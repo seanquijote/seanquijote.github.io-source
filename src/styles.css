@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #303030;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.center {
+	text-align: center;
+}
+
+.container {
+	width: 90%;
+}

@@ -2,18 +2,29 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app.router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
+import { MaterializeModule } from "angular2-materialize";
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
-	BrowserAnimationsModule
+  	BrowserAnimationsModule,
+    Angular2FontawesomeModule,
+    MaterializeModule
   ],
   providers: [ Title ],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

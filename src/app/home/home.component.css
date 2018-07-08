@@ -1,0 +1,18 @@
+.btn-wide {
+	width: 100%;
+	padding-bottom: 350px;
+}
+
+.nameplate {
+	font-weight: bold;
+	background-color: #303030;
+	position: absolute;
+	top: 320px;
+	left: 495px;
+}
+
+@media only screen and (max-width : 992px) {
+	.nameplate {
+		display: none;
+	}
+}

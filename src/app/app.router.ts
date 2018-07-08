@@ -2,14 +2,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 
 // import { Name3Component } from './';
 // import { Name4Component } from './';
 // import { PageNotFoundComponent } from './';
 
 const routes: Routes = [
-    { path: '', component: AppComponent },
-    { path: '**', component: AppComponent }
+    { path: '', component: HomeComponent },
+    { path: '**', component: HomeComponent }
 
     // { path: 'path4', component: Name4Component },
     // { path: 'path/:routeParam', component: MyComponent },
