@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 // import { Name3Component } from './';
 // import { Name4Component } from './';
@@ -10,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
+    { path: 'contact', component: ContactComponent },
     { path: '**', component: HomeComponent }
 
     // { path: 'path4', component: Name4Component },
