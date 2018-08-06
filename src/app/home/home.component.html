@@ -2,25 +2,40 @@
 <!-- 	<div [ngStyle]="{'background': '#fff url(assets/images/home_bg.jpeg) no-repeat 0 0'}">
 		<h1 class="center">SEAN KYLE NIÑO QUIJOTE</h1>	
 	</div> -->
-	<div style="position: absolute; left: 50%; top: 32%;">
-		<div class="card-panel center z-depth-4 white-text nameplate">
-			<img class="responsive-img" src="assets/images/logo.png" style="height: 150px; width: 100px;">
-			<h5><b>Sean Kyle Niño Quijote</b></h5>
+
+	<!-- CARD WITH TOP IMAGE -->
+	<div style="position: absolute; top: 26%;  left: 50%; z-index: 1;">
+		<div class="card nameplate">
+			<div class="card-image">
+				<img class="responsive-img z-depth-2" src="assets/images/profile.jpg" >
+			</div>
+			<div class="card-content center">
+				<h5>
+					<span materialize="tooltip" class="tooltipped hoverable" data-position="left" data-delay="50" data-tooltip="S E A N" style="padding: 5px;">S</span>
+					<span materialize="tooltip" class="tooltipped hoverable" data-position="top" data-delay="50" data-tooltip="K Y L E" style="padding: 5px;">K</span> 
+					<span materialize="tooltip" class="tooltipped hoverable" data-position="right" data-delay="50" data-tooltip="N I Ñ O" style="padding: 5px;">N</span>
+				</h5>
+				<h6>
+					<span materialize="tooltip" class="tooltipped hoverable" data-position="bottom" data-delay="50" data-tooltip="My last name">Q U I J O T E</span>
+				</h6>
+			</div>
 		</div>
 	</div>
 
 	<div class="row center" style="padding-top: 20px;">
 		<div class="col s12 m12 l6">
-			<a href="" class="btn btn-wide grey darken-1">
-			<!-- <a href="" class="btn btn-wide" style="background: url(assets/images/about_btn_bg.png);"> --><br><br><br>
-				<i fa class="fa fa-info-circle" style="font-size: 100px;"></i>
-				<h1>ABOUT</h1>
+			<a class="btn btn-wide white hoverable">
+			<!-- <a href="" class="btn btn-wide" style="background: url(assets/images/about_btn_bg.png);"> -->
+				<i fa class="fa fa-info-circle right-black btn-icon"></i>
+				<h4 class="right-black">A B O U T</h4>
+				<h6 class="grey-text darken-3">[ UNDER CONSTRUCTION ]</h6>
 			</a>
 		</div>
 		<div class="col s12 m12 l6">
-			<a href="" class="btn btn-wide grey darken-1"><br><br><br>
-				<i fa class="fa fa-briefcase" style="font-size: 100px;"></i>
-				<h1>WORK</h1>
+			<a class="btn btn-wide white hoverable">
+				<i fa class="fa fa-briefcase right-black btn-icon"></i>
+				<h4 class="right-black">W O R K</h4>
+				<h6 class="grey-text darken-3">[ UNDER CONSTRUCTION ]</h6>
 			</a>
 		</div>
 	</div>
@@ -28,15 +43,16 @@
 
 	<div class="row center">
 		<div class="col s12 m12 l6">
-			<a href="" class="btn btn-wide grey darken-1"><br><br><br>
-				<i fa class="fa fa-cogs" style="font-size: 100px;"></i>
-				<h1>SKILLS</h1>
+			<a class="right-btn btn btn-wide white hoverable">
+				<i fa class="fa fa-cogs right-black btn-icon"></i>
+				<h4 class="right-black">S K I L L S</h4>
+				<h6 class="grey-text darken-3">[ UNDER CONSTRUCTION ]</h6>
 			</a>
 		</div>
 		<div class="col s12 m12 l6">
-			<a href="" [routerLink]="['/contact']" class="btn btn-wide grey darken-1"><br><br><br>
-				<i fa class="fa fa-vcard" style="font-size: 100px;"></i>
-				<h1>CONTACT</h1>
+			<a [routerLink]="['/contact']" class="right-btn btn btn-wide white hoverable">
+				<i fa class="fa fa-vcard right-black btn-icon"></i>
+				<h4 class="right-black">C O N T A C T</h4>
 			</a>
 		</div>
 	</div>

@@ -10,8 +10,8 @@ import { ContactComponent } from './contact/contact.component';
 // import { PageNotFoundComponent } from './';
 
 const routes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'contact', component: ContactComponent },
+    { path: '', component: HomeComponent, data: { depth: 1 } },
+    { path: 'contact', component: ContactComponent, data: { depth: 2 } },
     { path: '**', component: HomeComponent }
 
     // { path: 'path4', component: Name4Component },

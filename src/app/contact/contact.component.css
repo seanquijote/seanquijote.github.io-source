@@ -1,4 +1,47 @@
+#email-div {
+	background-color: #d44638;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#linkedin-div {
+	background-color: #0077b5;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#github-div {
+	background-color: #2b3137;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#youtube-div {
+	background-color: #FF0000;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#facebook-div {
+	background-color: #3b5998;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#instagram-div {
+	background: #d6249f;
+	background: radial-gradient(circle at 30% 300%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	font-size: 40px;
+	padding: 20px;
+}
+
+.instagram-bg {
+	background: #d6249f;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
 .side-nav {
+    background-color: #fff;
 	width: 200px;
 }
 
@@ -9,11 +52,7 @@
 }
 
 header, main, footer {
-  	padding-left: 250px;
-}
-
-main {
-	padding-top: 20px;
+  	padding-left: 200px;
 }
 
 @media only screen and (max-width : 992px) {
