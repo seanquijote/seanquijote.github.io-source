@@ -1,20 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Router, ActivatedRoute } from "@angular/router";
-import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-work',
+  templateUrl: './work.component.html',
+  styleUrls: ['./work.component.css']
 })
-export class HomeComponent implements OnInit {
+export class WorkComponent implements OnInit {
 
   constructor(private titleService: Title, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
     window.scrollTo(0, 0);
-    this.titleService.setTitle( "Sean Kyle Niño Quijote" );
+    this.titleService.setTitle( "Work | Sean Kyle Niño Quijote" );
   }
 
 }

@@ -1,58 +1,121 @@
-<header class="no-pad-bot">
-	<!-- FIXED SIDEBAR -->
-	<ul id="sidenav-fixed" class="side-nav fixed hide-on-small-only show-on-medium-and-down right-black">
-		<li class="center"><h2>C</h2></li>
-		<li class="center"><h2>O</h2></li>
-		<li class="center"><h2>N</h2></li>
-		<li class="center"><h2>T</h2></li>
-		<li class="center"><h2>A</h2></li>
-		<li class="center"><h2>C</h2></li>
-		<li class="center"><h2>T</h2></li>
-		<li><a href="" [routerLink]="['/']"><i fa class="fa fa-chevron-left center right-black"></i>B A C K</a></li>
-	</ul>
+<header class="show-on-medium-and-down hide-on-large-only">
+	<!-- NAVBAR -->
+	<div id="navbar" class="navbar-fixed">
+		<nav class="z-depth-0 grey darken-4">
+		    <div class="nav-wrapper container">
+		      <a [routerLink]="['/']"  class="white-text"><i class="button-collapse material-icons">arrow_back</i></a>
+		      <a class="brand-logo" style="letter-spacing: 5px;">CONTACT</a>
+		    </div>
+		  </nav>
+	</div>
+</header>
+
+<main class="no-pad-bot">
+
+	<!-- DESKTOP VIEW -->
+	<div class="desktop-view" class="show-on-large hide-on-med-and-down">	
+		<!-- FIXED SIDEBAR -->
+		<ul id="sidenav-fixed" class="side-nav fixed white-text">
+			<li class="center"><h2>C</h2></li>
+			<li class="center"><h2>O</h2></li>
+			<li class="center"><h2>N</h2></li>
+			<li class="center"><h2>T</h2></li>
+			<li class="center"><h2>A</h2></li>
+			<li class="center"><h2>C</h2></li>
+			<li class="center"><h2>T</h2></li>
+			<li><a [routerLink]="['/']" class="white-text"><i fa class="fa fa-chevron-left center white-text"></i>B A C K</a></li>
+		</ul>
 
 		<a href="mailto:seanquijote" target="_blank">
 			<div id="email-div">
-			    <a href="mailto:seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable" style="background-color: #d44638; height: 100px; width: 100px;">
+			    <a href="mailto:seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn" style="background-color: #d44638;">
 			    	<i fa class="fa fa-envelope fa-lg contact-icons"></i>
-			    </a>		
-			    <span class="white-text" style="margin-left: 30px;">seanquijote@gmail.com</span>
+			    </a>
+			    <span class="white-text link-text">seanquijote@gmail.com</span>
 			</div>
 		</a>
 
 		<a href="https://www.linkedin.com/in/seanquijote" target="_blank">
 			<div id="linkedin-div">
-			    <a href="www.linkedin.com/in/seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable" style="background-color: #0077b5; height: 100px; width: 100px;"><i fa class="fa fa-linkedin fa-lg contact-icons"></i></a>
-			    <span class="white-text" style="margin-left: 30px;">www.linkedin.com/in/seanquijote</span>
+			    <a href="www.linkedin.com/in/seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn" style="background-color: #0077b5;"><i fa class="fa fa-linkedin fa-lg contact-icons"></i></a>
+			    <span class="white-text link-text">www.linkedin.com/in/seanquijote</span>
 			</div>
 		</a>
 
 		<a href="https://github.com/seanquijote" target="_blank">		
 			<div id="github-div">
-	      		<a href="https://github.com/seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable" style="background-color: #2b3137; height: 100px; width: 100px;"><i fa class="fa fa-github fa-lg contact-icons"></i></a>
-			    <a href="https://github.com/seanquijote" target="_blank" class="white-text" style="margin-left: 30px;">www.github.com/seanquijote</a>
+	      		<a href="https://github.com/seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn" style="background-color: #2b3137"><i fa class="fa fa-github fa-lg contact-icons"></i></a>
+			    <span class="white-text link-text">www.github.com/seanquijote</span>
 			</div>
 		</a>
 
 		<a href="https://www.youtube.com/channel/UCIeYEdwSeL507ws4y93CDVw" target="_blank">
 			<div id="youtube-div">
-			    <a href="https://www.youtube.com/channel/UCIeYEdwSeL507ws4y93CDVw" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable" style="background-color: #FF0000; height: 100px; width: 100px;"><i fa class="fa fa-youtube fa-lg contact-icons"></i></a>
-			    <span class="white-text" style="margin-left: 30px;">Sean Quijote</span>
+			    <a href="https://www.youtube.com/channel/UCIeYEdwSeL507ws4y93CDVw" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn" style="background-color: #FF0000;"><i fa class="fa fa-youtube fa-lg contact-icons"></i></a>
+			    <span class="white-text link-text">Sean Quijote</span>
 			</div>
 		</a>
 
 		<a href="https://www.facebook.com/seanquijote" target="_blank">		
 			<div id="facebook-div">
-			    <a href="https://www.facebook.com/seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable" style="background-color: #3B5998; height: 100px; width: 100px;"><i fa class="fa fa-facebook fa-lg contact-icons"></i></a>
-			    <span class="white-text" style="margin-left: 30px;">www.facebook.com/seanquijote</span>
+			    <a href="https://www.facebook.com/seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn" style="background-color: #3B5998;"><i fa class="fa fa-facebook fa-lg contact-icons"></i></a>
+			    <span class="white-text link-text">www.facebook.com/seanquijote</span>
 			</div>
 		</a>
 
 		<a href="https://www.instagram.com/seanquijote/" target="_blank">
 			<div id="instagram-div">
-			    <a href="https://www.instagram.com/seanquijote/" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable instagram-bg" style="background-color: #FF0000; height: 100px; width: 100px;"><i fa class="fa fa-instagram fa-lg contact-icons"></i></a>
-			    <span class="white-text" style="margin-left: 30px;">www.instagram.com/seanquijote</span>
+			    <a href="https://www.instagram.com/seanquijote/" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn instagram-bg" style="background-color: #FF0000;"><i fa class="fa fa-instagram fa-lg contact-icons"></i></a>
+			    <span class="white-text link-text">www.instagram.com/seanquijote</span>
+			</div>
+		</a>
+	</div>
+
+
+	<!-- MOBILE VIEW -->
+	<div class="mobile-view" class="show-on-medium-and-down hide-on-large-only center">	
+		<a href="mailto:seanquijote" target="_blank">
+			<div id="email-div">
+			    <a href="mailto:seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn center" style="background-color: #d44638;">
+			    	<i fa class="fa fa-envelope fa-lg contact-icons"></i>
+			    </a>
+			    <p class="white-text flow-text">seanquijote@gmail.com</p>
 			</div>
 		</a>
 
-</header>
+		<a href="https://www.linkedin.com/in/seanquijote" target="_blank">
+			<div id="linkedin-div">
+			    <a href="www.linkedin.com/in/seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn" style="background-color: #0077b5;"><i fa class="fa fa-linkedin fa-lg contact-icons"></i></a>
+			    <p class="white-text flow-text">www.linkedin.com/in/seanquijote</p>
+			</div>
+		</a>
+
+		<a href="https://github.com/seanquijote" target="_blank">		
+			<div id="github-div">
+	      		<a href="https://github.com/seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn" style="background-color: #2b3137"><i fa class="fa fa-github fa-lg contact-icons"></i></a>
+			    <p class="white-text flow-text">www.github.com/seanquijote</p>
+			</div>
+		</a>
+
+		<a href="https://www.youtube.com/channel/UCIeYEdwSeL507ws4y93CDVw" target="_blank">
+			<div id="youtube-div">
+			    <a href="https://www.youtube.com/channel/UCIeYEdwSeL507ws4y93CDVw" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn" style="background-color: #FF0000;"><i fa class="fa fa-youtube fa-lg contact-icons"></i></a>
+			    <p class="white-text flow-text">Sean Quijote</p>
+			</div>
+		</a>
+
+		<a href="https://www.facebook.com/seanquijote" target="_blank">		
+			<div id="facebook-div">
+			    <a href="https://www.facebook.com/seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn" style="background-color: #3B5998;"><i fa class="fa fa-facebook fa-lg contact-icons"></i></a>
+			    <p class="white-text flow-text">www.facebook.com/seanquijote</p>
+			</div>
+		</a>
+
+		<a href="https://www.instagram.com/seanquijote/" target="_blank">
+			<div id="instagram-div">
+			    <a href="https://www.instagram.com/seanquijote/" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn instagram-bg" style="background-color: #FF0000;"><i fa class="fa fa-instagram fa-lg contact-icons"></i></a>
+			    <p class="white-text flow-text">www.instagram.com/seanquijote</p>
+			</div>
+		</a>
+	</div>
+</main>

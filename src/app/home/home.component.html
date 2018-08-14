@@ -1,58 +1,121 @@
-
-<!-- 	<div [ngStyle]="{'background': '#fff url(assets/images/home_bg.jpeg) no-repeat 0 0'}">
-		<h1 class="center">SEAN KYLE NIÑO QUIJOTE</h1>	
-	</div> -->
-
-	<!-- CARD WITH TOP IMAGE -->
-	<div style="position: absolute; top: 26%;  left: 50%; z-index: 1;">
-		<div class="card nameplate">
-			<div class="card-image">
-				<img class="responsive-img z-depth-2" src="assets/images/profile.jpg" >
-			</div>
-			<div class="card-content center">
-				<h5>
-					<span materialize="tooltip" class="tooltipped hoverable" data-position="left" data-delay="50" data-tooltip="S E A N" style="padding: 5px;">S</span>
-					<span materialize="tooltip" class="tooltipped hoverable" data-position="top" data-delay="50" data-tooltip="K Y L E" style="padding: 5px;">K</span> 
-					<span materialize="tooltip" class="tooltipped hoverable" data-position="right" data-delay="50" data-tooltip="N I Ñ O" style="padding: 5px;">N</span>
-				</h5>
-				<h6>
-					<span materialize="tooltip" class="tooltipped hoverable" data-position="bottom" data-delay="50" data-tooltip="My last name">Q U I J O T E</span>
-				</h6>
+<main>
+	<div id="desktop-view" class="show-on-large hide-on-med-and-down">	
+		<div class="row">
+			<div materialize="slider" class="slider" [materializeParams]="[{ indicators: false }]">
+				<ul class="slides" style="background-color: #303030;">
+				  	<li>
+					    <img class="responsive-img slider-bg" src="assets/images/home_bg.jpg">
+					    <div class="caption center-align">
+							<img class="responsive-img hoverable" src="assets/images/logo_wht.png" style="height: 20%; width: 20%;"><br><br>
+					     	<h4 class="light grey-text text-lighten-3 letters-spaced">SEAN KYLE NIÑO QUIJOTE</h4>
+					     	<h6 class="light grey-text text-lighten-3 letters-spaced">
+					     		<code><span class="blinking">></span>coding_here</code> | <span class="ml12">Filming there</span>
+					     	</h6>
+					    </div>
+				  	</li>
+				</ul>
 			</div>
 		</div>
+
+		<div class="section">
+			<div class="container">
+				<div class="row center">
+					<div class="col s12 m12 l4">
+						<a [routerLink]="['/about']" class="btn btn-wide grey darken-4 hoverable">
+							<i fa class="fa fa-info-circle btn-text-color btn-icon"></i>
+							<h4 class="btn-text-color">A B O U T</h4>
+						</a>
+					</div>
+					<div class="col s12 m12 l4">
+						<a [routerLink]="['/work']" class="btn btn-wide hoverable">
+							<i fa class="fa fa-briefcase btn-text-color btn-icon"></i>
+							<h4 class="btn-text-color">W O R K</h4>
+						</a>
+					</div>
+					<div class="col s12 m12 l4">
+						<a [routerLink]="['/contact']" class="right-btn btn btn-wide hoverable">
+							<i fa class="fa fa-vcard btn-text-color btn-icon"></i>
+							<h4 class="btn-text-color">C O N T A C T</h4>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
-	<div class="row center" style="padding-top: 20px;">
-		<div class="col s12 m12 l6">
-			<a class="btn btn-wide white hoverable">
-			<!-- <a href="" class="btn btn-wide" style="background: url(assets/images/about_btn_bg.png);"> -->
-				<i fa class="fa fa-info-circle right-black btn-icon"></i>
-				<h4 class="right-black">A B O U T</h4>
-				<h6 class="grey-text darken-3">[ UNDER CONSTRUCTION ]</h6>
-			</a>
-		</div>
-		<div class="col s12 m12 l6">
-			<a class="btn btn-wide white hoverable">
-				<i fa class="fa fa-briefcase right-black btn-icon"></i>
-				<h4 class="right-black">W O R K</h4>
-				<h6 class="grey-text darken-3">[ UNDER CONSTRUCTION ]</h6>
-			</a>
-		</div>
-	</div>
 
 
-	<div class="row center">
-		<div class="col s12 m12 l6">
-			<a class="right-btn btn btn-wide white hoverable">
-				<i fa class="fa fa-cogs right-black btn-icon"></i>
-				<h4 class="right-black">S K I L L S</h4>
-				<h6 class="grey-text darken-3">[ UNDER CONSTRUCTION ]</h6>
-			</a>
+	<!-- MOBILE VIEW -->
+	<div id="mobile-view" class="show-on-medium-and-down hide-on-large-only">
+		<div class="row">
+			<div materialize="slider" class="slider" [materializeParams]="[{ indicators: false }]">
+				<ul class="slides" style="background-color: #303030;">
+				  	<li>
+					    <img class="responsive-img slider-bg" src="assets/images/home_bg.jpg">
+					    <div class="caption center-align">
+							<img class="responsive-img hoverable" src="assets/images/logo_wht.png" style="width: 40%;"><br><br>
+					     	<h4 class="light grey-text text-lighten-3 letters-spaced">SEAN KYLE NIÑO QUIJOTE</h4>
+					     	<h6 class="light grey-text text-lighten-3 letters-spaced">
+					     		<code><span class="blinking">></span>coding_here</code>
+					     		<hr style="width: 70%;">
+					     		<span class="ml12">Filming there</span>
+					     	</h6>
+					    </div>
+				  	</li>
+				</ul>
+			</div>
 		</div>
-		<div class="col s12 m12 l6">
-			<a [routerLink]="['/contact']" class="right-btn btn btn-wide white hoverable">
-				<i fa class="fa fa-vcard right-black btn-icon"></i>
-				<h4 class="right-black">C O N T A C T</h4>
-			</a>
+<!-- 		<div class="row">
+			<div class="card grey darken-4">
+				<div class="card-image">
+					<img class="responsive-img" src="assets/images/profile_mobile.jpg">
+				</div>
+				<div class="card-content center">
+					<h4><span class="white-text">― S E A N ―</span></h4>
+					<h5><span class="white-text">K Y L E &nbsp;&nbsp; N I Ñ O</span></h5>
+					<h4><span class="white-text">Q U I J O T E</span></h4>
+				</div>							
+			</div>
+		</div> -->
+
+		<div id="mobile-content">		
+			<div class="row">
+				<div class="col s4 m4">
+					<a [routerLink]="['/about']" class="btn btn-wide hoverable">
+						<div style="margin-top: 30px;">
+							<h4 class="white-text">A</h4>
+							<h4 class="white-text">B</h4>
+							<h4 class="white-text">O</h4>
+							<h4 class="white-text">U</h4>
+							<h4 class="white-text">T</h4>
+						</div>
+					</a>
+				</div>
+				<div class="col s4 m4">
+					<a [routerLink]="['/work']" class="btn btn-wide hoverable">
+						<div style="margin-top: 30px;">
+							<h4 class="white-text">W</h4>
+							<h4 class="white-text">O</h4>
+							<h4 class="white-text">R</h4>
+							<h4 class="white-text">K</h4>
+						</div>
+					</a>
+				</div>
+				<div class="col s4 m4">
+					<a [routerLink]="['/contact']" class="btn btn-wide hoverable">
+						<div style="margin-top: 30px;">
+							<h5 class="white-text">C</h5>
+							<h5 class="white-text">O</h5>
+							<h5 class="white-text">N</h5>
+							<h5 class="white-text">T</h5>
+							<h5 class="white-text">A</h5>
+							<h5 class="white-text">C</h5>
+							<h5 class="white-text">T</h5>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
+</main>

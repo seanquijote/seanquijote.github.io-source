@@ -1,0 +1,108 @@
+<!-- <app-header></app-header> -->
+
+<header class="show-on-medium-and-down hide-on-large-only">
+	<!-- NAVBAR -->
+	<div id="navbar" class="navbar-fixed">
+		<nav class="z-depth-0 grey darken-4">
+		    <div class="nav-wrapper container">
+		      <a [routerLink]="['/']"  class="white-text right"><i class="button-collapse material-icons">arrow_forward</i></a>
+		      <a class="brand-logo" style="letter-spacing: 5px;">ABOUT</a>
+		    </div>
+		  </nav>
+	</div>
+</header>
+
+<main class="no-pad-bot">
+	<!-- DESKTOP VIEW -->
+	<div id="desktop-view" class="show-on-large hide-on-med-and-down">	
+		<!-- FIXED SIDEBAR -->
+		<ul id="sidenav-fixed" class="side-nav right-aligned fixed white-text">
+			<li class="center"><h1>A</h1></li>
+			<li class="center"><h1>B</h1></li>
+			<li class="center"><h1>O</h1></li>
+			<li class="center"><h1>U</h1></li>
+			<li class="center"><h1>T</h1></li><br>
+			<li><a [routerLink]="['/']" class="white-text right"><i fa class="fa fa-chevron-right right white-text"></i>B A C K &nbsp;&nbsp;&nbsp;</a></li>
+		</ul>
+
+		<div class="section grey darken-4">
+			<div class="container">
+				<div class="row">
+					<div class="col s4 l4">
+						<div class="center" style="margin-top: 20px;">
+					    	<img class="responsive-img z-depth-4" src="assets/images/profile_desktop.jpg" style="width: 60%" />
+						</div>
+					</div>
+					<div class="col s8 l8">
+						<p class="grey-text lighten-3 flow-text">
+							I'm a <b class="white-text thin-font">Web Developer</b> living in Cebu City, where I currently work as a <b class="white-text thin-font">Software Engineer</b> at Lexmark. Cycling between the back-end and front-end, along with their respective frameworks and libraries, has deepened my interest in pursuing the web's future possibilities.<br><br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section grey darken-4">
+			<div class="container">
+				<div class="row">
+					<div class="col l6">
+						<div class="center" style="margin-top: 20px;">
+					    	<img class="responsive-img z-depth-4" src="assets/images/about_f5.jpg" style="width: 45%; margin-right: 10px;" />
+							<img class="responsive-img z-depth-4" src="assets/images/about_simple.jpg" style="width: 45%;" /><br>
+							<img class="responsive-img z-depth-4" src="assets/images/about_sith.jpg" style="width: 40%; margin-right: 10px; margin-top: 10px;" />
+							<img class="responsive-img z-depth-4" src="assets/images/about_sketch.png" style="width: 50%;" />
+						</div>
+					</div>
+					<div class="col l6">
+						<p class="grey-text lighten-3 flow-text">
+							As someone who's <b class="white-text thin-font">fresh from campus</b>, I like to stay well-rounded. When I'm not coding, I <b class="white-text thin-font">design</b> print media, and <b class="white-text thin-font">edit</b> videos.<br><br>
+
+							When I'm far from a computer, I'm most likely <b class="white-text thin-font">recording</b> a video, or engaging in the competitive scene of fighting games. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MOBILE VIEW -->
+	<div id="mobile-view" class="show-on-medium-and-down hide-on-large-only">	
+		<div class="section right-black-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<div class="left" style="padding-right: 20px; margin-top: 20px;">
+							<img class="responsive-img z-depth-4 center" src="assets/images/profile_desktop.jpg" style="width: 100%;" /> 
+						</div>
+						<p class="grey-text lighten-3 flow-text">
+							I'm a <b class="white-text thin-font">Web Developer</b> living in Cebu City, where I currently work as a <b class="white-text thin-font">Software Engineer</b> at Lexmark. Cycling between the back-end and front-end, along with their respective frameworks and libraries, has deepened my interest in pursuing the web's future possibilities.<br><br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section right-black-bg" style="border-top: 1px solid #121212;">
+			<div class="container">
+				<div class="row">
+					<div class="col l6">
+						<div class="center" style="margin-top: 20px;">
+					    	<img class="responsive-img z-depth-4" src="assets/images/about_f5.jpg" style="width: 45%; margin-right: 10px;" />
+							<img class="responsive-img z-depth-4" src="assets/images/about_simple.jpg" style="width: 45%;" /><br>
+							<img class="responsive-img z-depth-4" src="assets/images/about_sith.jpg" style="width: 40%; margin-right: 10px; margin-top: 10px;" />
+							<img class="responsive-img z-depth-4" src="assets/images/about_sketch.png" style="width: 50%;" />
+						</div>
+					</div>
+					<div class="col l6">
+						<p class="grey-text lighten-3 flow-text">
+							As someone who's <b class="white-text thin-font">fresh from campus</b>, I like to stay well-rounded. When I'm not coding, I <b class="white-text thin-font">design</b> print media, and <b class="white-text thin-font">edit</b> videos.<br><br>
+
+							When I'm far from a computer, I'm most likely <b class="white-text thin-font">recording</b> a video, or engaging in the competitive scene of fighting games.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</main>
