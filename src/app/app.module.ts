@@ -1,3 +1,5 @@
+import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { CommonModule } from '@angular/common';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app.router';
@@ -19,14 +21,16 @@ import { ContactComponent } from './contact/contact.component';
     WorkComponent,
     AboutComponent
   ],
-  imports: [
+  imports:[
+ CommonModule,
+NgtUniversalModule,
+ 
     AppRoutingModule,
-    BrowserModule,
+    
   	BrowserAnimationsModule,
     Angular2FontawesomeModule,
     MaterializeModule
   ],
   providers: [ Title ],
-  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

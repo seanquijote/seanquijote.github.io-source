@@ -7,7 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:server:prod": "ng run seanquijote:server && webpack --config webpack.server.config.js --progress --colors",
+    "build:browser:prod": "ng build --prod",
+    "build:prod": "npm run build:server:prod && npm run build:browser:prod",
+    "server": "node local.js"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +24,7 @@
     "@angular/platform-browser": "^6.0.0",
     "@angular/platform-browser-dynamic": "^6.0.0",
     "@angular/router": "^6.0.0",
+    "@ng-toolkit/universal": "^1.1.41-beta.110",
     "angular2-fontawesome": "^5.2.1",
     "angular2-materialize": "^15.1.10",
     "core-js": "^2.5.4",
@@ -30,7 +35,13 @@
     "materialize-css": "^0.100.2",
     "rxjs": "^6.0.0",
     "uikit": "^3.0.0-rc.8",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "@angular/platform-server": "^6.0.0",
+    "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
+    "webpack-cli": "^2.1.4",
+    "ts-loader": "4.2.0",
+    "@nguniversal/express-engine": "^6.0.0",
+    "cors": "~2.8.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.0",
@@ -43,12 +54,12 @@
     "codelyzer": "~4.2.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
-    "karma": "^2.0.4",
+    "karma": "^3.0.0",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~1.4.2",
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "protractor": "~5.3.0",
+    "protractor": "^5.4.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
     "typescript": "~2.7.2"

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { WINDOW } from '@ng-toolkit/universal';
+import { Component, OnInit , Inject} from '@angular/core';
 import { Router, ActivatedRoute } from "@angular/router";
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 
@@ -9,10 +10,10 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(@Inject(WINDOW) private window: Window, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    window.scrollTo(0, 0);
+    this.window.scrollTo(0, 0);
   }
 
 }
