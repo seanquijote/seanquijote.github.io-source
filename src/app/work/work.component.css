@@ -2,6 +2,15 @@
 	width: 90%;
 }
 
+/*#right-side-nav {
+	overflow: hidden;
+	height: 100%;
+}
+
+#right-side-nav:hover {
+	overflow-y: scroll;
+}
+*/
 .side-nav {
 	position: fixed;
     background-color: #eeeeee;

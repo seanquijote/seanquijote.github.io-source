@@ -8,11 +8,55 @@ import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-    { path: '', component: HomeComponent, data: { depth: 1 } },
-    { path: 'about', component: AboutComponent, data: { depth: 2 } },
-    { path: 'work', component: WorkComponent, data: { depth: 3 } },
-    { path: 'contact', component: ContactComponent, data: { depth: 4 } },
-    { path: '**', component: HomeComponent }
+    { 
+        path: '', 
+        component: HomeComponent, 
+        data: { 
+            depth: 1, 
+            title: "Sean Kyle Niño Quijote",
+            metatags: {
+                description: "I'm Junior Software Engineer living in Cebu",
+                keywords: "sean quijote, quijote, seanquijote"
+            }
+        } 
+    },
+    { 
+        path: 'about', 
+        component: AboutComponent, 
+        data: { 
+            depth: 2,
+            title: "About",
+            metatags: {
+                description: "A little bit about me",
+                keywords: "about seanquijote, about sean quijote"
+            }
+        } 
+    },
+    { 
+        path: 'work',
+        component: WorkComponent, 
+        data: { 
+            depth: 3,
+            title: "Work",
+            metatags: {
+                description: "A few of my projects",
+                keywords: "work seanquijote, work sean quijote"
+            }
+        } 
+    },
+    { 
+        path: 'contact', 
+        component: ContactComponent, 
+        data: { 
+            depth: 4,
+            title: "Contact",
+            metatags: {
+                description: "You can reach me through here",
+                keywords: "contact seanquijote, contact sean quijote"
+            } 
+        } 
+    },
+    { path: '**', redirectTo: '/' }
 
     // { path: 'path4', component: Name4Component },
     // { path: 'path/:routeParam', component: MyComponent },
