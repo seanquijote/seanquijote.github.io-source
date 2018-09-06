@@ -13,7 +13,7 @@ const routes: Routes = [
         component: HomeComponent, 
         data: { 
             depth: 1, 
-            title: "Sean Kyle Niño Quijote",
+            title: "Sean Quijote - Junior Software Engineer",
             metatags: {
                 description: "I'm Junior Software Engineer living in Cebu",
                 keywords: "sean quijote, quijote, seanquijote"
