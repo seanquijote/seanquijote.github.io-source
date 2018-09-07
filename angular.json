@@ -23,7 +23,7 @@
               "src/sitemap.xml",
               "src/robots.txt",
               "src/assets",
-              ".htaccess"
+              "src/.htaccess"
             ],
             "styles": [
               "src/styles.css",
