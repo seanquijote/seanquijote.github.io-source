@@ -60,6 +60,10 @@
 	margin-left: 30px;
 }
 
+.btn-back:hover {
+	background-color: #404040;
+}
+
 header, main, footer {
   	padding-left: 200px;
 }

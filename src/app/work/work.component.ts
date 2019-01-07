@@ -8,7 +8,7 @@ import { Component, OnInit , Inject} from '@angular/core';
 })
 export class WorkComponent implements OnInit {
 
-  constructor(@Inject(WINDOW) private window: Window, ) { }
+  constructor(@Inject(WINDOW) private window: Window) { }
 
   ngOnInit() {
     this.window.scrollTo(0, 0);

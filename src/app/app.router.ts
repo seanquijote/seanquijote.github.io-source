@@ -12,7 +12,7 @@ const routes: Routes = [
         path: '', 
         component: HomeComponent, 
         data: { 
-            depth: 1, 
+            depth: "depthHome", 
             title: "Sean Quijote - Junior Software Engineer",
             metatags: {
                 description: "I'm Junior Software Engineer living in Cebu",
@@ -24,7 +24,7 @@ const routes: Routes = [
         path: 'about', 
         component: AboutComponent, 
         data: { 
-            depth: 2,
+            depth: "depthAbout",
             title: "About",
             metatags: {
                 description: "A little bit about me",
@@ -36,7 +36,7 @@ const routes: Routes = [
         path: 'work',
         component: WorkComponent, 
         data: { 
-            depth: 3,
+            depth: "depthWork",
             title: "Work",
             metatags: {
                 description: "A few of my projects",
@@ -48,7 +48,7 @@ const routes: Routes = [
         path: 'contact', 
         component: ContactComponent, 
         data: { 
-            depth: 4,
+            depth: "depthContact",
             title: "Contact",
             metatags: {
                 description: "You can reach me through here",

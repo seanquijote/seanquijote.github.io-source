@@ -6,7 +6,7 @@
 
 		<meta charset="UTF-8" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="I'm a Junior Software Engineer living in Cebu" />
+		<meta name="description" content="Just a Junior Software Engineer living in Cebu" />
 		<meta name="keywords" content="seanquijote, sean quijote, quijote" />
 		<meta name="language" content="en" />
 		<meta name="robots" content="index,follow" />
@@ -16,9 +16,10 @@
 		<meta http-equiv="pragma" content="no-cache">
 
 		<meta property="og:site_name" content="Sean Kyle Niño Quijote" />
-		<meta property="og:url" content="http://seanquijote.com/" />
+<!-- 		<meta property="og:url" content="http://seanquijote.com/" />		 -->
+		<meta property="og:url" content="https://seanquijote.github.io/" />
 		<meta property="og:title" content="Sean Quijote - Junior Software Engineer" />
-		<meta property="og:description" content="I'm a Junior Software Engineer living in Cebu" />
+		<meta property="og:description" content="Just a Junior Software Engineer living in Cebu" />
 		<meta property="og:type" content="website" />
 		<meta property="og:locale" content="en_US" />
 
@@ -35,6 +36,7 @@
 				justify-content: center;
 				height: 100%;
 				min-height: 100vh;
+				overflow: hidden;
 			}
 			.app-loading .spinner {
 				height: 200px;
@@ -101,10 +103,10 @@
 	<body>
 		<h1 style="display: none;">Sean Quijote - Junior Software Engineer</h1>
 		<app-root>
-			<div class="app-loading">
+			<div class="app-loading" style="overflow-y: hidden;">
 				<img class="flash" src="assets/images/logo_wht.png">
 				<svg class="spinner" viewBox="25 25 50 50">
-				 	<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+				 	<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="1" stroke-miterlimit="10"/>
 				</svg>
 			</div>
 		</app-root>

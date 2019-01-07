@@ -49,8 +49,12 @@
 	top: 0;
 }
 
+.btn-back:hover {
+	background-color: #404040;
+}
+
 main {
-  	padding-right: 165px;
+  	padding-left: 165px;
 }
 
 @media only screen and (max-width : 992px) {

@@ -11,7 +11,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactComponent } from './contact/contact.component'
+
+import { MnFullpageModule } from "ngx-fullpage";
 
 @NgModule({
   declarations: [
@@ -22,14 +24,13 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent
   ],
   imports:[
- CommonModule,
-NgtUniversalModule,
- 
+    CommonModule,
+    NgtUniversalModule,
     AppRoutingModule,
-    
   	BrowserAnimationsModule,
     Angular2FontawesomeModule,
-    MaterializeModule
+    MaterializeModule,
+    MnFullpageModule.forRoot()    
   ],
   providers: [ Title ],
 })
