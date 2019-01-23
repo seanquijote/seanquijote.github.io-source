@@ -1,5 +1,39 @@
 <main>
-	<div id="desktop-view" class="show-on-large hide-on-med-and-down">
+<!-- app.component.html -->
+	<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+		<div class="section">		
+		  <div materialize="carousel" class="carousel carousel-slider center">
+		    <div class="carousel-fixed-item center">
+		      <a class="btn waves-effect white grey-text darken-text-2">button</a>
+		    </div>
+		    <div class="carousel-item red white-text" href="#one!">
+		      <h2>First Panel</h2>
+		      <p class="white-text">This is your first panel</p>
+		    </div>
+		    <div class="carousel-item amber white-text" href="#two!">
+		      <h2>Second Panel</h2>
+		      <p class="white-text">This is your second panel</p>
+		    </div>
+		    <div class="carousel-item green white-text" href="#three!">
+		      <h2>Third Panel</h2>
+		      <p class="white-text">This is your third panel</p>
+		    </div>
+		    <div class="carousel-item blue white-text" href="#four!">
+		      <h2>Fourth Panel</h2>
+		      <p class="white-text">This is your fourth panel</p>
+		    </div>
+		  </div>  
+		</div>
+		<div class="section white" (click)="fullpage_api.moveSectionDown()">Some section2</div>
+		<div class="section orange">
+			<div class="slide">Slide 2.1</div>
+			<div class="slide">Slide 2.2</div>
+			<div class="slide">Slide 2.3</div>
+		</div>
+		<div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>
+	</div>
+
+<!-- 	<div id="desktop-view" class="show-on-large hide-on-med-and-down" mnFullpage [mnFullpageNavigation]="true" [mnFullpageKeyboardScrolling]="true">
 		<div class="row">
 			<div materialize="slider" class="slider" [materializeParams]="[{ indicators: false, height: 600 }]">
 				<ul class="slides" style="background-color: #303030;">
@@ -41,8 +75,7 @@
 				</div>
 			</div>
 		</div>
-
-	</div>
+	</div> -->
 
 
 

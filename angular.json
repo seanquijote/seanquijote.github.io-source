@@ -36,7 +36,8 @@
               "node_modules/hammerjs/hammer.js",
               "node_modules/materialize-css/dist/js/materialize.js",
               "node_modules/uikit/dist/js/uikit.min.js",
-              "node_modules/uikit/dist/js/uikit-icons.min.js"
+              "node_modules/uikit/dist/js/uikit-icons.min.js",
+              "node_modules/fullpage.js/vendors/scrolloverflow.min.js"
             ]
           },
           "configurations": {

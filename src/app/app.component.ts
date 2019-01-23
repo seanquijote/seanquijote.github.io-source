@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { trigger, transition, group, query, style, animate } from '@angular/animations';
-import { SEOService } from './seo.service';
+import { SEOService } from './seo.service'; 
  
 @Component({
 	selector: 'app-root',
@@ -68,8 +68,9 @@ import { SEOService } from './seo.service';
 	]
 })
 export class AppComponent {
+
 	constructor(private router: Router, private acitvatedRoute: ActivatedRoute, private title: Title, private seoService: SEOService) {
-		seoService.addSeoData();
+		seoService.addSeoData()	
 	}
 
 	getDepth(outlet) {

@@ -36,7 +36,7 @@
           /(.+)?express(\\|\/)(.+)?/,
           path.join(__dirname, 'src'),
           {}
-        )
+        )       
       ]
     }
     
