@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 import { MaterializeModule } from "angular2-materialize";
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 // Page Components
 import { AppComponent } from './app.component';
@@ -33,7 +34,8 @@ import { ContactComponent } from './contact/contact.component';
   	BrowserAnimationsModule,
     Angular2FontawesomeModule,
     MaterializeModule,
-    AngularFullpageModule
+    AngularFullpageModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [ Title ],
   bootstrap: [ AppComponent ]

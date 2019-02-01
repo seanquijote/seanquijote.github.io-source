@@ -29,7 +29,8 @@
               "src/styles.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "node_modules/materialize-css/dist/css/materialize.css",
-              "node_modules/animate.css/animate.css"
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/hover.css/css/hover-min.css"              
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",

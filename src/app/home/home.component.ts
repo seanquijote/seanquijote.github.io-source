@@ -13,25 +13,27 @@ export class HomeComponent implements OnInit {
 	fullpage_api: any;	
 
 	constructor(@Inject(WINDOW) private window: Window, private router: Router, private route: ActivatedRoute) {
-		// for more details on config options please visit fullPage.js docs
 		this.config = {
-			// fullpage options
 			licenseKey: 'YOUR LICENSE KEY HERE',
-			anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+			// anchors: ['firstPage', 'secondPage'],
+			// navigationTooltips: ['Home', 'Work'],
+		    // navigation: true,	
+			keyboardScrolling: true,
+		    autoScrolling: true,	
 			menu: '#menu',
 
 			// fullpage callbacks
-			afterResize: () => {
-				console.log("After resize");
-			},
-			afterLoad: (origin, destination, direction) => {
-				console.log(origin.index);
-			}
+			// afterResize: () => {
+			// 	console.log("After resize");
+			// },
+			// afterLoad: (origin, destination, direction) => {
+			// 	console.log(origin.index);
+			// }
 		};	  	
   	}
 
 	ngOnInit() {
-		this.window.scrollTo(0, 0);
+		// this.window.scrollTo(0, 0);
 	}
 
 	getRef(fullPageRef) {

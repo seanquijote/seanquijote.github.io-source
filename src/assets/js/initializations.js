@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 	// carousel initialization
 	$('.carousel.carousel-slider').carousel({
 		fullWidth: true,

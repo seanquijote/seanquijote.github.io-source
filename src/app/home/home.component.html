@@ -1,12 +1,65 @@
 <main>
-<!-- app.component.html -->
 	<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
-		<div class="section">		
-		  <div materialize="carousel" class="carousel carousel-slider center">
+		<div class="section" [ngStyle]="{background: 'url(./assets/images/home_bg.png) no-repeat fixed'}">
+			<div class="row">
+				<div class="col l3 center-align floating">
+					<a [routerLink]="['/about']" class="btn-about hide-on-init" animateOnScroll animationName="animated fadeInLeft" style="vertical-align: center;">
+						<i class="material-icons btn-icon light grey-text text-lighten-3">arrow_back</i>
+						<h6 class="light grey-text text-lighten-3 letters-spaced">ABOUT</h6>
+					</a>
+				</div>					
+			    <div class="col l6 center-align">
+			    	<div>
+						<img class="responsive-img" src="assets/images/logo_wht.png" style="height: 10%; width: 10%;"><br><br>
+				     	<h4 class="light grey-text text-lighten-3 letters-spaced">SEAN QUIJOTE</h4>
+				     	<h6 class="light grey-text text-lighten-3 letters-spaced">
+				     		<code><span class="blinking">></span>coding_here</code> | <span class="ml12">Filming there</span>
+				     	</h6>
+				    </div>
+				    <div class="floating" style="margin-top: 40px;">
+						<a [routerLink]="['/work']" (mouseover)="flavorTextWork=true" (mouseout)="flavorTextWork=false" class="btn-work hide-on-init" animateOnScroll animationName="animated fadeInRight">
+							<i class="material-icons btn-icon light grey-text text-lighten-3">arrow_downward</i>
+							<h6 class="light grey-text text-lighten-3 letters-spaced">WORK</h6>
+						</a>
+					</div>				     	
+			    </div>
+				<div class="col l3 center-align floating">
+					<a [routerLink]="['/contact']" (mouseover)="flavorTextContact=true" (mouseout)="flavorTextContact=false" class="btn-contact hide-on-init" animateOnScroll animationName="animated fadeInRight">
+						<i class="material-icons btn-icon light grey-text text-lighten-3">arrow_forward</i>
+						<h6 class="light grey-text text-lighten-3 letters-spaced">CONTACT</h6>
+					</a>
+				</div>
+			</div>
+		</div>
+<!-- 		<div class="section">
+			<div class="container">
+				<div class="row center">
+					<div class="col s12 m12 l4">
+						<a [routerLink]="['/about']" class="btn btn-wide waves-effect grey darken-4 hoverable hvr-sweep-to-left hide-on-init" animateOnScroll animationName="animated fadeInLeft" offset="-100">
+							<i fa class="fa fa-info-circle btn-text-color btn-icon"></i>
+							<h4 class="btn-text-color">A B O U T</h4>
+						</a>
+					</div>
+					<div class="col s12 m12 l4">
+						<a [routerLink]="['/work']" class="btn btn-wide waves-effect hoverable hvr-sweep-to-bottom">
+							<i fa class="fa fa-briefcase btn-text-color btn-icon"></i>
+							<h4 class="btn-text-color">W O R K</h4>
+						</a>
+					</div>
+					<div class="col s12 m12 l4">
+						<a [routerLink]="['/contact']" class="btn btn-wide waves-effect hoverable hvr-sweep-to-right">
+							<i fa class="fa fa-vcard btn-text-color btn-icon"></i>
+							<h4 class="btn-text-color">C O N T A C T</h4>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>	 -->			    		
+<!-- 		  <div materialize="carousel" class="carousel carousel-slider center" [materializeParams]="[{ indicators: false, fullWidth: true }]">
 		    <div class="carousel-fixed-item center">
 		      <a class="btn waves-effect white grey-text darken-text-2">button</a>
 		    </div>
-		    <div class="carousel-item red white-text" href="#one!">
+		    <div class="carousel-item red white-text" href="#one!" [ngStyle]="{background: 'url(./assets/images/home_bg.png)'}">
 		      <h2>First Panel</h2>
 		      <p class="white-text">This is your first panel</p>
 		    </div>
@@ -22,15 +75,14 @@
 		      <h2>Fourth Panel</h2>
 		      <p class="white-text">This is your fourth panel</p>
 		    </div>
-		  </div>  
-		</div>
-		<div class="section white" (click)="fullpage_api.moveSectionDown()">Some section2</div>
+		  </div>   -->
+<!-- 		<div class="section white" (click)="fullpage_api.moveSectionDown()">Some section2</div>
 		<div class="section orange">
 			<div class="slide">Slide 2.1</div>
 			<div class="slide">Slide 2.2</div>
 			<div class="slide">Slide 2.3</div>
 		</div>
-		<div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>
+		<div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div> -->
 	</div>
 
 <!-- 	<div id="desktop-view" class="show-on-large hide-on-med-and-down" mnFullpage [mnFullpageNavigation]="true" [mnFullpageKeyboardScrolling]="true">
