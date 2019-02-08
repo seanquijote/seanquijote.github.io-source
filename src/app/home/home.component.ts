@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
 	constructor(@Inject(WINDOW) private window: Window, private router: Router, private route: ActivatedRoute) {
 		this.config = {
-			licenseKey: 'YOUR LICENSE KEY HERE',
+			licenseKey: 'eUTqJ@r7',
 			// anchors: ['firstPage', 'secondPage'],
 			// navigationTooltips: ['Home', 'Work'],
 		    // navigation: true,	

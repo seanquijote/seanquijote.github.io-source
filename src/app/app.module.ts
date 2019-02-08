@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     ContactComponent,
     WorkComponent,
-    AboutComponent
+    AboutComponent,
+    FooterComponent
   ],
   imports:[
     CommonModule,
