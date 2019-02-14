@@ -2,21 +2,23 @@
 	<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
 		<div class="section" [ngStyle]="{background: 'url(./assets/images/home_bg.png) no-repeat fixed'}">
 			<div class="row">
-				<div class="col l3 center-align floating">
-					<a [routerLink]="['/about']" class="btn-about hide-on-init" animateOnScroll animationName="animated fadeInLeft" style="vertical-align: center;">
-						<h6 class="light grey-text text-lighten-3 letters-spaced">ABOUT</h6>
-						<i class="material-icons light grey-text text-lighten-3">arrow_back</i>
-					</a>
+				<div class="col l3 center-align">
+					<div class="floating" style="vertical-align: center;">
+						<a [routerLink]="['/about']" class="btn-about hide-on-init" animateOnScroll animationName="animated fadeInLeft" style="vertical-align: center;">
+							<h6 class="light grey-text text-lighten-3 letters-spaced">ABOUT</h6>
+							<i class="material-icons light grey-text text-lighten-3">arrow_back</i>
+						</a>
+					</div>
 				</div>					
 			    <div class="col l6 center-align">
-			    	<div>
-						<img class="responsive-img" src="assets/images/logo_wht.png" style="height: 10%; width: 10%;"><br><br>
+			    	<div style="margin-top: 10%;">
+						<img class="responsive-img" src="assets/images/logo_wht.png" style="height: 100px; width: 100px;">
 				     	<h4 class="light grey-text text-lighten-3 letters-spaced btn-icon">SEAN QUIJOTE</h4>
 				     	<h6 class="light grey-text text-lighten-3 letters-spaced">
 				     		<code><span class="blinking">></span>coding_here</code> | <span class="ml12">Filming there</span>
 				     	</h6>
 				    </div>
-				    <div class="floating" style="margin-top: 40px;">
+				    <div class="floating" style="margin-top: 25%;">
 						<a [routerLink]="['/work']" (mouseover)="flavorTextWork=true" (mouseout)="flavorTextWork=false" class="btn-work hide-on-init" animateOnScroll animationName="animated fadeInRight">
 							<h6 class="light grey-text text-lighten-3 letters-spaced btn-icon">WORK</h6>
 							<i class="material-icons light grey-text text-lighten-3">arrow_downward</i>

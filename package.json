@@ -39,7 +39,7 @@
     "hoek": "^6.1.2",
     "hover.css": "^2.3.2",
     "jquery": "^3.3.1",
-    "materialize-css": "^1.0.0",
+    "materialize-css": "^0.100.2",
     "ng2-animate-on-scroll": "^1.0.11",
     "ngx-fullpage": "^5.0.4",
     "rxjs": "^6.4.0",
