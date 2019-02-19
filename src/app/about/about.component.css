@@ -1,0 +1,32 @@
+.container {
+	width: 90%;
+}
+
+.side-nav {
+    background-color: #303030;
+	width: 200px;
+}
+
+.blinking {
+  animation: blinker 3s linear infinite;
+}
+
+.btn-back:hover {
+  background-color: #404040;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+header, main, footer {
+  	padding-right: 200px;
+}
+
+@media only screen and (max-width : 992px) {
+	header, main, footer {
+		padding-right: 0;
+	}
+}

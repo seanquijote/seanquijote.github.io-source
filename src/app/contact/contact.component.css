@@ -1,0 +1,75 @@
+#email-div {
+	background-color: #d44638;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#linkedin-div {
+	background-color: #0077b5;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#github-div {
+	background-color: #2b3137;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#youtube-div {
+	background-color: #FF0000;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#facebook-div {
+	background-color: #3b5998;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#instagram-div {
+	background: #d6249f;
+	background: radial-gradient(circle at 30% 300%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	font-size: 40px;
+	padding: 20px;
+}
+
+.instagram-bg {
+	background: #d6249f;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.side-nav {
+    background-color: #303030;
+	width: 200px;
+}
+
+.contact-icons {
+	font-size: 60px;
+	position: relative;
+	top: 25px;
+}
+
+.circle-btn {
+	height: 100px;
+	width: 100px;
+}
+
+.link-text {
+	margin-left: 30px;
+}
+
+.btn-back:hover {
+	background-color: #404040;
+}
+
+header, main, footer {
+  	padding-left: 200px;
+}
+
+@media only screen and (max-width : 992px) {
+	header, main, footer {
+		padding-left: 0;
+	}
+}

@@ -1,0 +1,78 @@
+.container {
+	width: 90%;
+}
+
+/*#right-side-nav {
+	overflow: hidden;
+	height: 100%;
+}
+
+#right-side-nav:hover {
+	overflow-y: scroll;
+}
+*/
+.side-nav {
+	position: fixed;
+    background-color: #eeeeee;
+	width: 165px;
+	margin-top:65px;
+}
+
+.movePrevCarousel, .moveNextCarousel {
+	font-size: 30px;
+}
+
+.fixed-action-btn {
+	float: left;
+}
+
+.left-button{
+	left: 23px;
+	right: auto;
+}
+
+.youtube-videos {
+	background-color: #FF0000;
+}
+
+.lrdc-logo {
+	height: 60%;
+	width: 60%;
+}
+
+.letters-spaced {
+	letter-spacing: 13px;
+}
+
+.work-desc {
+	position: relative;
+	top: 0;
+}
+
+.btn-back:hover {
+	background-color: #404040;
+}
+
+main {
+  	padding-left: 165px;
+}
+
+@media only screen and (max-width : 992px) {
+	main {
+		padding-right: 0;
+	}
+
+	.lrdc-logo {
+		height: 80%;
+		width: 80%;
+	}
+
+	.letters-spaced {
+		letter-spacing: 0;
+	}
+
+	.work-desc {
+		position: relative;
+		top: 20px;
+	}
+}

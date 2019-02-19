@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "squijote": {
+    "seanquijote": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,19 +13,33 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/squijote",
+            "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/sitemap.xml",
+              "src/robots.txt",
+              "src/assets",
+              "src/.htaccess"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/materialize-css/dist/css/materialize.min.css",
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/hover.css/css/hover-min.css"              
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/hammerjs/hammer.js",
+              "node_modules/materialize-css/dist/js/materialize.min.js",
+              "node_modules/uikit/dist/js/uikit.min.js",
+              "node_modules/uikit/dist/js/uikit-icons.min.js",
+              "node_modules/fullpage.js/vendors/scrolloverflow.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -50,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "squijote:build"
+            "browserTarget": "seanquijote:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "squijote:build:production"
+              "browserTarget": "seanquijote:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "squijote:build"
+            "browserTarget": "seanquijote:build"
           }
         },
         "test": {
@@ -92,10 +106,18 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "src/tsconfig.server.json"
+          }
         }
       }
     },
-    "squijote-e2e": {
+    "seanquijote-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,7 +125,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "squijote:serve"
+            "devServerTarget": "seanquijote:serve"
           }
         },
         "lint": {
@@ -118,5 +140,5 @@
       }
     }
   },
-  "defaultProject": "squijote"
+  "defaultProject": "seanquijote"
 }
