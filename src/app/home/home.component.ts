@@ -9,6 +9,9 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+	flavorTextAbout: boolean = false;
+	flavorTextWork: boolean = false;
+	flavorTextContact: boolean = false;		
 	config: any;
 	fullpage_api: any;	
 

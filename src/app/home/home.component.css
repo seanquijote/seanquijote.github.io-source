@@ -1,3 +1,26 @@
+#flavorTextAbout {
+/*  display: none;*/
+  transition: text-shadow .3s;  
+  text-shadow: 0 0 20px #fff;
+  letter-spacing: 3px;  
+}
+
+#flavorTextWork {
+  position: absolute;
+  left: 50%;
+/*  display: none;*/
+  transition: text-shadow .3s;
+  text-shadow: 0 0 20px #fff;
+  letter-spacing: 3px;
+}
+
+#flavorTextContact {
+/*  display: none;*/
+  transition: text-shadow .3s;  
+  text-shadow: 0 0 20px #fff;
+  letter-spacing: 3px;  
+}
+
 .container {
   width: 90%;
 }
@@ -51,10 +74,6 @@
   letter-spacing: 10px;
 }
 
-.blinking {
-  animation: blinker 1s linear infinite;
-}
-
 .animated {
     visibility: visible !important;
 }
@@ -63,14 +82,28 @@
     visibility: hidden;
 }
 
+.slides li .slider-bg {
+  background-attachment: fixed;
+}
+
+.btn-nav-glow {
+  transition: text-shadow .3s;
+  text-shadow: 0 0 0 #fff;  
+}
+
+.btn-nav-glow:hover {
+  transition: text-shadow .3s;  
+  text-shadow: 0 0 30px #fff;
+}
+
+.blinking {
+  animation: blinker 1s linear infinite;
+}
+
 @keyframes blinker {
   50% {
     opacity: 0;
   }
-}
-
-.slides li .slider-bg {
-  background-attachment: fixed;
 }
 
 @media only screen and (max-width : 992px) {
