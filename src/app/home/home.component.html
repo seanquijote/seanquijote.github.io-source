@@ -3,7 +3,7 @@
 		<div class="section" [ngStyle]="{background: 'url(./assets/images/home_bg.png) no-repeat fixed'}">
 			<div class="row">
 				<div class="col l3 center-align">
-					<div class="floating" style="vertical-align: center;">
+					<div class="floating-x-l" style="vertical-align: bottom;">
 						<a [routerLink]="['/about']" class="btn-about hide-on-init" animateOnScroll animationName="animated fadeInLeft" style="vertical-align: center;">
 							<h6 class="light grey-text text-lighten-3 letters-spaced">ABOUT</h6>
 							<i class="material-icons light grey-text text-lighten-3">arrow_back</i>
@@ -18,19 +18,21 @@
 				     		<code><span class="blinking">></span>coding_here</code> | <span class="ml12">Filming there</span>
 				     	</h6>
 				    </div>
-				    <div class="floating" style="margin-top: 25%;">
+				    <div class="floating-y" style="margin-top: 25%;">
 						<a [routerLink]="['/work']" (mouseover)="flavorTextWork=true" (mouseout)="flavorTextWork=false" class="btn-work hide-on-init" animateOnScroll animationName="animated fadeInRight">
 							<h6 class="light grey-text text-lighten-3 letters-spaced btn-icon">WORK</h6>
 							<i class="material-icons light grey-text text-lighten-3">arrow_downward</i>
-							
+								
 						</a>
 					</div>				     	
 			    </div>
-				<div class="col l3 center-align floating">
-					<a [routerLink]="['/contact']" (mouseover)="flavorTextContact=true" (mouseout)="flavorTextContact=false" class="btn-contact hide-on-init" animateOnScroll animationName="animated fadeInRight">
-						<h6 class="light grey-text text-lighten-3 letters-spaced btn-icon">CONTACT</h6>
-						<i class="material-icons light grey-text text-lighten-3">arrow_forward</i>
-					</a>
+				<div class="col l3 center-align">
+					<div class="floating-x-r" style="vertical-align: center;">
+						<a [routerLink]="['/contact']" (mouseover)="flavorTextContact=true" (mouseout)="flavorTextContact=false" class="btn-contact hide-on-init" animateOnScroll animationName="animated fadeInRight">
+							<h6 class="light grey-text text-lighten-3 letters-spaced btn-icon">CONTACT</h6>
+							<i class="material-icons light grey-text text-lighten-3">arrow_forward</i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

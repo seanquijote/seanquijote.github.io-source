@@ -26,17 +26,41 @@ main {
 	font-weight: 300;
 }
 
-.floating {  
-    animation-name: floating;
+.floating-y {  
+    animation-name: floating-y;
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
 }
 
-@keyframes floating {
+.floating-x-l {  
+    animation-name: floating-x-l;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.floating-x-r {  
+    animation-name: floating-x-r;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating-y {
     from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 15px); }
+    50%  { transform: translate(0, 15px); }
     to   { transform: translate(0, -0px); }    
+}
+
+@keyframes floating-x-l {
+    from { transform: translate(0px,  0); }
+    50%  { transform: translate(-15px, 0); }
+    to   { transform: translate(-0px, 0); }    
+}
+
+@keyframes floating-x-r {
+    from { transform: translate(0px,  0); }
+    50%  { transform: translate(15px, 0); }
+    to   { transform: translate(-0px, 0); }    
 }
