@@ -10,56 +10,47 @@
 			<div class="row">
 				<div class="col l3 center-align">
 					<div class="floating-x-l">
-						<a [routerLink]="['/about']" class="animated hide-on-init" animateOnScroll animationName="fadeInLeft" (mouseover)="flavorTextAbout=true" (mouseout)="flavorTextAbout=false">
+            <a [routerLink]="['/about']" class="navLink animated hide-on-init" animateOnScroll animationName="fadeInLeft">
 							<div class="btn-nav-glow">
 								<span>
 									<h6 class="light grey-text text-lighten-3 letters-spaced">ABOUT</h6>
 									<i class="material-icons light grey-text text-lighten-3">arrow_back</i>
 								</span>
 							</div>
-							<div *ngIf="flavorTextAbout">
-								<p id="flavorTextAbout" class="light grey-text text-lighten-3 thin-font center-align">A little info about me</p>
-							</div>
-							<div *ngIf="!flavorTextAbout"></div>
+              <p class="flavorText light grey-text text-lighten-3 thin-font center-align">A little info about me</p>
 						</a>
 					</div>
-				</div>					
+				</div>
 			    <div class="col l6 center-align">
 			    	<div style="margin-top: 10%;">
 						<img class="responsive-img" src="assets/images/logo_wht.png" style="height: 100px; width: 100px;">
 				     	<h4 class="light grey-text text-lighten-3 letters-spaced btn-icon">SEAN QUIJOTE</h4>
-				     	<h6 class="light grey-text text-lighten-3 letters-spaced">
+				     	<!-- <h6 class="light grey-text text-lighten-3 letters-spaced">
 				     		<code><span class="blinking">></span>coding_here</code> | <span class="ml12">Filming there</span>
-				     	</h6>
+				     	</h6> -->
 				    </div>
 				    <div class="floating-y" style="margin-top: 25%;">
-						<a [routerLink]="['/work']" class="hide-on-init" animateOnScroll animationName="animated fadeInRight" (mouseover)="flavorTextWork=true" (mouseout)="flavorTextWork=false">
-							<div class="btn-nav-glow">
-								<span>
-									<h6 class="light grey-text text-lighten-3 letters-spaced btn-icon">WORK</h6>
-									<i class="material-icons light grey-text text-lighten-3">arrow_downward</i>
-								</span>
-							</div>
-							<div id="flavorTextWork" class="animated faster" animateOnScroll animationName="fadeIn" *ngIf="flavorTextWork">
-								<p style="position: relative; left: -50%;" class="light grey-text text-lighten-3 thin-font center-align">A little info about my work</p>
-							</div>
-							<div *ngIf="!flavorTextWork"></div>
-						</a>
-					</div>				     	
+              <a [routerLink]="['/work']" class="navLink animated hide-on-init" animateOnScroll animationName="fadeInRight">
+                <div class="btn-nav-glow">
+                  <span>
+                    <h6 class="light grey-text text-lighten-3 letters-spaced btn-icon">WORK</h6>
+                    <i class="material-icons light grey-text text-lighten-3">arrow_downward</i>
+                  </span>
+                </div>
+                <p class="flavorText light grey-text text-lighten-3 thin-font center-align">A little info about my work</p>
+              </a>
+					  </div>
 			    </div>
 				<div class="col l3 center-align">
 					<div class="floating-x-r">
-						<a [routerLink]="['/contact']" class="animated hide-on-init" animateOnScroll animationName="animated fadeInRight" (mouseover)="flavorTextContact=true" (mouseout)="flavorTextContact=false">
+            <a [routerLink]="['/contact']" class="navLink animated hide-on-init" animateOnScroll animationName="fadeInRight">
 							<div class="btn-nav-glow">
 								<span>
 									<h6 class="light grey-text text-lighten-3 letters-spaced btn-icon">CONTACT</h6>
 									<i class="material-icons light grey-text text-lighten-3">arrow_forward</i>
 								</span>
 							</div>
-							<div *ngIf="flavorTextContact">
-								<p id="flavorTextContact" class="light grey-text text-lighten-3 thin-font center-align">A little info about my contact details</p>
-							</div>
-							<div *ngIf="!flavorTextContact"></div>
+              <p class="flavorText light grey-text text-lighten-3 thin-font center-align">A little info about my contact details</p>
 						</a>
 					</div>
 				</div>
@@ -88,7 +79,7 @@
 					</div>
 				</div>
 			</div>
-		</div>	 -->			    		
+		</div>	 -->
 <!-- 		  <div materialize="carousel" class="carousel carousel-slider center" [materializeParams]="[{ indicators: false, fullWidth: true }]">
 		    <div class="carousel-fixed-item center">
 		      <a class="btn waves-effect white grey-text darken-text-2">button</a>
@@ -186,7 +177,7 @@
 			</div>
 		</div>
 
-		<div id="mobile-content">		
+		<div id="mobile-content">
 			<div class="row">
 				<div class="col s6 m6">
 					<a [routerLink]="['/about']" class="btn btn-wide waves-effect waves-light hoverable">
