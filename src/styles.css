@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* FullpageJS Style */
-@import url(~fullpage.js/dist/fullpage.min.css);
+@import '~fullpage.js/dist/fullpage.min.css';
 
 body {
 	display: flex;

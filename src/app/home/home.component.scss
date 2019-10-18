@@ -1,0 +1,68 @@
+$highlight1: #303030;
+$highlight2: #303030;
+$offset1: 1px;
+$offset2: -1px;
+
+.glitchy {
+  position: relative;
+
+  &::before, &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #303030;
+  }
+
+  &::before {
+    left: $offset1;
+    text-shadow: -3px 0 $highlight1;
+    clip: rect(20px, 800px, 170px, 0px);
+    animation: glitchy-anim 2.5s infinite linear alternate-reverse;
+  }
+
+  &::after {
+    left: $offset2;
+    text-shadow: -3px 0 $highlight2;
+    clip: rect(108px, 800px, 170px, 0px);
+    animation: glitchy-anim2 2.5s infinite linear alternate-reverse;
+  }
+
+  @mixin keyframes($n: 24, $index:0) {
+    @for $i from $index through $n {
+      $rand1: unquote(round(random() * 150) + "px");
+      $rand2: unquote(round(random() * 300) + "px");
+      $keyframeSel: percentage($i/$n);
+      #{$keyframeSel} {
+        clip: rect($rand1, 9999px, $rand2, 0);
+      }
+    }
+  }
+
+  @keyframes glitchy-anim {
+    // @include keyframes(24, 0);
+    @for $i from 0 through 24 {
+      $rand1: unquote(round(random() * 150) + "px");
+      $rand2: unquote(round(random() * 300) + "px");
+      $keyframeSel: percentage($i/24);
+      #{$keyframeSel} {
+        clip: rect($rand1, 9999px, $rand2, 0);
+      }
+    }
+  }
+
+  @keyframes glitchy-anim2 {
+    // @include keyframes(30, 2);
+    @for $i from 2 through 30 {
+      $rand1: unquote(round(random() * 150) + "px");
+      $rand2: unquote(round(random() * 300) + "px");
+      $keyframeSel: percentage($i/30);
+      #{$keyframeSel} {
+        clip: rect($rand1, 9999px, $rand2, 0);
+      }
+    }
+  }
+
+}

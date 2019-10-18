@@ -1,15 +1,15 @@
 
     // Work around for https://github.com/angular/angular-cli/issues/7200
-    
+
     const path = require('path');
     const webpack = require('webpack');
-    
+
     module.exports = {
       entry: {
         server: './server.ts',
       },
       target: 'node',
-      resolve: { extensions: ['.ts', '.js'] },
+      resolve: { extensions: ['.ts', '.js', '.less'] },
       externals: [/(node_modules|main\..*\.js)/,],
       output: {
         libraryTarget: 'commonjs2',
@@ -18,7 +18,8 @@
       },
       module: {
         rules: [
-          { test: /\.ts$/, loader: 'ts-loader' }
+          { test: /\.ts$/, loader: 'ts-loader' },
+          { test: /.less$/, exclude: /node_modules/, loader: 'raw-loader!less-loader' }
         ]
       },
       optimization: {
@@ -36,7 +37,6 @@
           /(.+)?express(\\|\/)(.+)?/,
           path.join(__dirname, 'src'),
           {}
-        )       
+        )
       ]
     }
-    

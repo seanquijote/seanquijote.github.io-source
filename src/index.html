@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 	<head>
-	  	<title>Sean Quijote - Junior Software Engineer</title>
-	  	<base href="/">
+    <title>Sean Quijote - Junior Software Engineer</title>
+    <base href="/">
 
 		<meta charset="UTF-8" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Just a Junior Software Engineer living in Cebu" />
 		<meta name="keywords" content="seanquijote, sean quijote, quijote" />
 		<meta name="language" content="en" />
@@ -22,11 +22,16 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:locale" content="en_US" />
 
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" media="(prefers-color-scheme:dark)" type="image/png" href="favicon-dark.png" />
+    <link rel="icon" media="(prefers-color-scheme:light)" type="image/png" href="favicon-light.png" />
+    <script src="https://unpkg.com/favicon-switcher@1.0.4/dist/index.js" crossorigin="anonymous" type="application/javascript"></script>
+
 		<style type="text/css">
 			body, html {
 				height: 100%;
 				background-color: #303030;
-			}
+      }
 			.app-loading {
 				position: relative;
 				display: flex;
@@ -35,7 +40,7 @@
 				justify-content: center;
 				height: 100%;
 				min-height: 100vh;
-				overflow-x: hidden;				
+				overflow-x: hidden;
 				overflow-y: hidden;
 			}
 			.app-loading .spinner {
@@ -60,7 +65,7 @@
 
 			.logo {
 				height: 60px;
-				width: 60px;				
+				width: 60px;
 			}
 
 			.flash{
@@ -71,13 +76,13 @@
 				animation: flash linear 1s infinite;
 			}
 			@-webkit-keyframes flash {
-				0% { opacity: 1; } 
-				50% { opacity: .1; } 
+				0% { opacity: 1; }
+				50% { opacity: .1; }
 				100% { opacity: 1; }
 			}
 			@keyframes flash {
-				0% { opacity: 1; } 
-				50% { opacity: .1; } 
+				0% { opacity: 1; }
+				50% { opacity: .1; }
 				100% { opacity: 1; }
 			}
 
@@ -101,16 +106,13 @@
 				}
 			}
 		</style>
-	  	<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-		<script type="text/javascript" src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
-	</head>
+  </head>
 
 	<body>
 		<h1 style="display: none;">Sean Quijote - Junior Software Engineer</h1>
 		<app-root>
 			<div class="app-loading">
-				<img class="logo" src="assets/images/logo_wht.png">
+				<img class="logo" src="assets/images/my-logo-wht.png" style="height: 100px; width: 50px;">
 				<svg class="spinner" viewBox="25 25 50 50">
 				 	<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="1" stroke-miterlimit="10"/>
 				</svg>

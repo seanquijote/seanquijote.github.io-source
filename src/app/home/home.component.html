@@ -1,61 +1,58 @@
 <main>
-	<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)" style="position: relative;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				height: 100%;
-				min-height: 100vh;">
-		<div class="section" [ngStyle]="{background: 'url(./assets/images/home_bg.png) no-repeat fixed'}">
-			<div class="row">
+  <!-- <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles> -->
+  <!-- <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)" style="position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 100vh;"> -->
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 100vh; text-align: center;">
+      <!-- <div class="section" [ngStyle]="{background: 'url(./assets/images/home_bg.png) no-repeat fixed'}"> -->
+			<div class="row" style="z-index: 1;">
+        <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
 				<div class="col l3 center-align">
 					<div class="floating-x-l">
             <a [routerLink]="['/about']" class="navLink animated hide-on-init" animateOnScroll animationName="fadeInLeft">
 							<div class="btn-nav-glow">
-								<span>
-									<h6 class="light grey-text text-lighten-3 letters-spaced">ABOUT</h6>
-									<i class="material-icons light grey-text text-lighten-3">arrow_back</i>
-								</span>
+                <h6 class="light grey-text text-lighten-3 letters-spaced btn-icon">ABOUT</h6>
+                <i class="material-icons light grey-text text-lighten-3">keyboard_arrow_left</i>
 							</div>
               <p class="flavorText light grey-text text-lighten-3 thin-font center-align">A little info about me</p>
 						</a>
 					</div>
 				</div>
-			    <div class="col l6 center-align">
-			    	<div style="margin-top: 10%;">
-						<img class="responsive-img" src="assets/images/logo_wht.png" style="height: 100px; width: 100px;">
-				     	<h4 class="light grey-text text-lighten-3 letters-spaced btn-icon">SEAN QUIJOTE</h4>
-				     	<!-- <h6 class="light grey-text text-lighten-3 letters-spaced">
-				     		<code><span class="blinking">></span>coding_here</code> | <span class="ml12">Filming there</span>
-				     	</h6> -->
-				    </div>
-				    <div class="floating-y" style="margin-top: 25%;">
-              <a [routerLink]="['/work']" class="navLink animated hide-on-init" animateOnScroll animationName="fadeInRight">
-                <div class="btn-nav-glow">
-                  <span>
-                    <h6 class="light grey-text text-lighten-3 letters-spaced btn-icon">WORK</h6>
-                    <i class="material-icons light grey-text text-lighten-3">arrow_downward</i>
-                  </span>
-                </div>
-                <p class="flavorText light grey-text text-lighten-3 thin-font center-align">A little info about my work</p>
-              </a>
-					  </div>
-			    </div>
+        <div class="col l6 center-align">
+          <div style="margin-top: 10%;">
+            <img class="responsive-img" src="assets/images/my-logo-wht.png" style="height: 130px; width: 80px;">
+            <h4 class="light grey-text text-lighten-3 letters-spaced thin-font btn-icon" data-text="SEAN QUIJOTE">SEAN QUIJOTE</h4>
+            <small class="light grey-text text-lighten-3 thin-font" style="letter-spacing: 3px;">
+              <code class="blinking">>&nbsp;</code>
+              <!-- <code class="input">junior software engineer</code> -->
+              <code class="typewrite" data-period="2000" data-type='[ "jr. software engineer", "currently playing The Witcher 3", "still learning how to ride a bike" ]'>
+                <span class="wrap"></span>
+              </code>
+            </small>
+          </div>
+          <div class="floating-y" style="margin-top: 25%;">
+            <a [routerLink]="['/work']" class="navLink animated hide-on-init" animateOnScroll animationName="fadeInRight">
+              <div class="btn-nav-glow">
+                <span class="navTitle">
+                  <h6 class="light grey-text text-lighten-3 letters-spaced btn-icon">WORK</h6>
+                </span>
+                <i class="material-icons light grey-text text-lighten-3">keyboard_arrow_down</i>
+              </div>
+              <p class="flavorText light grey-text text-lighten-3 thin-font center-align">A little info about my work</p>
+            </a>
+          </div>
+        </div>
 				<div class="col l3 center-align">
 					<div class="floating-x-r">
             <a [routerLink]="['/contact']" class="navLink animated hide-on-init" animateOnScroll animationName="fadeInRight">
 							<div class="btn-nav-glow">
-								<span>
-									<h6 class="light grey-text text-lighten-3 letters-spaced btn-icon">CONTACT</h6>
-									<i class="material-icons light grey-text text-lighten-3">arrow_forward</i>
-								</span>
+                <h6 class="light grey-text text-lighten-3 letters-spaced btn-icon">CONTACT</h6>
+                <i class="material-icons light grey-text text-lighten-3">keyboard_arrow_right</i>
 							</div>
               <p class="flavorText light grey-text text-lighten-3 thin-font center-align">A little info about my contact details</p>
 						</a>
 					</div>
 				</div>
 			</div>
-		</div>
+		<!-- </div> -->
 <!-- 		<div class="section">
 			<div class="container">
 				<div class="row center">
@@ -108,8 +105,8 @@
 			<div class="slide">Slide 2.3</div>
 		</div>
 		<div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div> -->
-	</div>
 
+</div>
 <!-- 	<div id="desktop-view" class="show-on-large hide-on-med-and-down" mnFullpage [mnFullpageNavigation]="true" [mnFullpageKeyboardScrolling]="true">
 		<div class="row">
 			<div materialize="slider" class="slider" [materializeParams]="[{ indicators: false, height: 600 }]">
@@ -162,7 +159,7 @@
 			<div materialize="slider" class="slider" [materializeParams]="[{ indicators: false }]">
 				<ul class="slides" style="background-color: #303030;">
 				  	<li>
-					    <img class="responsive-img slider-bg" src="assets/images/home_bg.png">
+					    <!-- <img class="responsive-img slider-bg" src="assets/images/home_bg.png"> -->
 					    <div class="caption center-align">
 							<img class="responsive-img hoverable" src="assets/images/logo_wht.png" style="width: 40%;"><br><br>
 					     	<h4 class="light grey-text text-lighten-3 letters-spaced">SEAN QUIJOTE</h4>
