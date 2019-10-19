@@ -5,7 +5,7 @@ $(document).ready(function(){
 		fullWidth: true,
 		indicators: false
 	});
-	
+
 	// slider initialization
 	$('.slider').slider({indicators: false});
 
@@ -27,6 +27,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		e.stopPropagation();
 		$('.carousel').carousel('prev');
-	});
+  });
+
 });
 

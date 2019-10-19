@@ -13,7 +13,7 @@ import { SEOService } from './seo.service';
       transition('depthHome => depthAbout', [
         style({ height: '!' }),
         query(':enter', style({ transform: 'translateX(-100%)' })),
-        query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0, background: 'url(assets/images/home_bg.png)'})),
+        query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0})),
         group([
           query(':leave', [animate('0.3s cubic-bezier(.35, 0, .25, 1)', style({ transform: 'translateX(100%)'}))]),
           query(':enter', [animate('0.3s cubic-bezier(.35, 0, .25, 1)', style({ transform: 'translateX(0)'}))])
@@ -32,7 +32,7 @@ import { SEOService } from './seo.service';
       transition('depthHome => depthWork', [
         style({ height: '!' }),
         query(':enter', style({ transform: 'translateY(100%)' })),
-        query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0, background: 'url(assets/images/home_bg.png)'})),
+        query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0})),
         group([
           query(':leave', [animate('0.3s cubic-bezier(.35, 0, .25, 1)', style({ transform: 'translateY(-100%)'}))]),
           query(':enter', [animate('0.3s cubic-bezier(.35, 0, .25, 1)', style({ transform: 'translateY(0)'}))])
@@ -51,7 +51,7 @@ import { SEOService } from './seo.service';
       transition('depthHome => depthContact', [
         style({ height: '!' }),
         query(':enter', style({ transform: 'translateX(100%)' })),
-        query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0, background: 'url(assets/images/home_bg.png)'})),
+        query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0})),
         group([
           query(':leave', [animate('0.3s cubic-bezier(.35, 0, .25, 1)', style({ transform: 'translateX(-100%)'}))]),
           query(':enter', [animate('0.3s cubic-bezier(.35, 0, .25, 1)', style({ transform: 'translateX(0)'}))])
