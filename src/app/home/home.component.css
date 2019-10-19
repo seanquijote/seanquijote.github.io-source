@@ -1,29 +1,20 @@
+main {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .navLink > .flavorText {
   letter-spacing: 3px;
   text-shadow: 0 0 20px #ffffff;
   opacity: 0;
-  -o-transition: opacity .3s linear, text-shadow .3s;
-  -ms-transition: opacity .3s linear, text-shadow .3s;
-  -moz-transition: opacity .3s linear, text-shadow .3s;
-  -webkit-transition: opacity .3s linear, text-shadow .3s;
-  transition: opacity .3s linear, text-shadow .3s;
-}
-
-.navLink > .navTitle {
-  text-shadow: 0 0 20px #ffffff;
-  opacity: 0;
-  -o-transition: opacity .3s linear, text-shadow .3s;
-  -ms-transition: opacity .3s linear, text-shadow .3s;
-  -moz-transition: opacity .3s linear, text-shadow .3s;
-  -webkit-transition: opacity .3s linear, text-shadow .3s;
-  transition: opacity .3s linear, text-shadow .3s;
+  -o-transition: opacity .3s linear;
+  -ms-transition: opacity .3s linear;
+  -moz-transition: opacity .3s linear;
+  -webkit-transition: opacity .3s linear;
+  transition: opacity .3s linear;
 }
 
 .navLink:hover > .flavorText {
-  opacity: 1;
-}
-
-.navLink:hover > .navTitle {
   opacity: 1;
 }
 
@@ -33,13 +24,6 @@
 
 .btn-icon {
   margin-top: 20px;
-}
-
-.nameplate {
-  color: #ffffff;
-  font-weight: bold;
-  position: relative;
-  left: -50%;
 }
 
 .tooltipped {

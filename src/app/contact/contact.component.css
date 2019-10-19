@@ -41,7 +41,7 @@
 }
 
 .side-nav {
-    background-color: #303030;
+  background-color: #1f1f1f;
 	width: 200px;
 }
 
@@ -65,7 +65,7 @@
 }
 
 header, main, footer {
-  	padding-left: 200px;
+  padding-left: 200px;
 }
 
 @media only screen and (max-width : 992px) {

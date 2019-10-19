@@ -10,8 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 import { MaterializeModule } from "angular2-materialize";
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
-import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { ParticlesModule } from 'angular-particle';
+import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 
 // Page Components
 import { AppComponent } from './app.component';
@@ -38,8 +38,8 @@ import { FooterComponent } from './footer/footer.component';
     Angular2FontawesomeModule,
     MaterializeModule,
     AngularFullpageModule,
-    AnimateOnScrollModule.forRoot(),
-    ParticlesModule
+    ParticlesModule,
+    MalihuScrollbarModule.forRoot()
   ],
   providers: [ Title ],
   bootstrap: [ AppComponent ]
