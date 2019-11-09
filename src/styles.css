@@ -3,10 +3,7 @@
 /* FullpageJS Style */
 @import '~fullpage.js/dist/fullpage.min.css';
 
-/** code by webdevtrick ( https://webdevtrick.com ) **/
-::-webkit-scrollbar {
-  width: 5px;
-}
+::-webkit-scrollbar { width: 5px; }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 30px;
@@ -35,6 +32,10 @@ main {
 
 .right-black-bg {
 	background-color: #1f1f1f;
+}
+
+.text-shadow {
+  text-shadow: 9px 8px 16px rgba(0, 0, 0, 1);
 }
 
 .thin-font {

@@ -6,9 +6,7 @@
         <a class="brand-logo white-text center" style="letter-spacing: 30px;">WORK</a>
         <ul class="right">
           <li>
-            <a [routerLink]="['/']">
-              <i class="material-icons left white-text">arrow_upward</i> BACK
-            </a>
+            <a [routerLink]="['/']"><i class="material-icons left white-text">arrow_upward</i> BACK</a>
           </li>
         </ul>
       </div>
@@ -16,14 +14,14 @@
 
 		<!-- MOBILE NAVBAR -->
 		<nav class="z-depth-0 right-black-bg show-on-medium-and-down hide-on-large-only">
-		    <div class="nav-wrapper container">
-		      <a [routerLink]="['/']"  class="white-text waves-effect waves-light"><i class="button-collapse material-icons">arrow_upward</i></a>
-		      <a class="brand-logo" style="letter-spacing: 5px;">WORK</a>
-		    </div>
+      <div class="nav-wrapper container">
+        <a [routerLink]="['/']"  class="white-text waves-effect waves-light"><i class="button-collapse material-icons">arrow_upward</i></a>
+        <a class="brand-logo" style="letter-spacing: 5px;">WORK</a>
+      </div>
 		</nav>
 
 		<!-- FIXED SIDEBAR RIGHT -->
-    <ul class="side-nav fixed z-depth-0 right-aligned">
+    <!-- <ul class="side-nav fixed z-depth-0 right-aligned">
 			<li><a href="/work#web-apps" class="white-text thin-font">W E B &nbsp;&nbsp; A P P S</a></li>
 			<li><a href="/work#kip" class="grey-text darken-4 thin-font">K I P</a></li>
 			<li><a href="/work#iap" class="grey-text darken-4 thin-font">I A P</a></li>
@@ -34,12 +32,72 @@
 			<li><a href="/work#duel" class="grey-text darken-4 thin-font">Lightsaber Duel</a></li>
 			<li><a href="/work#teaser" class="grey-text darken-4 thin-font">F5 Teaser</a></li>
 			<li><a href="/work#f5" class="grey-text darken-4 thin-font">F5 Commercial</a></li>
-    </ul>
+    </ul> -->
 	</div>
 </header>
 
-<main class="no-pad-bot">
-	<div id="web-apps" class="section scrollspy grey lighten-3">
+<main fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+  <div class="section">
+    <!-- <div class="section" [ngStyle]="{'background-image': 'url(assets/images/screencap_kepler.png)', 'background-color': '#1f1f1f', 'background-size': 'cover', 'background-attachment': 'fixed', 'background-repeat': 'no-repeat', 'filter': 'brightness(.5)'}"> -->
+    <div [ngStyle]="{'background-image': 'url(assets/images/screencap_kepler.png)', 'background-color': '#1f1f1f', 'background-size': 'cover', 'background-attachment': 'fixed', 'background-repeat': 'no-repeat', 'filter': 'contrast(.5) saturate(1.8) sepia(.6) brightness(90%)'}" style="position: absolute; left: 0; top: 0; height: 100%; width: 100%;"></div>
+    <div class="container" style="position: relative;">
+      <div class="row">
+        <div class="col l12">
+          <h1 class="center white-text" style="letter-spacing: 5px;"><b>Kepler Insight Portal</b></h1>
+          <h4 class="center white-text" style="letter-spacing: 2px;">A web portal for Kepler Insight School of Science and Arts.</h4>
+          <h4 class="center white-text" style="letter-spacing: 2px;">View Project:
+          <a href="http://keplerinsight.com.ph/" target="_blank" class="hvr-underline-from-left" style="letter-spacing: 2px;">
+            keplerinsight.com.ph
+            <i fa class="fa fa-share-square-o"></i>
+          </a>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" [ngStyle]="{'background-image': 'url(assets/images/screencap_ictalumni.png)', 'background-color': '#1f1f1f', 'background-size': 'cover', 'background-attachment': 'fixed', 'background-repeat': 'no-repeat'}">
+    <div class="container">
+      <div class="card z-depth-5" style="background-color: #1f1f1f;">
+        <div class="card-content">
+          <div class="row">
+            <div class="col l8">
+              <a href="http://keplerinsight.com.ph/" target="_blank" class="hoverable hvr-glow">
+                <div class="img-hover-zoom">
+                  <img class="responsive-img" src="assets/images/screencap_kepler.png">
+                </div>
+              </a>
+            </div>
+            <div class="col l4">
+              <div class="white-text thin-font" style="text-align: left;">
+                <h5 style="letter-spacing: 2px;">Kepler Insight Portal</h5><br>
+                <h6 style="letter-spacing: 2px;">Description:</h6>
+                <span style="letter-spacing: 2px;">A web portal for Kepler Insight School of Science and Arts.</span><br><br>
+
+                <h6 style="letter-spacing: 2px;">Technologies Used:</h6>
+                <ul style="letter-spacing: 2px; margin-top: 0;">
+                  <li>✔ Angular 4</li>
+                  <li>✔ Laravel 5.4</li>
+                  <li>✔ MaterializeCSS</li>
+                  <li>✔ MySQL</li>
+                </ul><br>
+
+                <h6 style="letter-spacing: 2px;">View Project:</h6>
+                <a href="http://keplerinsight.com.ph/" target="_blank" class="letter-spacing: 2px;">
+                  keplerinsight.com.ph &nbsp;
+                  <i fa class="fa fa-share-square-o"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)" style="background: green;">Some section4</div>
+
+	<!-- <div id="web-apps" class="section scrollspy grey lighten-3">
 		<div class="container">
 			<div class="row center">
 				<h3 class="thin-font letters-spaced">WEB APPLICATIONS</h3>
@@ -242,7 +300,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-
+	</div> -->
 </main>

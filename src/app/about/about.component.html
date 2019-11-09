@@ -17,7 +17,18 @@
 			<li class="center"><h1>T</h1></li>
 		</ul>
 
-
+    <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+      <div class="section" style="background: #1f1f1f;">
+        <img class="responsive-img z-depth-4" src="assets/images/profile_desktop.jpg" style="width: 60%" />
+      </div>
+      <div class="section" (click)="fullpage_api.moveSectionDown()" style="background: blue;">Some section2</div>
+      <div class="section" style="background: orange;">
+          <div class="slide">Slide 2.1</div>
+          <div class="slide">Slide 2.2</div>
+          <div class="slide">Slide 2.3</div>
+      </div>
+      <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)" style="background: green;">Some section4</div>
+    </div>
 
 <!-- 		<div class="section grey lighten-4 " [style.background-image]="'url(assets/images/profile_desktop.png)'" [style.background-repeat]="'no-repeat'" [style.background-size]="'300px'" style="height: 400px;">
 			<div class="container">
@@ -91,7 +102,7 @@
 				<div class="row">
 					<div class="col l6">
 						<div class="center" style="margin-top: 20px;">
-					    	<img class="responsive-img z-depth-4" src="assets/images/about_f5.jpg" style="width: 45%; margin-right: 10px;" />
+					    <img class="responsive-img z-depth-4" src="assets/images/about_f5.jpg" style="width: 45%; margin-right: 10px;" />
 							<img class="responsive-img z-depth-4" src="assets/images/about_simple.jpg" style="width: 45%;" /><br>
 							<img class="responsive-img z-depth-4" src="assets/images/about_sith.jpg" style="width: 40%; margin-right: 10px; margin-top: 10px;" />
 							<img class="responsive-img z-depth-4" src="assets/images/about_sketch.png" style="width: 50%;" />
