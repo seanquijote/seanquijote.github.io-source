@@ -51,6 +51,18 @@ main {
   text-shadow: 0px 0px 20px #fff;
 }
 
+.lg-letters-spaced {
+  letter-spacing: 10px;
+}
+
+.md-letters-spaced {
+  letter-spacing: 5px;
+}
+
+.sm-letters-spaced {
+  letter-spacing: 2px;
+}
+
 .floating-y {
   animation-name: floating-y;
   animation-duration: 6s;

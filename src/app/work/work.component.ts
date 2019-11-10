@@ -1,31 +1,33 @@
 import * as myGlobals from "../globals";
 import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
-import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
+import { fadeIn } from '../router-animations';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
-  styleUrls: ['./work.component.css']
+  styleUrls: ['./work.component.css'],
+  animations: [fadeIn()],
+  host: {'[@fadeIn' : ''}
 })
 export class WorkComponent implements OnInit {
   config: any;
   fullpage_api: any;
 
-  constructor(@Inject(WINDOW) private window: Window, private mScrollbarService: MalihuScrollbarService) {
+  constructor(@Inject(WINDOW) private window: Window) {
 		this.config = {
       licenseKey: myGlobals.fullpageLicense,
 			menu: '#menu',
-			anchors: ['kepler', 'secondPage'],
-			navigationTooltips: ['Kepler Insight Portal', 'Work'],
+			anchors: ['kip', 'iap', 'gsp'],
+			navigationTooltips: ['Kepler Insight Portal', 'ICT Alumni Portal', 'Graduate School Portal'],
 		  navigation: true,
-			keyboardScrolling: false,
+			keyboardScrolling: true,
 		  autoScrolling: false,
 
       // Scrolling
       css3: true,
-      scrollBar: true,
-
+      scrollBar: false,
 
 			// fullpage callbacks
 			// afterResize: () => {
@@ -39,7 +41,7 @@ export class WorkComponent implements OnInit {
 
   ngOnInit() {
     this.window.scrollTo({left: 0, top: 0, behavior: 'smooth'});
-    // this.mScrollbarService.initScrollbar(document.body, { axis: 'y', theme: 'dark-3' });
+    AOS.init()
   }
 
 	getRef(fullPageRef) {

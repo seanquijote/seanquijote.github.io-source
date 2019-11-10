@@ -1,7 +1,6 @@
 import * as myGlobals from "../globals";
 import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
-import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 
 @Component({
   selector: 'app-about',
@@ -12,7 +11,7 @@ export class AboutComponent implements OnInit {
   config: any;
   fullpage_api: any;
 
-  constructor(@Inject(WINDOW) private window: Window, private mScrollbarService: MalihuScrollbarService) {
+  constructor(@Inject(WINDOW) private window: Window) {
 		this.config = {
 			licenseKey: myGlobals.fullpageLicense,
 			// anchors: ['kip', 'secondPage'],

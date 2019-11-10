@@ -37,70 +37,91 @@
 </header>
 
 <main fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
-  <div class="section">
-    <!-- <div class="section" [ngStyle]="{'background-image': 'url(assets/images/screencap_kepler.png)', 'background-color': '#1f1f1f', 'background-size': 'cover', 'background-attachment': 'fixed', 'background-repeat': 'no-repeat', 'filter': 'brightness(.5)'}"> -->
-    <div [ngStyle]="{'background-image': 'url(assets/images/screencap_kepler.png)', 'background-color': '#1f1f1f', 'background-size': 'cover', 'background-attachment': 'fixed', 'background-repeat': 'no-repeat', 'filter': 'contrast(.5) saturate(1.8) sepia(.6) brightness(90%)'}" style="position: absolute; left: 0; top: 0; height: 100%; width: 100%;"></div>
-    <div class="container" style="position: relative;">
-      <div class="row">
-        <div class="col l12">
-          <h1 class="center white-text" style="letter-spacing: 5px;"><b>Kepler Insight Portal</b></h1>
-          <h4 class="center white-text" style="letter-spacing: 2px;">A web portal for Kepler Insight School of Science and Arts.</h4>
-          <h4 class="center white-text" style="letter-spacing: 2px;">View Project:
-          <a href="http://keplerinsight.com.ph/" target="_blank" class="hvr-underline-from-left" style="letter-spacing: 2px;">
-            keplerinsight.com.ph
-            <i fa class="fa fa-share-square-o"></i>
-          </a>
-          </h4>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section" [ngStyle]="{'background-image': 'url(assets/images/screencap_ictalumni.png)', 'background-color': '#1f1f1f', 'background-size': 'cover', 'background-attachment': 'fixed', 'background-repeat': 'no-repeat'}">
-    <div class="container">
-      <div class="card z-depth-5" style="background-color: #1f1f1f;">
-        <div class="card-content">
-          <div class="row">
-            <div class="col l8">
-              <a href="http://keplerinsight.com.ph/" target="_blank" class="hoverable hvr-glow">
-                <div class="img-hover-zoom">
-                  <img class="responsive-img" src="assets/images/screencap_kepler.png">
-                </div>
-              </a>
-            </div>
-            <div class="col l4">
-              <div class="white-text thin-font" style="text-align: left;">
-                <h5 style="letter-spacing: 2px;">Kepler Insight Portal</h5><br>
-                <h6 style="letter-spacing: 2px;">Description:</h6>
-                <span style="letter-spacing: 2px;">A web portal for Kepler Insight School of Science and Arts.</span><br><br>
-
-                <h6 style="letter-spacing: 2px;">Technologies Used:</h6>
-                <ul style="letter-spacing: 2px; margin-top: 0;">
-                  <li>✔ Angular 4</li>
-                  <li>✔ Laravel 5.4</li>
-                  <li>✔ MaterializeCSS</li>
-                  <li>✔ MySQL</li>
-                </ul><br>
-
-                <h6 style="letter-spacing: 2px;">View Project:</h6>
-                <a href="http://keplerinsight.com.ph/" target="_blank" class="letter-spacing: 2px;">
-                  keplerinsight.com.ph &nbsp;
-                  <i fa class="fa fa-share-square-o"></i>
+  <div class="section img-hover-zoom--blur">
+    <span [ngStyle]="{'background-image': 'url(assets/images/screencap_kepler.png)', 'background-color': '#1f1f1f', 'background-size': 'cover', 'background-attachment': 'fixed', 'background-repeat': 'no-repeat'}" style="position: absolute; left: 0; top: 0; height: 100%; width: 100%;"></span>
+    <div class="container center" style="position: relative; margin-top: -100px;">
+      <div class="project-item">
+        <div class="row" data-aos="fade-up">
+          <div class="col l12">
+              <h1 class="md-letters-spaced"><b>Kepler Insight Portal</b></h1>
+              <h4 class="sm-letters-spaced">A web portal for Kepler Insight School of Science and Arts.</h4>
+              <h5 class="sm-letters-spaced">
+                View the project
+                <a href="http://keplerinsight.com.ph/" target="_blank" class="hvr-underline-from-left sm-letters-spaced">
+                  here <i fa class="fa fa-share-square-o"></i>
                 </a>
-              </div>
-            </div>
+              </h5>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)" style="background: green;">Some section4</div>
+  <div class="section img-hover-zoom--blur">
+    <span [ngStyle]="{'background-image': 'url(assets/images/screencap_ictalumni.png)', 'background-color': '#1f1f1f', 'background-size': 'cover', 'background-attachment': 'fixed', 'background-repeat': 'no-repeat'}" style="position: absolute; left: 0; top: 0; height: 100%; width: 100%;"></span>
+    <div class="container" style="position: relative;">
+      <div class="row" data-aos="fade-up">
+        <div class="col l12">
+          <div class="project-item">
+            <h1 class="md-letters-spaced"><b>ICT Alumni Portal</b></h1>
+            <h4 class="sm-letters-spaced ">A web portal that aids our university's ICT department in keeping track of the employment data of all ICT alumni.</h4>
+            <h5 class="sm-letters-spaced ">
+              View the project
+              <a href="http://gtsystem.hol.es/" target="_blank" class="hvr-underline-from-left sm-letters-spaced">
+                here <i fa class="fa fa-share-square-o"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section img-hover-zoom--blur">
+    <span [ngStyle]="{'background-image': 'url(assets/images/screencap_gsportal.png)', 'background-color': '#1f1f1f', 'background-size': 'cover', 'background-attachment': 'fixed', 'background-repeat': 'no-repeat'}" style="position: absolute; left: 0; top: 0; height: 100%; width: 100%;"></span>
+    <div class="container" style="position: relative;">
+      <div class="row" data-aos="fade-up">
+        <div class="col l12">
+          <div class="project-item">
+            <h1 class="md-letters-spaced"><b>Graduate School Portal</b></h1>
+            <h4 class="sm-letters-spaced">A web portal that aids our university's Graduate School Department in keeping track of the academic data and employment data of all graduate students</h4>
+            <h5 class="sm-letters-spaced">
+              View the project
+              <a href="http://gsportal.esy.es/" target="_blank" class="hvr-underline-from-left sm-letters-spaced">
+                here <i fa class="fa fa-share-square-o"></i>
+              </a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section img-hover-zoom--blur" style="background-color: #1f1f1f;">
+      <span [ngStyle]="{'background-image': 'url(assets/images/lexmark_white.png)', 'background-attachment': 'fixed', 'background-repeat': 'no-repeat', 'background-position': 'center'}" style="position: absolute; left: 0; top: 0; height: 100%; width: 100%;"></span>
+      <div class="container" style="position: relative;">
+        <div class="row" data-aos="fade-up">
+          <div class="col l6">
+            <div class="project-item">
+              <h2 class="md-letters-spaced"><b>Firmware Assessment Script Hub</b></h2>
+              <h5 class="sm-letters-spaced">A web application that calls and executes bash scripts for testing automation. This is a self-initiated project during my internship at Lexmark.</h5>
+            </div>
+          </div>
+          <div class="col l6">
+              <div class="project-item">
+                <h2 class="md-letters-spaced"><b>Firmware Version Compiler</b></h2>
+                <h5 class="sm-letters-spaced">A web application that compiles the firmware code version of the printer. This is a self-initiated project during my internship at Lexmark.</h5>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
 
 	<!-- <div id="web-apps" class="section scrollspy grey lighten-3">
 		<div class="container">
 			<div class="row center">
-				<h3 class="thin-font letters-spaced">WEB APPLICATIONS</h3>
+				<h3 class="thin-font lg-letters-spaced">WEB APPLICATIONS</h3>
 			</div>
 		</div>
 	</div>
@@ -108,7 +129,7 @@
 	<div id="kip" class="section scrollspy red">
 		<div class="container">
 			<div class="row">
-				<h4 class="center white-text thin-font letters-spaced">Kepler Insight Portal</h4><br>
+				<h4 class="center white-text thin-font lg-letters-spaced">Kepler Insight Portal</h4><br>
 				<div class="col l8">
 					<div class="left">
 						<a href="http://keplerinsight.com.ph/" target="_blank" class="hoverable"><img class="responsive-img z-depth-3" src="assets/images/screencap_kepler.png"></a>
@@ -141,7 +162,7 @@
 	<div id="iap" class="section scrollspy teal darken-3">
 		<div class="container">
 			<div class="row">
-				<h4 class="center white-text thin-font letters-spaced">ICT Alumni Portal</h4><br>
+				<h4 class="center white-text thin-font lg-letters-spaced">ICT Alumni Portal</h4><br>
 				<div class="col l8">
 					<div class="left">
 						<a href="http://gtsystem.hol.es/" target="_blank" class="hoverable"><img class="responsive-img z-depth-3" src="assets/images/screencap_ictalumni.png"></a>
@@ -173,7 +194,7 @@
 	<div id="grad" class="section scrollspy blue">
 		<div class="container">
 			<div class="row">
-				<h4 class="center white-text thin-font letters-spaced">Graduate School Portal</h4><br>
+				<h4 class="center white-text thin-font lg-letters-spaced">Graduate School Portal</h4><br>
 				<div class="col l8">
 					<div class="left">
 						<a href="http://gsportal.esy.es/" target="_blank" class="hoverable"><img class="responsive-img z-depth-3" src="assets/images/screencap_gsportal.png"></a>
@@ -205,7 +226,7 @@
 	<div id="fash" class="section scrollspy grey lighten-4">
 		<div class="container">
 			<div class="row">
-				<h4 class="center black-text thin-font letters-spaced">Firmware Assessment Script Hub</h4><br>
+				<h4 class="center black-text thin-font lg-letters-spaced">Firmware Assessment Script Hub</h4><br>
 				<div class="col l8">
 					<div class="left black-text center">
 						<h6>T h i s &nbsp;&nbsp; p r o j e c t &nbsp;&nbsp; i s &nbsp;&nbsp; n o w &nbsp;&nbsp; o w n e d &nbsp;&nbsp; b y</h6><br>
@@ -234,7 +255,7 @@
 	<div id="fvc" class="section scrollspy cyan darken-1">
 		<div class="container">
 			<div class="row">
-				<h4 class="center white-text thin-font letters-spaced">Firmware Version Compiler</h4><br>
+				<h4 class="center white-text thin-font lg-letters-spaced">Firmware Version Compiler</h4><br>
 				<div class="col l8">
 					<div class="left white-text center">
 						<h6>T h i s &nbsp;&nbsp; p r o j e c t &nbsp;&nbsp; i s &nbsp;&nbsp; n o w &nbsp;&nbsp; o w n e d &nbsp;&nbsp; b y</h6><br>
@@ -263,7 +284,7 @@
 	<div id="videos" class="section scrollspy grey lighten-3">
 		<div class="container">
 			<div class="row center">
-				<h3 class="thin-font letters-spaced">VIDEOS</h3>
+				<h3 class="thin-font lg-letters-spaced">VIDEOS</h3>
 				<small>For other videos, go to <a href="https://www.youtube.com/channel/UCIeYEdwSeL507ws4y93CDVw" target="_blank">my YouTube channel</a></small>
 			</div>
 		</div>
@@ -272,7 +293,7 @@
 	<div id="duel" class="section scrollspy youtube-videos">
 		<div class="container">
 			<div class="row">
-				<h4 class="center white-text thin-font letters-spaced">Simple Lightsaber Duel</h4><br>
+				<h4 class="center white-text thin-font lg-letters-spaced">Simple Lightsaber Duel</h4><br>
 				<div class="video-container hoverable z-depth-4">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/WCKwIYLw28s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
@@ -283,7 +304,7 @@
 	<div id="teaser" class="section scrollspy youtube-videos">
 		<div class="container">
 			<div class="row">
-				<h4 class="center white-text thin-font letters-spaced">F5 Energy Drink Teaser</h4><br>
+				<h4 class="center white-text thin-font lg-letters-spaced">F5 Energy Drink Teaser</h4><br>
 				<div class="video-container hoverable z-depth-4">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/tVeBS-1Wh9I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
@@ -294,7 +315,7 @@
 	<div id="f5" class="section scrollspy youtube-videos">
 		<div class="container">
 			<div class="row">
-				<h4 class="center white-text thin-font letters-spaced">F5 Energy Drink Commercial</h4><br>
+				<h4 class="center white-text thin-font lg-letters-spaced">F5 Energy Drink Commercial</h4><br>
 				<div class="video-container hoverable z-depth-4">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/i2FPfNMaUhE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>

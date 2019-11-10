@@ -32,7 +32,7 @@
               "node_modules/materialize-css/dist/css/materialize.min.css",
               "node_modules/animate.css/animate.min.css",
               "node_modules/hover.css/css/hover-min.css",
-              "node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
@@ -40,7 +40,7 @@
               "node_modules/materialize-css/dist/js/materialize.min.js",
               "node_modules/uikit/dist/js/uikit.min.js",
               "node_modules/uikit/dist/js/uikit-icons.min.js",
-              "node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"
+              "node_modules/aos/dist/aos.js"
             ]
           },
           "configurations": {

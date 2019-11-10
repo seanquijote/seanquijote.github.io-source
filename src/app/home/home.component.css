@@ -60,10 +60,6 @@ main {
   -o-transition: .3s;
 }
 
-.letters-spaced {
-  letter-spacing: 10px;
-}
-
 .animated {
     visibility: visible !important;
 }
@@ -87,7 +83,7 @@ main {
 }
 
 .blinking {
-  animation: blinker 2s linear infinite;
+  animation: blinker 1s linear infinite;
 }
 
 @keyframes blinker {

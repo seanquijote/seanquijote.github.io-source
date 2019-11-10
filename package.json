@@ -1,6 +1,6 @@
 {
   "name": "seanquijote.github.io-source",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -33,6 +33,7 @@
     "angular2-fontawesome": "^5.2.1",
     "angular2-materialize": "^15.1.10",
     "animate.css": "^3.7.0",
+    "aos": "^2.3.4",
     "core-js": "^2.6.3",
     "cors": "^2.8.5",
     "font-awesome": "^4.7.0",
@@ -42,7 +43,6 @@
     "jquery": "^3.4.1",
     "materialize-css": "^0.100.2",
     "ngx-fullpage": "^5.0.4",
-    "ngx-malihu-scrollbar": "^8.0.0",
     "ngx-spinner": "^8.0.3",
     "rxjs": "^6.4.0",
     "rxjs-compat": "^6.4.0",

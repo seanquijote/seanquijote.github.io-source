@@ -3,7 +3,6 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { Router, ActivatedRoute } from "@angular/router";
 import { fadeIn } from '../router-animations';
-import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 import Typed from 'typed.js';
 
 @Component({
@@ -14,32 +13,12 @@ import Typed from 'typed.js';
   // host: {'[@fadeIn' : ''}
 })
 export class HomeComponent implements OnInit {
-	// config: any;
-  // fullpage_api: any;
   particleStyle: object = {};
   particleParams: object = {};
   width: number = 100;
   height: number = 100;
 
-	constructor(@Inject(WINDOW) private window: Window, private router: Router, private route: ActivatedRoute, private mScrollbarService: MalihuScrollbarService) {
-		// this.config = {
-		// 	licenseKey: myGlobals.fullpageLicense,
-		// 	// anchors: ['firstPage', 'secondPage'],
-		// 	// navigationTooltips: ['Home', 'Work'],
-		//   // navigation: true,
-		// 	// keyboardScrolling: true,
-		//   // autoScrolling: true,
-		// 	// menu: '#menu',
-
-		// 	// fullpage callbacks
-		// 	// afterResize: () => {
-		// 	// 	console.log("After resize");
-		// 	// },
-		// 	// afterLoad: (origin, destination, direction) => {
-		// 	// 	console.log(origin.index);
-		// 	// }
-    // }
-  }
+	constructor(@Inject(WINDOW) private window: Window, private router: Router, private route: ActivatedRoute) {}
 
 	ngOnInit() {
     const options = {
@@ -47,7 +26,7 @@ export class HomeComponent implements OnInit {
       typeSpeed: 60,
       backSpeed: 40,
       backDelay: 5000,
-      showCursor: false,
+      showCursor: true,
       cursorChar: '|',
       loop: true
     };
@@ -169,8 +148,4 @@ export class HomeComponent implements OnInit {
       retina_detect: true
     }
   }
-
-	// getRef(fullPageRef) {
-	// 	this.fullpage_api = fullPageRef
-	// }
 }

@@ -11,7 +11,6 @@ import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawe
 import { MaterializeModule } from "angular2-materialize";
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { ParticlesModule } from 'angular-particle';
-import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 
 // Page Components
 import { AppComponent } from './app.component';
@@ -38,8 +37,7 @@ import { FooterComponent } from './footer/footer.component';
     Angular2FontawesomeModule,
     MaterializeModule,
     AngularFullpageModule,
-    ParticlesModule,
-    MalihuScrollbarModule.forRoot()
+    ParticlesModule
   ],
   providers: [ Title ],
   bootstrap: [ AppComponent ]
