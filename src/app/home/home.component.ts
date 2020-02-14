@@ -15,23 +15,34 @@ import Typed from 'typed.js';
 export class HomeComponent implements OnInit {
   particleStyle: object = {};
   particleParams: object = {};
+  typedOptions: object = {};
+  typedDesktop: object = {};
+  typedMobile: object = {};
   width: number = 100;
   height: number = 100;
 
 	constructor(@Inject(WINDOW) private window: Window, private router: Router, private route: ActivatedRoute) {}
 
 	ngOnInit() {
-    const options = {
-      strings: ['jr. software engineer', 'currently playing the Witcher 3', 'still learning how to ride a bike'],
+    this.typedOptions = {
+      strings: [
+        "jr. software engineer",
+        "feel free to spin on your chair",
+        "may the forks be with you",
+        "tossed a coin to a witcher",
+        "/* todo  Insert more witty messages */",
+        "oh, you're still here?",
+        "let's go back"
+      ],
       typeSpeed: 60,
-      backSpeed: 40,
+      backSpeed: 30,
       backDelay: 5000,
       showCursor: true,
       cursorChar: '|',
       loop: true
     };
-
-    const typed = new Typed('.typed-element', options);
+    this.typedDesktop = new Typed('.typed-element-desktop', this.typedOptions);
+    this.typedMobile = new Typed('.typed-element-mobile', this.typedOptions);
 
     this.particleStyle = {
       'position': 'fixed',
@@ -45,24 +56,20 @@ export class HomeComponent implements OnInit {
     this.particleParams = {
       particles: {
         number: {
-          value: 60,
+          value: 50,
           density: {
             enable: true,
-            value_area: 400
+            value_area: 800
           }
         },
-        color: {
-          value: "#eeeeee"
-        },
+        color: { value: "#eeeeee" },
         shape: {
           type: "circle",
           stroke: {
             width: 0,
             color: "#000000"
           },
-          polygon: {
-            nb_sides: 5
-          }
+          polygon: { nb_sides: 5 }
         },
         opacity: {
           value: 0.5,
@@ -93,7 +100,7 @@ export class HomeComponent implements OnInit {
         },
         move: {
           enable: true,
-          speed: 4,
+          speed: 6,
           direction: "none",
           random: false,
           straight: false,
@@ -122,9 +129,7 @@ export class HomeComponent implements OnInit {
         modes: {
           grab: {
             distance: 200,
-            line_linked: {
-              opacity: 1
-            }
+            line_linked: { opacity: 1 }
           },
           bubble: {
             distance: 400,
@@ -137,15 +142,20 @@ export class HomeComponent implements OnInit {
             distance: 200,
             duration: 0.4
           },
-          push: {
-            particles_nb: 4
-          },
-          remove: {
-            particles_nb: 2
-          }
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 }
         }
       },
       retina_detect: true
     }
+  }
+
+  ngOnDestroy() {
+    console.log('destroyed')
+    this.typedOptions = null
+    this.typedDesktop = null
+    this.typedMobile = null
+    this.particleStyle = null
+    this.particleParams = null
   }
 }

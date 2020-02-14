@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Aurek-Besh';
+  src:  url('Aurek-Besh.eot');
+  src:  url('Aurek-Besh.eot?#iefix') format('embedded-opentype'),
+        url('AurekBesh-3wrL.ttf') format('truetype'),
+        url('Aurek-Besh.woff') format('woff'),
+        url('Aurek-Besh.woff2') format('woff2'),
+        url('Aurek-Besh.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Aurek-Besh-Narrow';
+  src:  url('Aurek-BeshNarrow.eot');
+  src:  url('Aurek-BeshNarrow.eot?#iefix') format('embedded-opentype'),
+        url('Aurek-BeshNarrow.ttf') format('truetype'),
+        url('Aurek-BeshNarrow.woff') format('woff'),
+        url('Aurek-BeshNarrow.woff2') format('woff2'),
+        url('Aurek-BeshNarrow.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Aurebesh-Droid';
+  src: url('AurebeshDroidRegular-Mnwe.ttf') format('truetype');
+}

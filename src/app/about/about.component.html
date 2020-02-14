@@ -1,34 +1,69 @@
 <main class="no-pad-bot">
+
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 100vh;">
+
 	<!-- DESKTOP VIEW -->
 	<div id="desktop-view" class="show-on-large hide-on-med-and-down">
-		<!-- FIXED SIDEBAR -->
-		<ul id="sidenav-fixed" class="side-nav right-aligned fixed white-text">
+    <div id="collage-container">
+      <img src="assets/images/about_f5.jpg" id="collage-one" />
+      <img src="assets/images/about_simple.jpg" id="collage-two" />
+      <img src="assets/images/about_arcade.jpg" id="collage-three" />
+      <img src="assets/images/about_dev.jpg" id="collage-four" />
+      <img src="assets/images/about_tekken.png" id="collage-five" />
+      <img src="assets/images/about_sith.png" id="collage-six" />
+      <img src="assets/images/about_iceborne.jpg" id="collage-seven" />
+      <img src="assets/images/about_iceborne_2.jpg" id="collage-eight" />
+      <img src="assets/images/about_mhfu.png" id="collage-nine" />
+    </div>
+
+    <ul id="sidenav-fixed" class="side-nav right-aligned fixed z-depth-0">
       <li class="center">
         <h6>
           <a [routerLink]="['/']" class="btn-back btn-floating btn-large btn-flat waves-effect waves-light">
-            <i class="medium material-icons white-text">arrow_forward</i>
+          <i class="medium material-icons white-text">arrow_forward</i>
           </a>
         </h6>
       </li>
-			<li class="center"><h1>A</h1></li>
-			<li class="center"><h1>B</h1></li>
-			<li class="center"><h1>O</h1></li>
-			<li class="center"><h1>U</h1></li>
-			<li class="center"><h1>T</h1></li>
-		</ul>
+      <li class="page-name-initial">A</li>
+      <li class="page-name">B</li>
+      <li class="page-name">O</li>
+      <li class="page-name">U</li>
+      <li class="page-name">T</li>
+    </ul>
 
-    <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
-      <div class="section" style="background: #1f1f1f;">
-        <img class="responsive-img z-depth-4" src="assets/images/profile_desktop.jpg" style="width: 60%" />
+    <!-- <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)"> -->
+      <div class="section" style="background: #1f1f1f; opacity: 1;">
+        <div class="row">
+          <div class="container">
+            <div class="col s4 l4">
+              <div class="center" style="margin-top: 20px;">
+                <img class="responsive-img" src="assets/images/profile_desktop.png" style="z-index: 999;"/>
+              </div>
+            </div>
+            <div class="col offset-s4 l8 white-text" style="text-align: justify;">
+              <!-- <div style="margin-right: 20px; margin-left: -50px;"> -->
+                <p class="flow-text" style="z-index: 999;">
+                  I am a Junior Software Engineer based in Cebu, Philippines. I always had this urge to build things. Nowadays I use this to create web services, appplications, and machine learning models.
+                </p>
+                <p class="flow-text" style="z-index: 999;">
+                  When I'm not busy developing I like to pass the time having a hit around the competitive scene of fighting games, Tekken specifically, and the captivating world of Monster Hunter. I also like to dabble in cinematography as much as I can. Oh and Star Wars, kudos to the writers of the <a href="https://www.starwars.com/games-apps/knights-of-the-old-republic">KotOR</a> series for pulling me back in.
+                </p>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="section" (click)="fullpage_api.moveSectionDown()" style="background: blue;">Some section2</div>
+
+
+
+      <!-- <div class="section" (click)="fullpage_api.moveSectionDown()" style="background: blue;">Some section2</div>
       <div class="section" style="background: orange;">
           <div class="slide">Slide 2.1</div>
           <div class="slide">Slide 2.2</div>
           <div class="slide">Slide 2.3</div>
       </div>
-      <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)" style="background: green;">Some section4</div>
-    </div>
+      <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)" style="background: green;">Some section4</div> -->
+    <!-- </div> -->
 
 <!-- 		<div class="section grey lighten-4 " [style.background-image]="'url(assets/images/profile_desktop.png)'" [style.background-repeat]="'no-repeat'" [style.background-size]="'300px'" style="height: 400px;">
 			<div class="container">
@@ -59,7 +94,7 @@
 					</div>
 					<div class="col l6">
 						<div class="center" style="margin-top: 20px;">
-					    	<img class="responsive-img z-depth-4" src="assets/images/about_f5.jpg" style="width: 45%; margin-right: 10px;" />
+					    <img class="responsive-img z-depth-4" src="assets/images/about_f5.jpg" style="width: 45%; margin-right: 10px;" />
 							<img class="responsive-img z-depth-4" src="assets/images/about_simple.jpg" style="width: 45%;" /><br>
 							<img class="responsive-img z-depth-4" src="assets/images/about_sith.jpg" style="width: 40%; margin-right: 10px; margin-top: 10px;" />
 							<img class="responsive-img z-depth-4" src="assets/images/about_sketch.png" style="width: 50%;" />
@@ -72,7 +107,6 @@
 
 	<!-- MOBILE VIEW -->
 	<div id="mobile-view" class="show-on-medium-and-down hide-on-large-only">
-		<!-- NAVBAR -->
 		<div id="navbar" class="navbar-fixed">
 			<nav class="z-depth-0 grey darken-4" style="height: 11%; padding: 10px;">
 			    <div class="nav-wrapper container">
@@ -87,7 +121,7 @@
 				<div class="row">
 					<div class="col s12">
 						<div class="left" style="padding-right: 20px; margin-top: 20px;">
-							<img class="responsive-img z-depth-4 center" src="assets/images/profile_desktop.jpg" style="width: 100%;" />
+							<img class="responsive-img z-depth-4 center" src="assets/images/profile_mobile.jpg" style="width: 100%;" />
 						</div>
 						<h5 class="grey-text lighten-3">
 							I'm a <b class="white-text thin-font">Junior Software Engineer</b> living in Cebu City.<br><br>
@@ -120,4 +154,5 @@
 		</div>
 	</div>
 
+  </div>
 </main>

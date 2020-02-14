@@ -1,6 +1,6 @@
 #email-div {
-	background-color: #d44638;
-	font-size: 40px;
+  background-color: #d44638;
+  max-height: 100%;
 	padding: 20px;
 }
 
@@ -57,11 +57,24 @@
 }
 
 .link-text {
-	margin-left: 30px;
+  margin-left: 30px;
+  overflow: hidden;
 }
 
 .btn-back:hover {
 	background-color: #404040;
+}
+
+.flexbox {
+  min-height: 100vh;
+  display: flex;
+}
+
+.flexbox > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 header, main, footer {

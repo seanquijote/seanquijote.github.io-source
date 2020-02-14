@@ -10,53 +10,53 @@ import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-    { 
-        path: '', 
-        component: HomeComponent, 
-        data: { 
-            depth: "depthHome", 
+    {
+        path: '',
+        component: HomeComponent,
+        data: {
+            depth: "depthHome",
             title: "Sean Quijote - Junior Software Engineer",
             metatags: {
                 description: "I'm Junior Software Engineer living in Cebu",
                 keywords: "sean quijote, quijote, seanquijote"
             }
-        } 
+        }
     },
-    { 
-        path: 'about', 
-        component: AboutComponent, 
-        data: { 
+    {
+        path: 'about',
+        component: AboutComponent,
+        data: {
             depth: "depthAbout",
-            title: "About",
+            title: "Sean Quijote - About",
             metatags: {
                 description: "A little bit about me",
                 keywords: "about seanquijote, about sean quijote"
             }
-        } 
+        }
     },
-    { 
+    {
         path: 'work',
-        component: WorkComponent, 
-        data: { 
+        component: WorkComponent,
+        data: {
             depth: "depthWork",
-            title: "Work",
+            title: "Sean Quijote - Work",
             metatags: {
                 description: "A few of my projects",
                 keywords: "work seanquijote, work sean quijote"
             }
-        } 
+        }
     },
-    { 
-        path: 'contact', 
-        component: ContactComponent, 
-        data: { 
+    {
+        path: 'contact',
+        component: ContactComponent,
+        data: {
             depth: "depthContact",
-            title: "Contact",
+            title: "Sean Quijote - Contact",
             metatags: {
                 description: "You can reach me through here",
                 keywords: "contact seanquijote, contact sean quijote"
-            } 
-        } 
+            }
+        }
     },
     { path: '**', redirectTo: '/' }
 

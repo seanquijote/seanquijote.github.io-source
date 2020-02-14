@@ -20,7 +20,7 @@ export class WorkComponent implements OnInit {
       licenseKey: myGlobals.fullpageLicense,
 			menu: '#menu',
 			anchors: ['kip', 'iap', 'gsp'],
-			navigationTooltips: ['Kepler Insight Portal', 'ICT Alumni Portal', 'Graduate School Portal'],
+			navigationTooltips: ['Kepler Insight Portal', 'ICT Alumni Portal', 'Graduate School Portal', 'Lexmark QA Tools'],
 		  navigation: true,
 			keyboardScrolling: true,
 		  autoScrolling: false,
