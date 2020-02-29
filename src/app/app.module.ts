@@ -11,8 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 import { MaterializeModule } from "angular2-materialize";
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
-import { ParticlesModule } from 'angular-particle';
-import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
+// import { ParticlesModule } from 'angular-particle';
+// import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 import { MasonryGalleryModule } from 'ngx-masonry-gallery';
 
 // Page Components
@@ -46,8 +46,6 @@ import { ParticlesDirective } from './particles.directive';
     Angular2FontawesomeModule,
     MaterializeModule,
     AngularFullpageModule,
-    ParticlesModule,
-    Angular2ImageGalleryModule,
     MasonryGalleryModule,
   ],
   providers: [ Title ],
