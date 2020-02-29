@@ -1,21 +1,10 @@
 <main class="no-pad-bot">
-
   <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 100vh;">
-
 	<!-- DESKTOP VIEW -->
 	<div id="desktop-view" class="show-on-large hide-on-med-and-down">
     <div id="collage-container">
-      <img src="assets/images/about_f5.jpg" id="collage-one" />
-      <img src="assets/images/about_simple.jpg" id="collage-two" />
-      <img src="assets/images/about_arcade.jpg" id="collage-three" />
-      <img src="assets/images/about_dev.jpg" id="collage-four" />
-      <img src="assets/images/about_tekken.png" id="collage-five" />
-      <img src="assets/images/about_sith.png" id="collage-six" />
-      <img src="assets/images/about_iceborne.jpg" id="collage-seven" />
-      <img src="assets/images/about_iceborne_2.jpg" id="collage-eight" />
-      <img src="assets/images/about_mhfu.png" id="collage-nine" />
+      <ngx-masonry-gallery [width]="430" [gutter]="10" [verticalGutter]="10" [images]="images" id="collage-masonry" style="z-index: 0;"></ngx-masonry-gallery>
     </div>
-
     <ul id="sidenav-fixed" class="side-nav right-aligned fixed z-depth-0">
       <li class="center">
         <h6>
@@ -30,79 +19,26 @@
       <li class="page-name">U</li>
       <li class="page-name">T</li>
     </ul>
-
-    <!-- <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)"> -->
       <div class="section" style="background: #1f1f1f; opacity: 1;">
         <div class="row">
           <div class="container">
             <div class="col s4 l4">
               <div class="center" style="margin-top: 20px;">
-                <img class="responsive-img" src="assets/images/profile_desktop.png" style="z-index: 999;"/>
+                <!-- <img class="responsive-img" src="assets/images/profile_mobile.jpg" style="height: 350px; z-index: 1;"/> -->
+                <img class="responsive-img" src="assets/images/profile_desktop.png" style="height: 300px;"/>
               </div>
             </div>
             <div class="col offset-s4 l8 white-text" style="text-align: justify;">
-              <!-- <div style="margin-right: 20px; margin-left: -50px;"> -->
-                <p class="flow-text" style="z-index: 999;">
+                <p class="flow-text">
                   I am a Junior Software Engineer based in Cebu, Philippines. I always had this urge to build things. Nowadays I use this to create web services, appplications, and machine learning models.
                 </p>
-                <p class="flow-text" style="z-index: 999;">
-                  When I'm not busy developing I like to pass the time having a hit around the competitive scene of fighting games, Tekken specifically, and the captivating world of Monster Hunter. I also like to dabble in cinematography as much as I can. Oh and Star Wars, kudos to the writers of the <a href="https://www.starwars.com/games-apps/knights-of-the-old-republic">KotOR</a> series for pulling me back in.
+                <p class="flow-text">
+                  When I'm not busy developing I like to pass the time having a hit around the competitive scene of fighting games, Tekken specifically, and the captivating world of Monster Hunter. I also like to dabble in cinematography as much as I can. Oh and Star Wars, kudos to the writers of the Knights of the Old Republic series for pulling me back in.
                 </p>
-              <!-- </div> -->
             </div>
           </div>
         </div>
       </div>
-
-
-
-      <!-- <div class="section" (click)="fullpage_api.moveSectionDown()" style="background: blue;">Some section2</div>
-      <div class="section" style="background: orange;">
-          <div class="slide">Slide 2.1</div>
-          <div class="slide">Slide 2.2</div>
-          <div class="slide">Slide 2.3</div>
-      </div>
-      <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)" style="background: green;">Some section4</div> -->
-    <!-- </div> -->
-
-<!-- 		<div class="section grey lighten-4 " [style.background-image]="'url(assets/images/profile_desktop.png)'" [style.background-repeat]="'no-repeat'" [style.background-size]="'300px'" style="height: 400px;">
-			<div class="container">
-				<div class="row"> -->
-<!-- 					<div class="col s4 l4">
-						<div class="center" style="margin-top: 20px;">
-					    	<img class="responsive-img z-depth-4" src="assets/images/profile_desktop.jpg" style="width: 60%" />
-						</div>
-					</div> -->
-<!-- 					<div class="col offset-l4 l8">
-						<h4 class="grey-text lighten-4 thin-font">
-							I'm a Junior Software Engineer living in Cebu City.
-						</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section grey darken-3">
-			<div class="container">
-				<div class="row">
-					<div class="col l6">
-						<h4 class="black-text thin-font" style="text-align: right;">
-							As someone who's <span class="white-text thin-font">fresh from campus</span>, I like to stay well-rounded. When I'm not coding, I <span class="white-text thin-font">design</span> print media, and <span class="white-text thin-font">edit</span> videos.<br><br>
-
-							When I'm far from a computer, I'm most likely <span class="white-text thin-font">recording</span> a video, or engaging in the competitive scene of fighting games.
-						</h4>
-					</div>
-					<div class="col l6">
-						<div class="center" style="margin-top: 20px;">
-					    <img class="responsive-img z-depth-4" src="assets/images/about_f5.jpg" style="width: 45%; margin-right: 10px;" />
-							<img class="responsive-img z-depth-4" src="assets/images/about_simple.jpg" style="width: 45%;" /><br>
-							<img class="responsive-img z-depth-4" src="assets/images/about_sith.jpg" style="width: 40%; margin-right: 10px; margin-top: 10px;" />
-							<img class="responsive-img z-depth-4" src="assets/images/about_sketch.png" style="width: 50%;" />
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
 	</div>
 
 	<!-- MOBILE VIEW -->
@@ -138,8 +74,8 @@
 						<div class="center" style="margin-top: 20px;">
 					    <img class="responsive-img z-depth-4" src="assets/images/about_f5.jpg" style="width: 45%; margin-right: 10px;" />
 							<img class="responsive-img z-depth-4" src="assets/images/about_simple.jpg" style="width: 45%;" /><br>
-							<img class="responsive-img z-depth-4" src="assets/images/about_sith.jpg" style="width: 40%; margin-right: 10px; margin-top: 10px;" />
-							<img class="responsive-img z-depth-4" src="assets/images/about_sketch.png" style="width: 50%;" />
+							<img class="responsive-img z-depth-4" src="assets/images/about_sith.png" style="width: 40%; margin-right: 10px; margin-top: 10px;" />
+							<img class="responsive-img z-depth-4" src="assets/images/about_tekken.png" style="width: 50%;" />
 						</div>
 					</div>
 					<div class="col l6">

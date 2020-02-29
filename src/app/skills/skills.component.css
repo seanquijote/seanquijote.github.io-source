@@ -1,0 +1,172 @@
+#email-div {
+  background-color: #d44638;
+  max-height: 100%;
+	padding: 20px;
+}
+
+#linkedin-div {
+	background-color: #0077b5;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#github-div {
+	background-color: #2b3137;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#youtube-div {
+	background-color: #FF0000;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#facebook-div {
+	background-color: #3b5998;
+	font-size: 40px;
+	padding: 20px;
+}
+
+#instagram-div {
+	background: #d6249f;
+	background: radial-gradient(circle at 30% 300%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	font-size: 40px;
+	padding: 20px;
+}
+
+.instagram-bg {
+	background: #d6249f;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.side-nav {
+  background-color: #1f1f1f;
+  width: 200px;
+  color: #777;
+}
+
+.contact-icons {
+	font-size: 60px;
+	position: relative;
+	top: 25px;
+}
+
+.page-name-initial {
+  text-align: center;
+  font-size: 150px;
+  margin-top: 60px;
+  margin-bottom: 65px;
+  font-weight: bolder;
+}
+
+.page-name {
+  text-align: center;
+  font-size: 150px;
+  margin-bottom: 65px;
+  font-weight: bolder;
+}
+
+.circle-btn {
+	height: 100px;
+	width: 100px;
+}
+
+.link-text {
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+.btn-back:hover {
+	background-color: #404040;
+}
+
+.flexbox {
+  min-height: 100vh;
+  display: flex;
+}
+
+.flexbox > div {
+  flex: 1;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+header, main, footer {
+  padding-left: 200px;
+}
+
+/* Smartphones */
+@media only screen and (max-width : 992px) {
+	header, main, footer {
+		padding-left: 0;
+	}
+}
+
+/* 15" Laptops */
+@media (min-width: 1536px) {
+  .page-name-initial {
+    text-align: center;
+    font-size: 130px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+    opacity: .1;
+  }
+
+  .page-name {
+    text-align: center;
+    font-size: 130px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+    opacity: .1;
+  }
+
+  .flexbox > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill-header {
+    color: #fff;
+    margin-top: 50px;
+  }
+}
+
+/* Monitors (1920x1080) */
+@media (min-width: 1920px) {
+  .page-name-initial {
+    text-align: center;
+    font-size: 170px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-weight: bolder;
+    opacity: .1;
+  }
+
+  .page-name {
+    text-align: center;
+    font-size: 170px;
+    /* margin-top: 50px; */
+    margin-bottom: 80px;
+    font-weight: bolder;
+    opacity: .1;
+  }
+
+  .flexbox > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .skill-header {
+    color: #fff;
+  }
+
+  .skill-header {
+    margin-top: 50px;
+  }
+}

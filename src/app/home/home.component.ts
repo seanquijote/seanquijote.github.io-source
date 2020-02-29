@@ -1,6 +1,6 @@
 import * as myGlobals from "../globals";
 import { WINDOW } from '@ng-toolkit/universal';
-import { Component, OnInit , Inject} from '@angular/core';
+import { Component, OnInit , Inject, OnDestroy} from '@angular/core';
 import { Router, ActivatedRoute } from "@angular/router";
 import { fadeIn } from '../router-animations';
 import Typed from 'typed.js';
@@ -8,11 +8,11 @@ import Typed from 'typed.js';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css', './home.component.scss'],
+  styleUrls: ['./home.component.css'],
   // animations: [fadeIn()],
   // host: {'[@fadeIn' : ''}
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
   particleStyle: object = {};
   particleParams: object = {};
   typedOptions: object = {};
@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
 	constructor(@Inject(WINDOW) private window: Window, private router: Router, private route: ActivatedRoute) {}
 
 	ngOnInit() {
+    console.log("onInit")
     this.typedOptions = {
       strings: [
         "jr. software engineer",
@@ -151,7 +152,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    console.log('destroyed')
+    console.log("onDestroy")
     this.typedOptions = null
     this.typedDesktop = null
     this.typedMobile = null

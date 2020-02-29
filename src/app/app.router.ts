@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
+import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
     {
@@ -58,6 +59,18 @@ const routes: Routes = [
             }
         }
     },
+    {
+      path: 'skills',
+      component: SkillsComponent,
+      data: {
+          depth: "depthSkills",
+          title: "Sean Quijote - Skills",
+          metatags: {
+              description: "Tech things I can do",
+              keywords: "skills seanquijote, skills sean quijote"
+          }
+      }
+  },
     { path: '**', redirectTo: '/' }
 
     // { path: 'path4', component: Name4Component },

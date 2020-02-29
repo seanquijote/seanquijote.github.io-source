@@ -1,6 +1,7 @@
 import * as myGlobals from "../globals";
 import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
+import { IMasonryGalleryImage } from 'ngx-masonry-gallery';
 
 @Component({
   selector: 'app-about',
@@ -37,5 +38,28 @@ export class AboutComponent implements OnInit {
 
 	getRef(fullPageRef) {
 		this.fullpage_api = fullPageRef
-	}
+  }
+
+  private urls: string[] = [
+    '../assets/images/about_f5.jpg',
+    '../assets/images/about_simple.jpg',
+    '../assets/images/about_arcade.jpg',
+    '../assets/images/about_dev.jpg',
+    '../assets/images/about_tekken_cover.jpg',
+    '../assets/images/about_tekken_ingame1.png',
+    '../assets/images/about_tekken_ingame2.jpg',
+    '../assets/images/about_sith_me.png',
+    '../assets/images/about_swkotor2.jpg',
+    '../assets/images/about_iceborne.png',
+    '../assets/images/about_iceborne_ingame1.jpg',
+    '../assets/images/about_iceborne_ingame2.jpg',
+    '../assets/images/about_mhfu.png',
+    '../assets/images/about_crypto.jpg',
+];
+
+  public get images(): IMasonryGalleryImage[] {
+    return this.urls.map(m => <IMasonryGalleryImage>{
+      imageUrl: m
+    });
+  }
 }

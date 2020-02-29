@@ -1,7 +1,8 @@
 <main>
   <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 100vh; text-align: center;">
-    <div style="z-index: 0;">
+    <div style="z-index: 0; position: absolute;">
       <particles [style]="particleStyle" [params]="particleParams" [width]="width" [height]="height"></particles>
+      <!-- <canvas repulse-particles></canvas> -->
     </div>
 
     <!-- DESKTOP VIEW -->
@@ -47,7 +48,7 @@
         </div>
         <div class="col l3 center-align">
           <div class="floating-x-r" style="margin-top: 50%;">
-            <a [routerLink]="['/contact']" class="navLink animated hide-on-init" animateOnScroll animationName="fadeInRight">
+            <a [routerLink]="['/skills']" class="navLink animated hide-on-init" animateOnScroll animationName="fadeInRight">
               <div class="btn-nav-glow">
                 <h6 class="navTitle light grey-text text-lighten-3 lg-letters-spaced btn-icon">SKILLS</h6>
                 <i class="material-icons light grey-text text-lighten-3" style="margin-top: 5px;">keyboard_arrow_right</i>
