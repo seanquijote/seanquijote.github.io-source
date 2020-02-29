@@ -1,10 +1,6 @@
 <main>
   <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 100vh; text-align: center;">
-    <div style="z-index: 0; position: absolute;">
-      <particles [style]="particleStyle" [params]="particleParams" [width]="width" [height]="height"></particles>
-      <!-- <canvas repulse-particles></canvas> -->
-    </div>
-
+    <span [ngStyle]="{'background': 'url(assets/images/home_bg.png) fixed no-repeat'}" style="position: absolute; left: 0; top: 0; height: 100%; width: 100%; opacity: .1;"></span>
     <!-- DESKTOP VIEW -->
     <div id="desktop-view" class="show-on-large hide-on-med-and-down container">
       <div class="row">
