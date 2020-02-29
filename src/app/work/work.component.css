@@ -58,11 +58,11 @@
 
 .img-hover-zoom--blur span {
   transition: transform .5s, filter .5s ease-in-out;
-  -o-filter: blur(10px) contrast(.5) saturate(1.8) sepia(.6) brightness(50%);
-  -ms-filter: blur(10px) contrast(.5) saturate(1.8) sepia(.6) brightness(50%);
-  -moz-filter: blur(10px) contrast(.5) saturate(1.8) sepia(.6) brightness(50%);
-  -webkit-filter: blur(10px) contrast(.5) saturate(1.8) sepia(.6) brightness(50%);
-  filter: blur(10px) contrast(.5) saturate(1.8) sepia(.6) brightness(50%);
+  -o-filter: blur(10px) contrast(.5) grayscale(.6) brightness(50%);
+  -ms-filter: blur(10px) contrast(.5) grayscale(.6) brightness(50%);
+  -moz-filter: blur(10px) contrast(.5) grayscale(.6) brightness(50%);
+  -webkit-filter: blur(10px) contrast(.5) grayscale(.6) brightness(50%);
+  filter: blur(10px) contrast(.5) grayscale(.6) brightness(50%);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -moz-transform: scale(1.1);
