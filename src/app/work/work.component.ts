@@ -17,15 +17,13 @@ export class WorkComponent implements OnInit {
 
   constructor(@Inject(WINDOW) private window: Window) {
 		this.config = {
-      licenseKey: myGlobals.fullpageLicense,
+      licenseKey: 'eUTqJ@r7',
 			menu: '#menu',
-			anchors: ['kip', 'iap', 'gsp'],
-			navigationTooltips: ['Kepler Insight Portal', 'ICT Alumni Portal', 'Graduate School Portal', 'Lexmark QA Tools'],
+			anchors: ['ovc', 'kip', 'iap', 'gsp', 'qa'],
+			navigationTooltips: ['OVCode', 'Kepler Insight Portal', 'ICT Alumni Portal', 'Graduate School Portal', 'Lexmark QA Tools'],
 		  navigation: true,
 			keyboardScrolling: true,
 		  autoScrolling: false,
-
-      // Scrolling
       css3: true,
       scrollBar: false,
 
