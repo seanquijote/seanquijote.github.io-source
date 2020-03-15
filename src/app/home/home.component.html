@@ -1,8 +1,12 @@
 <main>
   <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 100vh; text-align: center;">
-    <span [ngStyle]="{'background': 'url(assets/images/home_bg.png) fixed no-repeat'}" style="position: absolute; left: 0; top: 0; height: 100%; width: 100%; opacity: .1;"></span>
+    <div style="z-index: 0;">
+      <div id="particles-js" [ngStyle]="particleStyle"></div>
+    </div>
+
     <!-- DESKTOP VIEW -->
     <div id="desktop-view" class="show-on-large hide-on-med-and-down container">
+
       <div class="row">
         <div class="col l3 center-align">
           <div class="floating-x-l" style="margin-top: 50%;">
