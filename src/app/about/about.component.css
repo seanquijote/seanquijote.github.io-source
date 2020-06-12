@@ -48,6 +48,12 @@ header, main, footer {
   margin-top: 60px;
   margin-bottom: 65px;
   font-weight: bolder;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .page-name {
@@ -55,9 +61,20 @@ header, main, footer {
   font-size: 150px;
   margin-bottom: 65px;
   font-weight: bolder;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.mobile-img {
+  margin: 20px 0 20px 0; 
 }
 
 #collage-container {
+  pointer-events: none;
   position: fixed;
   z-index: 0;
   margin-left: -250px;
@@ -135,21 +152,24 @@ header, main, footer {
 	}
 }
 
-/* 15" Laptops */
-@media (min-width: 1536px) {
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
   .page-name-initial {
     text-align: center;
-    font-size: 150px;
-    margin-top: 60px;
-    margin-bottom: 65px;
+    font-size: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-weight: bolder;
     opacity: .1;
   }
 
   .page-name {
     text-align: center;
-    font-size: 150px;
-    margin-bottom: 65px;
+    font-size: 100px;
+    margin-bottom: 30px;
     font-weight: bolder;
     opacity: .1;
   }
@@ -174,22 +194,25 @@ header, main, footer {
   }
 }
 
-/* Monitors (1920x1080) */
-@media (min-width: 1920px) {
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
   .page-name-initial {
     text-align: center;
-    font-size: 200px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    font-size: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-weight: bolder;
     opacity: .1;
   }
 
   .page-name {
     text-align: center;
-    font-size: 200px;
+    font-size: 100px;
     /* margin-top: 50px; */
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     font-weight: bolder;
     opacity: .1;
   }
@@ -197,7 +220,8 @@ header, main, footer {
   #collage-container {
     position: fixed;
     z-index: 0;
-    margin-left: -250px;
+    /*margin-left: -250px;*/
+    margin-left: -30px;
     margin-top: -280px;
     width: 100%;
     opacity: .05;

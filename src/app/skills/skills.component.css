@@ -1,55 +1,30 @@
-#email-div {
-  background-color: #d44638;
-  max-height: 100%;
-	padding: 20px;
-}
-
-#linkedin-div {
-	background-color: #0077b5;
-	font-size: 40px;
-	padding: 20px;
-}
-
-#github-div {
-	background-color: #2b3137;
-	font-size: 40px;
-	padding: 20px;
-}
-
-#youtube-div {
-	background-color: #FF0000;
-	font-size: 40px;
-	padding: 20px;
-}
-
-#facebook-div {
-	background-color: #3b5998;
-	font-size: 40px;
-	padding: 20px;
-}
-
-#instagram-div {
-	background: #d6249f;
-	background: radial-gradient(circle at 30% 300%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-	font-size: 40px;
-	padding: 20px;
-}
-
-.instagram-bg {
-	background: #d6249f;
-	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-}
-
 .side-nav {
   background-color: #1f1f1f;
   width: 200px;
   color: #777;
 }
 
-.contact-icons {
-	font-size: 60px;
-	position: relative;
-	top: 25px;
+.skills-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: .1;
+}
+
+.languages-wrapper {
+  background-color: #d44638;
+}
+
+.tools-wrapper {
+  background-color: #0077b5;
+}
+
+.skill-header {
+  margin-top: 50px;
+}
+
+.skill-level {
+  margin-top: 50px;
 }
 
 .page-name-initial {
@@ -58,6 +33,12 @@
   margin-top: 60px;
   margin-bottom: 65px;
   font-weight: bolder;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .page-name {
@@ -65,6 +46,12 @@
   font-size: 150px;
   margin-bottom: 65px;
   font-weight: bolder;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .circle-btn {
@@ -78,7 +65,7 @@
 }
 
 .btn-back:hover {
-	background-color: #404040;
+  background-color: #404040;
 }
 
 .flexbox {
@@ -105,52 +92,40 @@ header, main, footer {
 }
 
 /* 15" Laptops */
-@media (min-width: 1536px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
   .page-name-initial {
     text-align: center;
-    font-size: 130px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    font-size: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-weight: bolder;
     opacity: .1;
   }
 
   .page-name {
     text-align: center;
-    font-size: 130px;
-    margin-bottom: 50px;
+    font-size: 100px;
+    margin-bottom: 30px;
     font-weight: bolder;
     opacity: .1;
-  }
-
-  .flexbox > div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skill-header {
-    color: #fff;
-    margin-top: 50px;
   }
 }
 
 /* Monitors (1920x1080) */
-@media (min-width: 1920px) {
+@media (min-width: 1281px) {
   .page-name-initial {
     text-align: center;
-    font-size: 170px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    font-size: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-weight: bolder;
     opacity: .1;
   }
 
   .page-name {
     text-align: center;
-    font-size: 170px;
-    /* margin-top: 50px; */
-    margin-bottom: 80px;
+    font-size: 100px;
+    margin-bottom: 30px;
     font-weight: bolder;
     opacity: .1;
   }
@@ -158,15 +133,7 @@ header, main, footer {
   .flexbox > div {
     flex: 1;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     flex-direction: column;
-  }
-
-  .skill-header {
-    color: #fff;
-  }
-
-  .skill-header {
-    margin-top: 50px;
   }
 }

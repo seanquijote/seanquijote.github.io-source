@@ -18,6 +18,19 @@
 	overflow-y: scroll;
 }
 
+.page-name {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  opacity: .1;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 .movePrevCarousel, .moveNextCarousel {
 	font-size: 30px;
 }
@@ -44,7 +57,7 @@
 	background-color: #404040;
 }
 
-.img-hover-zoom {
+/*.img-hover-zoom {
   overflow: hidden;
 }
 
@@ -86,7 +99,7 @@
 .img-hover-zoom--blur:hover .project-item {
   transition: 0.5 ease-in-out;
   background-color: rgba(100, 100, 100, 0.5);
-}
+}*/
 
 .project-item {
   color: #fff;
@@ -101,6 +114,7 @@
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 50px;
+  background-color: rgba(100, 100, 100, 0.5);
 }
 
 /* main {

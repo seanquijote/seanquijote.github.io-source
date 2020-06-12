@@ -48,7 +48,6 @@ export class AboutComponent implements OnInit {
     '../assets/images/about_tekken_cover.jpg',
     '../assets/images/about_tekken_ingame1.png',
     '../assets/images/about_tekken_ingame2.jpg',
-    '../assets/images/about_sith_me.png',
     '../assets/images/about_swkotor2.jpg',
     '../assets/images/about_iceborne.png',
     '../assets/images/about_iceborne_ingame1.jpg',

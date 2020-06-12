@@ -33,7 +33,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     backDelay: 5000,
     showCursor: true,
     cursorChar: '|',
-    loop: true
+    loop: true,
+    contentType: 'null'
   };
   typedDesktop: any;
   typedMobile: any;

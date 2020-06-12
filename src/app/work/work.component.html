@@ -1,43 +1,29 @@
 <header>
-	<div class="navbar-fixed">
+	<div id="navbar" class="navbar-fixed">
 		<!-- DESKTOP NAVBAR -->
-		<nav class="top-nav right-black-bg">
-      <div class="nav-wrapper container">
-        <a class="brand-logo white-text center" style="letter-spacing: 30px;">WORK</a>
-        <ul class="right">
-          <li>
-            <a [routerLink]="['/']"><i class="material-icons left white-text">arrow_upward</i> BACK</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-		<!-- MOBILE NAVBAR -->
-		<nav class="z-depth-0 right-black-bg show-on-medium-and-down hide-on-large-only">
-      <div class="nav-wrapper container">
-        <a [routerLink]="['/']"  class="white-text waves-effect waves-light"><i class="button-collapse material-icons">arrow_upward</i></a>
-        <a class="brand-logo" style="letter-spacing: 5px;">WORK</a>
-      </div>
+		<nav class="top-nav right-black-bg show-on-large hide-on-medium-and-down">
+			<div class="nav-wrapper container">
+				<a class="brand-logo page-name center" style="letter-spacing: 5px;">WORK</a>
+				<ul class="right">
+					<li>
+					    <a [routerLink]="['/']"><i class="material-icons left white-text">arrow_upward</i> BACK</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
-
-		<!-- FIXED SIDEBAR RIGHT -->
-    <!-- <ul class="side-nav fixed z-depth-0 right-aligned">
-			<li><a href="/work#web-apps" class="white-text thin-font">W E B &nbsp;&nbsp; A P P S</a></li>
-			<li><a href="/work#kip" class="grey-text darken-4 thin-font">K I P</a></li>
-			<li><a href="/work#iap" class="grey-text darken-4 thin-font">I A P</a></li>
-			<li><a href="/work#grad" class="grey-text darken-4 thin-font">G S P</a></li>
-			<li><a href="/work#fash" class="grey-text darken-4 thin-font">F A S H</a></li>
-			<li><a href="/work#fvc" class="grey-text darken-4 thin-font">F V C</a></li>
-			<li><a href="/work#videos" class="white-text thin-font">V I D E O S</a></li>
-			<li><a href="/work#duel" class="grey-text darken-4 thin-font">Lightsaber Duel</a></li>
-			<li><a href="/work#teaser" class="grey-text darken-4 thin-font">F5 Teaser</a></li>
-			<li><a href="/work#f5" class="grey-text darken-4 thin-font">F5 Commercial</a></li>
-    </ul> -->
+		<!-- MOBILE NAVBAR -->
+		<nav class="z-depth-0 right-black-bg show-on-medium-and-down hide-on-large-only" style="height: 11%; padding: 10px;">
+			<div class="nav-wrapper container">
+				<a [routerLink]="['/']"  class="white-text waves-effect waves-light left">
+					<i class="button-collapse material-icons">arrow_upward</i>
+				</a>
+				<a class="brand-logo" style="letter-spacing: 5px;">WORK</a>
+			</div>
+		</nav>
 	</div>
 </header>
 
 <main fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
-
   <div class="section img-hover-zoom--blur">
     <span [ngStyle]="{'background-image': 'url(assets/images/screencap_ov.png)', 'background-color': '#1f1f1f', 'background-size': 'cover', 'background-attachment': 'fixed', 'background-repeat': 'no-repeat'}" style="position: absolute; left: 0; top: 0; height: 100%; width: 100%;"></span>
     <div class="container center" style="position: relative; margin-top: -100px;">
@@ -45,7 +31,7 @@
         <div class="row" data-aos="fade-up">
           <div class="col l12">
               <h1 class="md-letters-spaced"><b>OVCode</b></h1>
-              <h4 class="sm-letters-spaced">A patented technology that integrates blockchain to digital signature, cryptography and permanent storage.</h4>
+              <h4 class="sm-letters-spaced" >A patented technology that integrates blockchain to digital signature, cryptography and permanent storage.</h4>
               <h5 class="sm-letters-spaced">
                 View the project
                 <a href="https://ovcode.com" target="_blank" class="hvr-underline-from-left sm-letters-spaced">
@@ -122,225 +108,19 @@
       <span [ngStyle]="{'background-image': 'url(assets/images/lexmark_white.png)', 'background-attachment': 'fixed', 'background-repeat': 'no-repeat', 'background-position': 'center'}" style="position: absolute; left: 0; top: 0; height: 100%; width: 100%;"></span>
       <div class="container" style="position: relative;">
         <div class="row" data-aos="fade-up">
-          <div class="col l6">
+          <div class="col s12 m6 l6" style="margin: 20px  0 20px 0;">
             <div class="project-item">
               <h2 class="md-letters-spaced"><b>Firmware Assessment Script Hub</b></h2>
               <h5 class="sm-letters-spaced">A web application that calls and executes bash scripts for testing automation. This is a self-initiated project during my internship at Lexmark.</h5>
             </div>
           </div>
-          <div class="col l6">
+          <div class="col s12 m6 l6" style="margin: 20px  0 20px 0;">
               <div class="project-item">
                 <h2 class="md-letters-spaced"><b>Firmware Version Compiler</b></h2>
                 <h5 class="sm-letters-spaced">A web application that compiles the firmware code version of the printer. This is a self-initiated project during my internship at Lexmark.</h5>
               </div>
-            </div>
+          </div>
         </div>
       </div>
     </div>
-
-
-	<!-- <div id="web-apps" class="section scrollspy grey lighten-3">
-		<div class="container">
-			<div class="row center">
-				<h3 class="thin-font lg-letters-spaced">WEB APPLICATIONS</h3>
-			</div>
-		</div>
-	</div>
-
-	<div id="kip" class="section scrollspy red">
-		<div class="container">
-			<div class="row">
-				<h4 class="center white-text thin-font lg-letters-spaced">Kepler Insight Portal</h4><br>
-				<div class="col l8">
-					<div class="left">
-						<a href="http://keplerinsight.com.ph/" target="_blank" class="hoverable"><img class="responsive-img z-depth-3" src="assets/images/screencap_kepler.png"></a>
-					</div>
-				</div>
-				<div class="col l4">
-					<div class="white-text right work-desc" style="text-align: left;">
-						D e s c r i p t i o n :<br>
-						A web portal for Kepler Insight School of Science and Arts.<br><br>
-
-						<ul class="white-text">
-							T e c h n o l o g i e s &nbsp;&nbsp; U s e d :
-							<li>+ Angular 4</li>
-							<li>+ Laravel 5.4</li>
-							<li>+ MaterializeCSS</li>
-							<li>+ MySQL</li>
-						</ul><br>
-
-						S e e &nbsp;&nbsp; P r o j e c t :<br>
-						<a href="http://keplerinsight.com.ph/" target="_blank" class="white-text hoverable">
-							keplerinsight.com.ph &nbsp;
-							<i fa class="fa fa-share-square-o"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="iap" class="section scrollspy teal darken-3">
-		<div class="container">
-			<div class="row">
-				<h4 class="center white-text thin-font lg-letters-spaced">ICT Alumni Portal</h4><br>
-				<div class="col l8">
-					<div class="left">
-						<a href="http://gtsystem.hol.es/" target="_blank" class="hoverable"><img class="responsive-img z-depth-3" src="assets/images/screencap_ictalumni.png"></a>
-					</div>
-				</div>
-				<div class="col l4">
-					<div class="white-text right work-desc" style="text-align: left;">
-						D e s c r i p t i o n :<br>
-						A web portal that aids our university's ICT department in keeping track of the employment data of all ICT alumni.<br><br>
-
-						<ul class="white-text">
-							T e c h n o l o g i e s &nbsp;&nbsp; U s e d :
-							<li>+ CodeIgniter</li>
-							<li>+ Bootstrap</li>
-							<li>+ MySQL</li>
-						</ul><br>
-
-						S e e &nbsp;&nbsp; P r o j e c t :<br>
-						<a href="http://gtsystem.hol.es/" target="_blank" class="white-text hoverable">
-							gtsystem.hol.es &nbsp;
-							<i fa class="fa fa-share-square-o"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="grad" class="section scrollspy blue">
-		<div class="container">
-			<div class="row">
-				<h4 class="center white-text thin-font lg-letters-spaced">Graduate School Portal</h4><br>
-				<div class="col l8">
-					<div class="left">
-						<a href="http://gsportal.esy.es/" target="_blank" class="hoverable"><img class="responsive-img z-depth-3" src="assets/images/screencap_gsportal.png"></a>
-					</div>
-				</div>
-				<div class="col l4">
-					<div class="white-text right work-desc" style="text-align: left;">
-						D e s c r i p t i o n :<br>
-						A web portal that aids our university's Graduate School Department in keeping track of the academic data and employment data of all graduate students.<br><br>
-
-						<ul class="white-text">
-							T e c h n o l o g i e s &nbsp;&nbsp; U s e d :
-							<li>+ CodeIgniter</li>
-							<li>+ Bootstrap</li>
-							<li>+ MySQL</li>
-						</ul><br>
-
-						S e e &nbsp;&nbsp; P r o j e c t :<br>
-						<a href="http://gsportal.esy.es/" target="_blank" class="white-text hoverable">
-							gsportal.esy.es &nbsp;
-							<i fa class="fa fa-share-square-o"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fash" class="section scrollspy grey lighten-4">
-		<div class="container">
-			<div class="row">
-				<h4 class="center black-text thin-font lg-letters-spaced">Firmware Assessment Script Hub</h4><br>
-				<div class="col l8">
-					<div class="left black-text center">
-						<h6>T h i s &nbsp;&nbsp; p r o j e c t &nbsp;&nbsp; i s &nbsp;&nbsp; n o w &nbsp;&nbsp; o w n e d &nbsp;&nbsp; b y</h6><br>
-						<img class="responsive-img lrdc-logo" src="assets/images/lexmark_black.png">
-					</div>
-				</div>
-				<div class="col l4">
-					<div class="black-text right work-desc" style="text-align: left;">
-						D e s c r i p t i o n :<br>
-						A web application that calls and executes bash scripts for testing automation. This is a self-initiated project during my internship at Lexmark.<br><br>
-
-						<ul class="black-text">
-							T e c h n o l o g i e s &nbsp;&nbsp; U s e d :
-							<li>+ CodeIgniter</li>
-							<li>+ Bootstrap</li>
-							<li>+ MySQL</li>
-							<li>+ Bash</li>
-							<li>+ SSH</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fvc" class="section scrollspy cyan darken-1">
-		<div class="container">
-			<div class="row">
-				<h4 class="center white-text thin-font lg-letters-spaced">Firmware Version Compiler</h4><br>
-				<div class="col l8">
-					<div class="left white-text center">
-						<h6>T h i s &nbsp;&nbsp; p r o j e c t &nbsp;&nbsp; i s &nbsp;&nbsp; n o w &nbsp;&nbsp; o w n e d &nbsp;&nbsp; b y</h6><br>
-						<img class="responsive-img lrdc-logo" src="assets/images/lexmark_white.png">
-					</div>
-				</div>
-				<div class="col l4">
-					<div class="white-text right work-desc" style="text-align: left;">
-						D e s c r i p t i o n :<br>
-						A web application that compiles the firmware code version of the printer. This is a self-initiated project during my internship at Lexmark.<br><br>
-
-						<ul class="white-text">
-							T e c h n o l o g i e s &nbsp;&nbsp; U s e d :
-							<li>+ CodeIgniter</li>
-							<li>+ Bootstrap</li>
-							<li>+ MySQL</li>
-							<li>+ Bash</li>
-							<li>+ SSH</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="videos" class="section scrollspy grey lighten-3">
-		<div class="container">
-			<div class="row center">
-				<h3 class="thin-font lg-letters-spaced">VIDEOS</h3>
-				<small>For other videos, go to <a href="https://www.youtube.com/channel/UCIeYEdwSeL507ws4y93CDVw" target="_blank">my YouTube channel</a></small>
-			</div>
-		</div>
-	</div>
-
-	<div id="duel" class="section scrollspy youtube-videos">
-		<div class="container">
-			<div class="row">
-				<h4 class="center white-text thin-font lg-letters-spaced">Simple Lightsaber Duel</h4><br>
-				<div class="video-container hoverable z-depth-4">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/WCKwIYLw28s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="teaser" class="section scrollspy youtube-videos">
-		<div class="container">
-			<div class="row">
-				<h4 class="center white-text thin-font lg-letters-spaced">F5 Energy Drink Teaser</h4><br>
-				<div class="video-container hoverable z-depth-4">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/tVeBS-1Wh9I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="f5" class="section scrollspy youtube-videos">
-		<div class="container">
-			<div class="row">
-				<h4 class="center white-text thin-font lg-letters-spaced">F5 Energy Drink Commercial</h4><br>
-				<div class="video-container hoverable z-depth-4">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/i2FPfNMaUhE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div> -->
 </main>

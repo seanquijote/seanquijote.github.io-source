@@ -20,12 +20,12 @@
     </ul>
 
     <div class="flexbox white-text">
-      <span [ngStyle]="{'background': 'url(assets/images/skills_languages.png) no-repeat'}" style="position: fixed; height: 100%; width: 100%; opacity: .1;"></span>
-      <div class="col l3 center" style="background-color: #d44638;">
+      <!-- <span class="skills-bg" [ngStyle]="{'background': 'url(assets/images/skills_languages.png) no-repeat'}"></span> -->
+      <div class="col l3 center languages-wrapper">
         <h4 class="skill-header md-letters-spaced">Languages</h4>
-        <b><small class="sm-letters-spaced">(Programming, markup, and style sheet)</small></b>
+        <small class="sm-letters-spaced"><b>(Programming, markup, and style sheet)</b></small>
         <div class="row white-text thin-font">
-          <h5 class="sm-letters-spaced" style="margin-top: 50px;">Currently using...</h5>
+          <h5 class="skill-level sm-letters-spaced">Currently using...</h5>
           <ul class="sm-letters-spaced">
             <div class="col l6">
               <li>C#</li>
@@ -40,7 +40,7 @@
           </ul>
         </div>
         <div class="row thin-font">
-          <h5 class="skill-level  sm-letters-spaced">Most experienced with...</h5>
+          <h5 class="skill-level sm-letters-spaced">Most experienced with...</h5>
           <ul class="sm-letters-spaced">
             <div class="col l6">
               <li>PHP</li>
@@ -73,11 +73,11 @@
           </ul>
         </div>
       </div>
-      <div class="col l3 center" style="background-color: #0077b5;">
+      <div class="col l3 center tools-wrapper">
         <h4 class="skill-header md-letters-spaced">Tools</h4>
-        <b><small class="sm-letters-spaced">(Frameworks, libraries, databases, and platforms)</small></b>
+        <small class="sm-letters-spaced"><b>(Frameworks, libraries, databases, and platforms)</b></small>
         <div class="row white-text thin-font">
-          <h5 class="sm-letters-spaced" style="margin-top: 50px;">Currently using...</h5>
+          <h5 class="sm-letters-spaced">Currently using...</h5>
           <ul class="sm-letters-spaced">
             <div class="col l6">
               <li>Laravel</li>
@@ -94,7 +94,7 @@
               <li>Git</li>
             </div>
             <div class="col l12">
-              <li>Google Cloud's Vision API</li>
+              <li>Google Vision API</li>
             </div>
           </ul>
         </div>
@@ -128,7 +128,7 @@
               <li>MongoDB</li>
             </div>
             <div class="col l12">
-              <li>Google Cloud's Vision API</li>
+              <li>Google Vision API</li>
             </div>
           </ul>
         </div>
@@ -139,42 +139,91 @@
 	<!-- MOBILE VIEW -->
 	<div class="mobile-view" class="show-on-medium-and-down hide-on-large-only center">
 		<div id="navbar" class="navbar-fixed">
-			<nav class="z-depth-0 grey darken-4">
+			<nav class="z-depth-0 grey darken-4" style="height: 11%; padding: 10px;">
         <div class="nav-wrapper container">
-          <a [routerLink]="['/']"  class="white-text waves-effect waves-light left"><i class="button-collapse material-icons">arrow_back</i></a>
+          <a [routerLink]="['/']" class="white-text waves-effect waves-light left">
+            <i class="button-collapse material-icons">arrow_back</i>
+          </a>
           <a class="brand-logo center" style="letter-spacing: 5px;">SKILLS</a>
         </div>
 			</nav>
 		</div>
+    <div class="row languages-wrapper">
+      <div class="col s12 white-text center">
+          <h4 class="skill-header md-letters-spaced">Languages</h4>
+          <small class="sm-letters-spaced"><b>(Programming, markup, and style sheet)</b></small>
+          <h5 class="skill-level sm-letters-spaced">Currently using...</h5>
+          <ul class="sm-letters-spaced">
+              <li>C#</li>
+              <li>TypeScript</li>
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+          </ul>
+          <h5 class="skill-level sm-letters-spaced">Most experienced with...</h5>
+          <ul class="sm-letters-spaced">
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+          </ul>
+          <h5 class="skill-level sm-letters-spaced">Some experience with...</h5>
+          <ul class="sm-letters-spaced" style="padding-bottom: 30px;">
+              <li>Visual Basic 6</li>
+              <li>Java</li>
+              <li>Bash</li>
+              <li>Markdown</li>
+              <li>SQL</li>
+              <li>C</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>XAML</li>
+              <li>PL/SQL</li>
+          </ul>
+      </div>
+    </div>
+    <div class="row tools-wrapper" style="margin-top: -24px; margin-bottom: -10px;">
+      <div class="col s12 white-text center">
+          <h4 class="skill-header md-letters-spaced">Tools</h4>
+          <small class="sm-letters-spaced"><b>(Frameworks, libraries, databases, and platforms)</b></small>
+          <h5 class="skill-level sm-letters-spaced">Currently using...</h5>
+          <ul class="sm-letters-spaced">
+            <li>Laravel</li>
+            <li>Tensorflow</li>
+            <li>ExpressJS</li>
+            <li>NodeJS</li>
+            <li>MongoDB</li>
+            <li>Angular</li>
+            <li>Bootstrap</li>
+            <li>Materialize</li>
+            <li>NPM</li>
+            <li>Git</li>
+            <li>Google Vision API</li>
+          </ul>
+          <h5 class="skill-level sm-letters-spaced">Most experienced with...</h5>
+          <ul class="sm-letters-spaced">
+            <li>Laravel</li>
+            <li>ExpressJS</li>
+            <li>CodeIgniter</li>
+            <li>Angular</li>
+            <li>MySQL</li>
+            <li>Bootstrap</li>
+            <li>Materialize</li>
+            <li>NPM</li>
+            <li>Git</li>
+          </ul>
+          <h5 class="skill-level sm-letters-spaced">Some experience with...</h5>
+          <ul class="sm-letters-spaced" style="padding-bottom: 30px;">
+            <li>Tensorflow</li>
+            <li>SVN</li>
+            <li>UWP</li>
+            <li>MongoDB</li>
+            <li>Google Vision API</li>
+          </ul>
+      </div>
+    </div>
 
-		<a href="mailto:seanquijote" target="_blank">
-			<div id="email-div">
-			    <a href="mailto:seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn center" style="background-color: #d44638;">
-			    	<i fa class="fa fa-envelope fa-lg contact-icons"></i>
-			    </a>
-			    <p class="white-text flow-text">seanquijote@gmail.com</p>
-			</div>
-		</a>
-
-		<a href="https://www.linkedin.com/in/seanquijote" target="_blank">
-			<div id="linkedin-div">
-			    <a href="www.linkedin.com/in/seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn" style="background-color: #0077b5;"><i fa class="fa fa-linkedin fa-lg contact-icons"></i></a>
-			    <p class="white-text flow-text">www.linkedin.com/in/seanquijote</p>
-			</div>
-		</a>
-
-		<a href="https://github.com/seanquijote" target="_blank">
-			<div id="github-div">
-	      		<a href="https://github.com/seanquijote" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn" style="background-color: #2b3137"><i fa class="fa fa-github fa-lg contact-icons"></i></a>
-			    <p class="white-text flow-text">www.github.com/seanquijote</p>
-			</div>
-		</a>
-
-		<a href="https://www.youtube.com/channel/UCIeYEdwSeL507ws4y93CDVw" target="_blank">
-			<div id="youtube-div">
-			    <a href="https://www.youtube.com/channel/UCIeYEdwSeL507ws4y93CDVw" target="_blank" class="btn-floating btn-large wave-effect wave-light z-depth-4 hoverable circle-btn" style="background-color: #FF0000;"><i fa class="fa fa-youtube fa-lg contact-icons"></i></a>
-			    <p class="white-text flow-text">Sean Quijote</p>
-			</div>
-		</a>
 	</div>
 </main>

@@ -6,7 +6,6 @@
 
     <!-- DESKTOP VIEW -->
     <div id="desktop-view" class="show-on-large hide-on-med-and-down container">
-
       <div class="row">
         <div class="col l3 center-align">
           <div class="floating-x-l" style="margin-top: 50%;">
@@ -29,10 +28,8 @@
                 <span class="typed-element-desktop"></span>
               </code><br/>
               <div class="contact-nav">
-                <a href="mailto:seanquijote@gmail.com" target="_blank" materialize="tooltip" class="contact-icon tooltipped" [materializeParams]="[{ delay: 30, position: 'bottom', html: true, tooltip: '<small>Email</small>' }]"><i fa class="fa fa-envelope-o fa-lg"></i></a>
                 <a href="https://www.linkedin.com/in/seanquijote" target="_blank" materialize="tooltip" class="contact-icon tooltipped" [materializeParams]="[{ delay: 30, position: 'bottom', html: true, tooltip: '<small>LinkedIn</small>' }]"><i fa class="fa fa-linkedin-square fa-lg"></i></a>
                 <a href="https://github.com/seanquijote" target="_blank" materialize="tooltip"  class="contact-icon tooltipped" [materializeParams]="[{ delay: 30, position: 'bottom', html: true, tooltip: '<small>GitHub</small>' }]"><i fa class="fa fa-github fa-lg"></i></a>
-                <a href="https://www.youtube.com/channel/UCIeYEdwSeL507ws4y93CDVw" target="_blank" materialize="tooltip" class="contact-icon tooltipped" [materializeParams]="[{ delay: 30, position: 'bottom', html: true, tooltip: '<small>YouTube</small>' }]"><i fa class="fa fa-youtube-play fa-lg"></i></a>
               </div>
             </small>
           </div>
@@ -65,42 +62,43 @@
       <div class="row">
         <div class="col s12 m12 l12">
           <div class="center" style="margin-top: 15px;">
-            <img class="responsive-img" src="assets/images/my-logo-wht.png" style="height: 130px; width: 80px;">
-            <br>
+            <img class="responsive-img" src="assets/images/my-logo-wht.png" style="height: 130px; width: 80px;"><br>
             <h4 class="light grey-text text-lighten-3 lg-letters-spaced">SEAN<br>QUIJOTE</h4>
             <small class="light grey-text text-lighten-3 thin-font" style="letter-spacing: 2px;">
               <code>
                 <span class="blinking">>&nbsp;</span>
                 <span class="typed-element-mobile"></span>
               </code>
+              <div class="contact-nav">
+                <a href="https://www.linkedin.com/in/seanquijote" target="_blank" materialize="tooltip" class="contact-icon tooltipped" [materializeParams]="[{ delay: 30, position: 'bottom', html: true, tooltip: '<small>LinkedIn</small>' }]"><i fa class="fa fa-linkedin-square fa-lg"></i></a>
+                <a href="https://github.com/seanquijote" target="_blank" materialize="tooltip"  class="contact-icon tooltipped" [materializeParams]="[{ delay: 30, position: 'bottom', html: true, tooltip: '<small>GitHub</small>' }]"><i fa class="fa fa-github fa-lg"></i></a>
+              </div>
             </small>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col s6 m6 l6">
-          <a [routerLink]="['/about']" class="btn-wide waves-effect waves-light hoverable">
+        <div class="col s4">
+          <a [routerLink]="['/about']" class="btn-wide waves-effect waves-light hoverable" style="padding-right: 20px; padding-left: 20px;">
             <div style="margin-top: 30px;">
               <i fa class="fa fa-info-circle btn-text-color btn-icon"></i>
               <div class="white-text sm-letters-spaced" style="font-size: 14px; color: transparent;">ABOUT</div>
             </div>
           </a>
         </div>
-        <div class="col s6 m6 l6">
-          <a [routerLink]="['/contact']" class="btn-wide waves-effect waves-light hoverable">
-            <div style="margin-top: 30px;">
-              <i fa class="fa fa-vcard btn-text-color btn-icon"></i>
-              <div class="white-text sm-letters-spaced" style="font-size: 14px;">CONTACT</div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m12 l12">
-          <a [routerLink]="['/work']" class="btn-wide waves-effect waves-light hoverable">
+        <div class="col s4">
+          <a [routerLink]="['/work']" class="btn-wide waves-effect waves-light hoverable" style="padding-right: 20px; padding-left: 20px;">
             <div style="margin-top: 30px;">
               <i fa class="fa fa-briefcase btn-text-color btn-icon"></i>
               <div class="white-text sm-letters-spaced" style="font-size: 14px;">WORK</div>
+            </div>
+          </a>
+        </div>
+        <div class="col s4">
+          <a [routerLink]="['/skills']" class="btn-wide waves-effect waves-light hoverable" style="padding-right: 20px; padding-left: 20px;">
+            <div style="margin-top: 30px;">
+              <i fa class="fa fa-vcard btn-text-color btn-icon"></i>
+              <div class="white-text sm-letters-spaced" style="font-size: 14px;">SKILLS</div>
             </div>
           </a>
         </div>
