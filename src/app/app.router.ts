@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
-import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
@@ -44,18 +43,6 @@ const routes: Routes = [
             metatags: {
                 description: "A few of my projects",
                 keywords: "work seanquijote, work sean quijote"
-            }
-        }
-    },
-    {
-        path: 'contact',
-        component: ContactComponent,
-        data: {
-            depth: "depthContact",
-            title: "Sean Quijote - Contact",
-            metatags: {
-                description: "You can reach me through here",
-                keywords: "contact seanquijote, contact sean quijote"
             }
         }
     },

@@ -1,82 +1,84 @@
 <main class="no-pad-bot">
-  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 100vh;">
-	<!-- DESKTOP VIEW -->
-	<div id="desktop-view" class="show-on-large hide-on-med-and-down">
-    <div id="collage-container">
-      <ngx-masonry-gallery [width]="430" [gutter]="10" [verticalGutter]="10" [images]="images" id="collage-masonry" style="z-index: 0;"></ngx-masonry-gallery>
-    </div>
-    <ul id="sidenav-fixed" class="side-nav right-aligned fixed z-depth-0">
-      <li class="center">
-        <h6>
-          <a [routerLink]="['/']" class="btn-back btn-floating btn-large btn-flat waves-effect waves-light">
-          <i class="medium material-icons white-text">arrow_forward</i>
-          </a>
-        </h6>
-      </li>
-      <li class="page-name-initial">A</li>
-      <li class="page-name">B</li>
-      <li class="page-name">O</li>
-      <li class="page-name">U</li>
-      <li class="page-name">T</li>
-    </ul>
-      <div class="section" style="background: #1f1f1f; opacity: 1;">
-       <div class="container">
-  		 <div class="row">
-            <div class="col m12 l12 white-text" style="text-align: justify;">
-                <p class="flow-text">
-                  I am a Junior Software Engineer based in Cebu, Philippines. I always had this urge to build things. Nowadays I use this to create web services, appplications, and machine learning models.
-                </p>
-                <p class="flow-text">
-                  When I'm not busy developing I like to pass the time having a hit around the competitive scene of fighting games, Tekken specifically, and the captivating world of Monster Hunter. I also like to dabble in cinematography as much as I can. Oh and Star Wars, kudos to the writers of the Knights of the Old Republic series for pulling me back in.
-                </p>
-            </div>
-          </div>
-        </div>
-      </div>
-	</div>
-
-	<!-- MOBILE VIEW -->
-	<div id="mobile-view" class="show-on-medium-and-down hide-on-large-only">
-		<div id="navbar" class="navbar-fixed">
-			<nav class="z-depth-0 grey darken-4" style="height: 11%; padding: 10px;">
-			    <div class="nav-wrapper container">
-			     	<a [routerLink]="['/']"  class="btn-back btn-floating btn-large btn-flat waves-effect waves-light right">
-			     		<i class="material-icons">arrow_forward</i>
-			     	</a>
-			     	<a class="brand-logo" style="letter-spacing: 5px;">ABOUT</a>
-			    </div>
-			</nav>
+  	<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 100vh;">
+		<!-- DESKTOP VIEW -->
+		<div id="desktop-view" class="show-on-large hide-on-med-and-down">
+			<div id="collage-container">
+			 	<ngx-masonry-gallery [width]="430" [gutter]="10" [verticalGutter]="10" [images]="images" id="collage-masonry" style="z-index: 0;"></ngx-masonry-gallery>
+			</div>
+		    <ul id="sidenav-fixed" class="side-nav right-aligned fixed z-depth-0">
+				<li class="center">
+					<h6>
+					  <a [routerLink]="['/']" class="btn-back btn-floating btn-large btn-flat waves-effect waves-light">
+						  <i class="medium material-icons white-text">arrow_forward</i>
+					  </a>
+					</h6>
+				</li>
+				<li class="page-name-initial">A</li>
+				<li class="page-name">B</li>
+				<li class="page-name">O</li>
+				<li class="page-name">U</li>
+				<li class="page-name">T</li>
+		    </ul>
+	      	<div class="section" style="background: #1f1f1f; opacity: 1;">
+				<div class="container">
+					<div class="row">
+					    <div class="col s12 m12 l12 white-text">
+							<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+							<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="seanquijote"><a class="LI-simple-link" href='https://ph.linkedin.com/in/seanquijote?trk=profile-badge'>Sean Quijote</a></div>
+					    </div>
+					    <div class="col s12 m12 l12 white-text" style="text-align: justify;">
+					        <p class="flow-text">
+					        	I am a Junior Software Engineer based in Cebu, Philippines. I always had this urge to build things. Nowadays I use this to create web services, appplications, and machine learning models.
+					        </p>
+					        <p class="flow-text">
+					        	When I'm not busy developing I like to pass the time having a hit around the competitive scene of fighting games, Tekken specifically, and the captivating world of Monster Hunter. I also like to dabble in cinematography as much as I can. Oh and Star Wars, kudos to the writers of the Knights of the Old Republic series for pulling me back in.
+					        </p>
+					    </div>
+				  	</div>
+				</div>
+	    	</div>
 		</div>
+		<!-- MOBILE VIEW -->
+		<div id="mobile-view" class="show-on-medium-and-down hide-on-large-only">
+			<div id="navbar" class="navbar-fixed">
+				<nav class="z-depth-0 grey darken-4" style="height: 11%; padding: 10px;">
+				    <div class="nav-wrapper container">
+				     	<a [routerLink]="['/']"  class="btn-back btn-floating btn-large btn-flat waves-effect waves-light right">
+				     		<i class="material-icons">arrow_forward</i>
+				     	</a>
+				     	<a class="brand-logo" style="letter-spacing: 5px;">ABOUT</a>
+				    </div>
+				</nav>
+			</div>
 
-		<div class="section right-black-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col s12">
-						<h5 class="grey-text lighten-3">
-							<div>
-								I'm a <b class="white-text thin-font">Junior Software Engineer</b> living in Cebu City.
-							</div>
-					    	<div class="mobile-img">
-					    		<img class="responsive-img z-depth-4" src="assets/images/about_f5.jpg" loading="lazy">
-					    	</div>
-							<div>
-								As someone who's <b class="white-text thin-font">fresh from campus</b>, I like to stay well-rounded. When I'm not coding, I <b class="white-text thin-font">design</b> print media, and <b class="white-text thin-font">edit</b> videos.
-							</div>
-							<div class="mobile-img">
-								<img class="responsive-img z-depth-4" src="assets/images/about_simple.jpg" loading="lazy">
-							</div>
-							<div>
-								When I'm far from a computer, I'm most likely <b class="white-text thin-font">recording</b> a video, or engaging in the competitive scene of fighting games.
-							</div>
-							<div class="mobile-img">
-								<img class="responsive-img z-depth-4" src="assets/images/about_tekken_ingame1.png" loading="lazy">
-							</div>
-						</h5>
+			<div class="section right-black-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+							<h5 class="grey-text lighten-3">
+								<div>
+									I'm a <b class="white-text thin-font">Junior Software Engineer</b> living in Cebu City.
+								</div>
+						    	<div class="mobile-img">
+						    		<img class="responsive-img z-depth-4" src="assets/images/about_f5.jpg" loading="lazy">
+						    	</div>
+								<div>
+									As someone who's <b class="white-text thin-font">fresh from campus</b>, I like to stay well-rounded. When I'm not coding, I <b class="white-text thin-font">design</b> print media, and <b class="white-text thin-font">edit</b> videos.
+								</div>
+								<div class="mobile-img">
+									<img class="responsive-img z-depth-4" src="assets/images/about_simple.jpg" loading="lazy">
+								</div>
+								<div>
+									When I'm far from a computer, I'm most likely <b class="white-text thin-font">recording</b> a video, or engaging in the competitive scene of fighting games.
+								</div>
+								<div class="mobile-img">
+									<img class="responsive-img z-depth-4" src="assets/images/about_tekken_ingame1.png" loading="lazy">
+								</div>
+							</h5>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-  </div>
+ 	</div>
 </main>
