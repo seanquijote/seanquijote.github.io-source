@@ -3,8 +3,8 @@
 		<!-- DESKTOP VIEW -->
 		<div id="desktop-view" class="show-on-large hide-on-med-and-down">
 			<div id="collage-container">
-			 	<ngx-masonry-gallery [width]="430" [gutter]="10" [verticalGutter]="10" [images]="images" id="collage-masonry" style="z-index: 0;"></ngx-masonry-gallery>
-			</div>
+				<ngx-masonry-gallery [width]="430" [gutter]="10" [verticalGutter]="10" [images]="images" id="collage-masonry" style="z-index: 0;"></ngx-masonry-gallery>
+		   </div>
 		    <ul id="sidenav-fixed" class="side-nav right-aligned fixed z-depth-0">
 				<li class="center">
 					<h6>
@@ -18,25 +18,33 @@
 				<li class="page-name">O</li>
 				<li class="page-name">U</li>
 				<li class="page-name">T</li>
-		    </ul>
-	      	<div class="section" style="background: #1f1f1f; opacity: 1;">
-				<div class="container">
-					<div class="row">
-					    <div class="col s12 m12 l12 white-text">
-							<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-							<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="seanquijote"><a class="LI-simple-link" href='https://ph.linkedin.com/in/seanquijote?trk=profile-badge'>Sean Quijote</a></div>
-					    </div>
-					    <div class="col s12 m12 l12 white-text" style="text-align: justify;">
-					        <p class="flow-text">
-					        	I am a Junior Software Engineer based in Cebu, Philippines. I always had this urge to build things. Nowadays I use this to create web services, appplications, and machine learning models.
-					        </p>
-					        <p class="flow-text">
-					        	When I'm not busy developing I like to pass the time having a hit around the competitive scene of fighting games, Tekken specifically, and the captivating world of Monster Hunter. I also like to dabble in cinematography as much as I can. Oh and Star Wars, kudos to the writers of the Knights of the Old Republic series for pulling me back in.
-					        </p>
-					    </div>
-				  	</div>
+			</ul>
+			<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+				<div class="section" style="background: #1f1f1f; opacity: 1;">
+					<div class="container">
+						<div class="row">
+							<div class="col s12 m12 l12 white-text" style="text-align: justify;">
+								<p class="flow-text">
+									I am a Junior Software Engineer based in Cebu, Philippines. I always had this urge to build things. Nowadays I use this to create web apps and web services.
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
-	    	</div>
+				<div class="section" style="background: #1f1f1f; opacity: 1;">
+					<div class="container">
+						<div class="row">
+							<div class="col s12 m12 l12 white-text" style="text-align: justify;">
+								<p class="flow-text">
+									When I'm not busy developing I like to pass the time having a hit around the competitive scene of fighting games, Tekken specifically, and the captivating world of Monster Hunter. I also like to dabble in cinematography as much as I can. Oh and Star Wars, kudos to the writers of the Knights of the Old Republic series for pulling me back in.
+								</p>
+							</div>
+						  </div>
+					</div>
+				</div>
+
+			</div>
+
 		</div>
 		<!-- MOBILE VIEW -->
 		<div id="mobile-view" class="show-on-medium-and-down hide-on-large-only">

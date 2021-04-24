@@ -2,6 +2,7 @@ import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { IMasonryGalleryImage } from 'ngx-masonry-gallery';
 import { environment } from '../../environments/environment';
+import { MnFullpageModule } from 'ngx-fullpage';
 
 @Component({
   selector: 'app-about',
@@ -15,12 +16,12 @@ export class AboutComponent implements OnInit {
   constructor(@Inject(WINDOW) private window: Window) {
 		this.config = {
 			licenseKey: environment.FULLPAGE_LICENSE_KEY,
-			// anchors: ['kip', 'secondPage'],
+			anchors: ['firstPage', 'secondPage'],
 			// navigationTooltips: ['Kepler Insight', 'Work'],
 		  // navigation: true,
-			// keyboardScrolling: true,
+			keyboardScrolling: true,
 		  // autoScrolling: true,
-			// menu: '#menu',
+			menu: '#menu',
 
 			// fullpage callbacks
 			// afterResize: () => {
