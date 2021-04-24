@@ -17,7 +17,7 @@ export class WorkComponent implements OnInit {
 
   constructor(@Inject(WINDOW) private window: Window) {
 		this.config = {
-      licenseKey: 'eUTqJ@r7',
+      licenseKey: myGlobals.fullpageLicense,
 			menu: '#menu',
 			anchors: ['ovc', 'kip', 'iap', 'gsp', 'qa'],
 			navigationTooltips: ['OVCode', 'Kepler Insight Portal', 'ICT Alumni Portal', 'Graduate School Portal', 'Lexmark QA Tools'],

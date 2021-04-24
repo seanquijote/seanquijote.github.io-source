@@ -15,10 +15,10 @@ const routes: Routes = [
         component: HomeComponent,
         data: {
             depth: "depthHome",
-            title: "Sean Quijote - Junior Software Engineer",
+            title: "My Name - Junior Software Engineer",
             metatags: {
                 description: "I'm Junior Software Engineer living in Cebu",
-                keywords: "sean quijote, quijote, seanquijote"
+                keywords: "My Name, lastname, me"
             }
         }
     },
@@ -27,10 +27,10 @@ const routes: Routes = [
         component: AboutComponent,
         data: {
             depth: "depthAbout",
-            title: "Sean Quijote - About",
+            title: "My Name - About",
             metatags: {
                 description: "A little bit about me",
-                keywords: "about seanquijote, about sean quijote"
+                keywords: "about me, about My Name"
             }
         }
     },
@@ -39,10 +39,10 @@ const routes: Routes = [
         component: WorkComponent,
         data: {
             depth: "depthWork",
-            title: "Sean Quijote - Work",
+            title: "My Name - Work",
             metatags: {
                 description: "A few of my projects",
-                keywords: "work seanquijote, work sean quijote"
+                keywords: "work me, work My Name"
             }
         }
     },
@@ -51,10 +51,10 @@ const routes: Routes = [
       component: SkillsComponent,
       data: {
           depth: "depthSkills",
-          title: "Sean Quijote - Skills",
+          title: "My Name - Skills",
           metatags: {
               description: "Tech things I can do",
-              keywords: "skills seanquijote, skills sean quijote"
+              keywords: "skills me, skills My Name"
           }
       }
   },

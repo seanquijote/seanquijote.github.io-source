@@ -1,3 +1,11 @@
+.section {
+  overflow: hidden;
+}
+
+.container {
+	width: 90%;
+}
+
 .side-nav {
   background-color: #1f1f1f;
   width: 200px;
@@ -8,7 +16,9 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  opacity: .1;
+  left: 0; 
+  top: 0;
+  opacity: .03;
 }
 
 .languages-wrapper {
