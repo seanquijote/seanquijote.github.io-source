@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>http://seanquijote.github.io/</loc>
+      <loc>http://me.github.io/</loc>
       <priority>1.0</priority>
       <changefreq>monthly</changefreq>
    </url>
    <url>
-      <loc>http://seanquijote.github.io/about</loc>
+      <loc>http://me.github.io/about</loc>
       <changefreq>monthly</changefreq>
    </url>
    <url>
-      <loc>http://seanquijote.github.io/work</loc>
+      <loc>http://me.github.io/work</loc>
       <changefreq>monthly</changefreq>
    </url>
    <url>
-      <loc>http://seanquijote.github.io/skills</loc>
+      <loc>http://me.github.io/skills</loc>
       <changefreq>monthly</changefreq>
    </url>
 </urlset>
