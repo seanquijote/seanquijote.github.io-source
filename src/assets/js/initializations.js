@@ -4,20 +4,20 @@ $(document).ready(function(){
 		fullWidth: true,
 		indicators: false
 	});
+
 	$('.moveNextCarousel').click(function(e){
 		e.preventDefault();
 		e.stopPropagation();
 		$('.carousel').carousel('next');
 	});
 
-	// move prev carousel
 	$('.movePrevCarousel').click(function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    $('.carousel').carousel('prev');
-  });
+		e.preventDefault();
+		e.stopPropagation();
+		$('.carousel').carousel('prev');
+	});
 
 	$('.slider').slider({indicators: false});
 	$('.scrollspy').scrollSpy();
-  $('.materialboxed').materialbox();
+	$('.materialboxed').materialbox();
 });

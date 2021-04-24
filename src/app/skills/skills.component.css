@@ -19,6 +19,7 @@
   left: 0; 
   top: 0;
   opacity: .03;
+  background-attachment:inherit;
 }
 
 .languages-wrapper {

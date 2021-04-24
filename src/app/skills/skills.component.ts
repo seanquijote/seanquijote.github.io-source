@@ -23,12 +23,10 @@ export class SkillsComponent implements OnInit {
 			menu: '#menu',
 			anchors: ['langs', 'tools'],
 			navigationTooltips: ['Languages', 'Tools'],
-      // sectionsColor: ['#efefef', '#a1a1a1'],
+      // sectionsColor: ['#000', '#a1a1a1'],
 		  navigation: true,
 			keyboardScrolling: true,
 		  autoScrolling: true,
-      // loopBottom: true,
-      // loopTop: true,
 
 			// // fullpage callbacks
 			// afterResize: () => {
