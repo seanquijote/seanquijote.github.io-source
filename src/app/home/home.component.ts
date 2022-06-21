@@ -20,12 +20,13 @@ export class HomeComponent implements OnInit, OnDestroy {
   particleParams: object = {};
   typedOptions: object = {
     strings: [
-      "jr. software engineer",
-      "feel free to spin on your chair",
-      "may the forks be with you",
+      "software developer II",
+      "back-end enjoyer",
+      "front-end padawan",
+      "fork sensitive",
       "tossed a coin to a witcher",
-      "/* todo  Insert more witty messages */",
-      "oh, you're still here?",
+      "longsword counter evangelist",
+      "5-bar purple rank law main",
       "let's go back"
     ],
     typeSpeed: 60,

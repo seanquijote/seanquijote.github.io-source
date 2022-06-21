@@ -1,6 +1,6 @@
-import * as myGlobals from "../globals";
 import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +13,7 @@ export class ContactComponent implements OnInit {
 
   constructor(@Inject(WINDOW) private window: Window) {
 		this.config = {
-			licenseKey: myGlobals.fullpageLicense,
+			licenseKey: environment.FULLPAGE_LICENSE_KEY,
 			// anchors: ['firstPage', 'secondPage'],
 			// navigationTooltips: ['Home', 'Work'],
 		  // navigation: true,

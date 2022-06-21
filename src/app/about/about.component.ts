@@ -17,13 +17,13 @@ export class AboutComponent implements OnInit {
 		this.config = {
 			licenseKey: environment.FULLPAGE_LICENSE_KEY,
 			anchors: ['firstPage', 'secondPage'],
+			keyboardScrolling: true,
+			menu: '#menu',
 			// navigationTooltips: ['Kepler Insight', 'Work'],
 		  // navigation: true,
-			keyboardScrolling: true,
 		  // autoScrolling: true,
-			menu: '#menu',
 
-			// fullpage callbacks
+			/* Fullpage callbacks */
 			// afterResize: () => {
 			// 	console.log("After resize");
 			// },

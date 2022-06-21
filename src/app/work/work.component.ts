@@ -1,7 +1,7 @@
-import * as myGlobals from "../globals";
 import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { fadeIn } from '../router-animations';
+import { environment } from '../../environments/environment';
 import * as AOS from 'aos';
 
 @Component({
@@ -17,7 +17,7 @@ export class WorkComponent implements OnInit {
 
   constructor(@Inject(WINDOW) private window: Window) {
 		this.config = {
-      licenseKey: 'eUTqJ@r7',
+			licenseKey: environment.FULLPAGE_LICENSE_KEY,
 			menu: '#menu',
 			anchors: ['ovc', 'kip', 'iap', 'gsp', 'qa'],
 			navigationTooltips: ['OVCode', 'Kepler Insight Portal', 'ICT Alumni Portal', 'Graduate School Portal', 'Lexmark QA Tools'],
