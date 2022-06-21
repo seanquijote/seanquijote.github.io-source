@@ -1,7 +1,8 @@
-import * as myGlobals from "../globals";
 import { WINDOW } from '@ng-toolkit/universal';
 import { Component, OnInit , Inject} from '@angular/core';
 import { IMasonryGalleryImage } from 'ngx-masonry-gallery';
+import { environment } from '../../environments/environment';
+import { MnFullpageModule } from 'ngx-fullpage';
 
 @Component({
   selector: 'app-about',
@@ -14,15 +15,15 @@ export class AboutComponent implements OnInit {
 
   constructor(@Inject(WINDOW) private window: Window) {
 		this.config = {
-			licenseKey: myGlobals.fullpageLicense,
-			// anchors: ['kip', 'secondPage'],
+			licenseKey: environment.FULLPAGE_LICENSE_KEY,
+			anchors: ['firstPage', 'secondPage'],
+			keyboardScrolling: true,
+			menu: '#menu',
 			// navigationTooltips: ['Kepler Insight', 'Work'],
 		  // navigation: true,
-			// keyboardScrolling: true,
 		  // autoScrolling: true,
-			// menu: '#menu',
 
-			// fullpage callbacks
+			/* Fullpage callbacks */
 			// afterResize: () => {
 			// 	console.log("After resize");
 			// },
@@ -54,7 +55,7 @@ export class AboutComponent implements OnInit {
     '../assets/images/about_iceborne_ingame2.jpg',
     '../assets/images/about_mhfu.png',
     '../assets/images/about_crypto.jpg',
-];
+  ];
 
   public get images(): IMasonryGalleryImage[] {
     return this.urls.map(m => <IMasonryGalleryImage>{

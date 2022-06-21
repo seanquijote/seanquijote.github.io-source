@@ -11,7 +11,8 @@
     "build:server:prod": "ng run seanquijote:server && webpack --config webpack.server.config.js --progress --colors",
     "build:browser:prod": "ng build --prod",
     "build:prod": "npm run build:server:prod && npm run build:browser:prod",
-    "server": "node local.js"
+    "server": "node local.js",
+    "config": "ts-node ./src/assets/js/setEnv.ts"
   },
   "private": true,
   "dependencies": {
@@ -62,8 +63,9 @@
     "@angular/language-service": "^7.2.3",
     "@types/jasmine": "^3.3.8",
     "@types/jasminewd2": "^2.0.6",
-    "@types/node": "~10.12.19",
+    "@types/node": "^10.12.30",
     "codelyzer": "~4.5.0",
+    "dotenv": "^8.2.0",
     "jasmine-core": "~3.3.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "^4.1.0",
@@ -76,6 +78,7 @@
     "protractor": "^5.4.2",
     "ts-node": "~8.0.2",
     "tslint": "~5.12.1",
-    "typescript": "^3.1.1"
+    "typescript": "^3.1.1",
+    "yargs": "^16.2.0"
   }
 }

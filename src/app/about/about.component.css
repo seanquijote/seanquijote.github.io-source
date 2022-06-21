@@ -221,8 +221,8 @@ header, main, footer {
     position: fixed;
     z-index: 0;
     /*margin-left: -250px;*/
-    margin-left: -30px;
-    margin-top: -280px;
+    margin-left: -170px;
+    margin-top: -290px;
     width: 100%;
     opacity: .05;
     -o-opacity: .05;
