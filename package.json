@@ -31,7 +31,7 @@
     "@ng-toolkit/universal": "^1.1.50",
     "@nguniversal/express-engine": "^7.1.0",
     "@nguniversal/module-map-ngfactory-loader": "^7.1.0",
-    "ajv": "^6.11.0",
+    "ajv": "^6.12.3",
     "angular2-fontawesome": "^5.2.1",
     "angular2-image-gallery": "^8.0.0",
     "angular2-materialize": "^15.1.10",
