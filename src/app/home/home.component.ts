@@ -41,6 +41,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   typedMobile: any;
   width: number = 100;
   height: number = 100;
+  lastUpdatedOn: any;
 
 	constructor(@Inject(WINDOW) private window: Window, private router: Router, private route: ActivatedRoute) {}
 
@@ -56,6 +57,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
     this.typedDesktop = new Typed('.typed-element-desktop', this.typedOptions)
     this.typedMobile = new Typed('.typed-element-mobile', this.typedOptions)
+    this.lastUpdatedOn = "August 26, 2022"
   }
 
   ngOnDestroy() {

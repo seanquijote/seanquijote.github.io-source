@@ -14,7 +14,7 @@
                 <h6 class="navTitle light grey-text text-lighten-3 lg-letters-spaced btn-icon">ABOUT</h6>
                 <i class="material-icons light grey-text text-lighten-3" style="margin-top: 5px;">keyboard_arrow_left</i>
               </div>
-              <small class="flavorText light grey-text text-lighten-3 thin-font center-align">Know me more</small>
+              <small class="flavorText light grey-text text-lighten-3 thin-font center-align">Who am I</small>
             </a>
           </div>
         </div>
@@ -39,7 +39,7 @@
                 <h6 class="navTitle light grey-text text-lighten-3 lg-letters-spaced btn-icon">WORK</h6>
                 <i class="material-icons light grey-text text-lighten-3" style="margin-top: 5px;">keyboard_arrow_down</i>
               </div>
-              <small class="flavorText light grey-text text-lighten-3">Stuff I worked in</small>
+              <small class="flavorText light grey-text text-lighten-3">What I worked in</small>
             </a>
           </div>
         </div>
@@ -50,7 +50,7 @@
                 <h6 class="navTitle light grey-text text-lighten-3 lg-letters-spaced btn-icon">SKILLS</h6>
                 <i class="material-icons light grey-text text-lighten-3" style="margin-top: 5px;">keyboard_arrow_right</i>
               </div>
-              <small class="flavorText light grey-text text-lighten-3 thin-font center-align">See what I can do</small>
+              <small class="flavorText light grey-text text-lighten-3 thin-font center-align">What I can do</small>
             </a>
           </div>
         </div>
@@ -77,32 +77,48 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row" style="margin-top: 50px;">
         <div class="col s4">
-          <a [routerLink]="['/about']" class="btn-wide waves-effect waves-light hoverable" style="padding-right: 20px; padding-left: 20px;">
-            <div style="margin-top: 30px;">
-              <i fa class="fa fa-info-circle btn-text-color btn-icon"></i>
-              <div class="white-text sm-letters-spaced" style="font-size: 14px; color: transparent;">ABOUT</div>
-            </div>
-          </a>
+          <div class="floating-x-l">
+            <a [routerLink]="['/about']" class="navLink animated hide-on-init" animateOnScroll animationName="fadeInLeft">
+              <div class="btn-nav-glow">
+                <div class="white-text sm-letters-spaced" style="font-size: 14px;">ABOUT</div>
+                <i class="material-icons light grey-text text-lighten-3" style="margin-top: 5px;">keyboard_arrow_left</i>
+              </div>
+              <small class="flavorText light grey-text text-lighten-3 thin-font center-align">Who am I</small>
+            </a>
+          </div>
         </div>
         <div class="col s4">
-          <a [routerLink]="['/work']" class="btn-wide waves-effect waves-light hoverable" style="padding-right: 20px; padding-left: 20px;">
-            <div style="margin-top: 30px;">
-              <i fa class="fa fa-briefcase btn-text-color btn-icon"></i>
-              <div class="white-text sm-letters-spaced" style="font-size: 14px;">WORK</div>
-            </div>
-          </a>
+          <div class="floating-y">
+            <a [routerLink]="['/work']" class="navLink animated hide-on-init" animateOnScroll animationName="fadeInLeft">
+              <div class="btn-nav-glow">
+                <div class="white-text sm-letters-spaced" style="font-size: 14px;">WORK</div>
+                <i class="material-icons light grey-text text-lighten-3" style="margin-top: 5px;">keyboard_arrow_down</i>
+              </div>
+              <small class="flavorText light grey-text text-lighten-3">What I worked on</small>
+            </a>
+          </div>
         </div>
         <div class="col s4">
-          <a [routerLink]="['/skills']" class="btn-wide waves-effect waves-light hoverable" style="padding-right: 20px; padding-left: 20px;">
-            <div style="margin-top: 30px;">
-              <i fa class="fa fa-vcard btn-text-color btn-icon"></i>
-              <div class="white-text sm-letters-spaced" style="font-size: 14px;">SKILLS</div>
-            </div>
-          </a>
+          <div class="floating-x-r">
+            <a [routerLink]="['/skills']" class="navLink animated hide-on-init" animateOnScroll animationName="fadeInRight">
+              <div class="btn-nav-glow">
+                <div class="white-text sm-letters-spaced" style="font-size: 14px;">SKILLS</div>
+                <i class="material-icons light grey-text text-lighten-3" style="margin-top: 5px;">keyboard_arrow_right</i>
+              </div>
+              <small class="flavorText light grey-text text-lighten-3 thin-font center-align">What I can do</small>
+            </a>
+          </div>
         </div>
       </div>
+    </div>
+
+    <!-- LAST UPDATED -->
+    <div style="position: fixed; bottom: 0; right: 0; padding-bottom: 20px; padding-right: 20px;">
+      <small class="light grey-text text-lighten-2 thin-font" style="letter-spacing: 3px;">
+        <code>Last updated on: {{lastUpdatedOn}}</code>
+      </small>
     </div>
   </div>
 </main>
