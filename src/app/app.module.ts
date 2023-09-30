@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app.router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from  '@angular/common/http';
 
 // Third Party Modules
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
@@ -42,11 +43,12 @@ import { ParticlesDirective } from './particles.directive';
     FormsModule,
     NgtUniversalModule,
     AppRoutingModule,
-  	BrowserAnimationsModule,
+    BrowserAnimationsModule,
     Angular2FontawesomeModule,
     MaterializeModule,
     AngularFullpageModule,
     MasonryGalleryModule,
+    HttpClientModule
   ],
   providers: [ Title ],
   bootstrap: [ AppComponent ]

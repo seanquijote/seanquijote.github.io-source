@@ -15,9 +15,9 @@ const routes: Routes = [
         component: HomeComponent,
         data: {
             depth: "depthHome",
-            title: "Sean Quijote - Junior Software Engineer",
+            title: "Sean Quijote - Full-Stack Developer",
             metatags: {
-                description: "I'm Junior Software Engineer living in Cebu",
+                description: "I'm a Full-Stack Developer living in Cebu",
                 keywords: "sean quijote, quijote, seanquijote"
             }
         }
