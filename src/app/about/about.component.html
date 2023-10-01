@@ -1,10 +1,14 @@
 <main class="no-pad-bot">
 	<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 100vh;">
+    <div style="z-index: 0;">
+      <div id="particles-js-about" [ngStyle]="particleStyle"></div>
+    </div>
+
 		<!-- DESKTOP VIEW -->
 		<div id="desktop-view" class="show-on-large hide-on-med-and-down">
-			<div id="collage-container">
+			<!-- <div id="collage-container">
 				<ngx-masonry-gallery [width]="430" [gutter]="10" [verticalGutter]="10" [images]="images" id="collage-masonry" style="z-index: 0;"></ngx-masonry-gallery>
-			</div>
+			</div> -->
 			<ul id="sidenav-fixed" class="side-nav right-aligned fixed z-depth-0">
 				<li class="center">
 					<h6>
@@ -20,32 +24,45 @@
 				<li class="page-name">T</li>
 			</ul>
 			<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
-				<div class="section" style="background: #1f1f1f; opacity: 1;">
+				<div class="section">
 					<div class="container">
 						<div class="row">
 							<div class="col s12 m12 l12 white-text" style="text-align: justify;">
-								<p class="flow-text">
-									I am a Full-Stack Developer based in Cebu, Philippines. I always had this urge to build things. Nowadays I use this to create web apps and web services.
-								</p>
+								<div class="center">
+									<h1 style="font-weight: bolder;">Who am I?</h1>
+									<span>
+										<img class="responsive-img z-depth-4" src="assets/images/about_me1.jpg" width="100%" loading="lazy" style="margin-right: 10px;">
+									</span>
+									<p class="text-block" *ngFor="let intro of introList">{{ intro }}</p>
+									<h2 style="font-weight: bolder;">Programming</h2>
+									<p class="text-block" *ngFor="let programming of programmingList">{{ programming }}</p>
+									<h2 style="font-weight: bolder;">Leisure</h2>
+									<span>
+										<img class="responsive-img z-depth-4" src="assets/images/about_tekken_ingame2.jpg" width="56%" loading="lazy" style="margin-right: 10px;">
+										<img class="responsive-img z-depth-4" src="assets/images/about_arcade.jpg" width="42%" loading="lazy">
+									</span>
+									<p class="text-block">{{ leisureList[0] }}</p>
+									<span>
+										<img class="responsive-img z-depth-4" src="assets/images/about_simple.jpg" width="53%" loading="lazy" style="margin-right: 10px;">
+										<img class="responsive-img z-depth-4" src="assets/images/about_f5.jpg" width="45%" loading="lazy">
+									</span>
+									<p class="text-block">{{ leisureList[1] }}</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="section" style="background: #1f1f1f; opacity: 1;">
+				<!-- <div class="section">
 					<div class="container">
 						<div class="row">
 							<div class="col s12 m12 l12 white-text" style="text-align: justify;">
-								<p class="flow-text">
-									When I'm not busy developing I like to pass the time having a hit around the competitive scene of fighting games, Tekken specifically, and the captivating world of Monster Hunter. I also like to dabble in cinematography as much as I can. Oh and Star Wars, kudos to the writers of the Knights of the Old Republic series for pulling me back in.
-								</p>
 							</div>
 						</div>
 					</div>
-				</div>
-
+				</div> -->
 			</div>
-
 		</div>
+
 		<!-- MOBILE VIEW -->
 		<div id="mobile-view" class="show-on-medium-and-down hide-on-large-only">
 			<div id="navbar" class="navbar-fixed">
@@ -67,9 +84,9 @@
 								<div>
 									I'm a <b class="white-text thin-font">Full-Stack Developer</b> living in Cebu City.
 								</div>
-									<div class="mobile-img">
-										<img class="responsive-img z-depth-4" src="assets/images/about_f5.jpg" loading="lazy">
-									</div>
+								<div class="mobile-img">
+									<img class="responsive-img z-depth-4" src="assets/images/about_f5.jpg" loading="lazy">
+								</div>
 								<div>
 									As someone who's <b class="white-text thin-font">fresh from campus</b>, I like to stay well-rounded. When I'm not coding, I <b class="white-text thin-font">design</b> print media, and <b class="white-text thin-font">edit</b> videos.
 								</div>

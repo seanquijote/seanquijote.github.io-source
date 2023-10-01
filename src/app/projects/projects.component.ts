@@ -4,11 +4,11 @@ import { Component, OnInit , Inject} from '@angular/core';
 import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
-  selector: 'app-skills',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.css']
 })
-export class SkillsComponent implements OnInit {
+export class ProjectsComponent implements OnInit {
   config: any;
   fullpage_api: any;
 

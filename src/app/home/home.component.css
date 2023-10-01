@@ -1,8 +1,3 @@
-main {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
 #desktop-view, #mobile-view {
   z-index: 999;
 }

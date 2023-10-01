@@ -1,5 +1,5 @@
 import { WINDOW } from '@ng-toolkit/universal';
-import { Component, OnInit , Inject, OnDestroy} from '@angular/core';
+import { Component, OnInit, Inject, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute } from "@angular/router";
 import { HttpService } from '../http.service';
 import { fadeIn } from '../router-animations';
@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   particleStyle: object = {
     'position': 'fixed',
     'width': '100%',
-    'height': '100%',
     'z-index': -1,
     'top': 0,
     'left': 0,
@@ -70,8 +69,8 @@ export class HomeComponent implements OnInit, OnDestroy {
       (error) => { console.log(error) }
     )
 
-    console.log(this.data)
-    particlesJS.load('particles-js', '../assets/particles.json', null)
+
+    particlesJS.load('particles-js', '../assets/particles-circles.json', null)
     this.lastUpdatedOn = "August 26, 2022"
   }
 

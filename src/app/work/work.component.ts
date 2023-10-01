@@ -15,15 +15,15 @@ export class WorkComponent implements OnInit {
   config: any;
   fullpage_api: any;
 
-  constructor(@Inject(WINDOW) private window: Window) {
+	constructor(@Inject(WINDOW) private window: Window) {
 		this.config = {
 			licenseKey: environment.FULLPAGE_LICENSE_KEY,
 			menu: '#menu',
 			anchors: ['ovc', 'kip', 'iap', 'gsp', 'qa'],
 			navigationTooltips: ['OVCode', 'Kepler Insight Portal', 'ICT Alumni Portal', 'Graduate School Portal', 'Lexmark QA Tools'],
-		  navigation: true,
+			navigation: true,
 			keyboardScrolling: true,
-		  autoScrolling: false,
+			autoScrolling: false,
       css3: true,
       scrollBar: false,
 

@@ -12,12 +12,12 @@ import * as AOS from 'aos';
   animations: [
     trigger('routeAnimation', [
       transition('depthHome => depthAbout', [
-        style({ height: '!' }),
+        style({ height: '!', overflowX: 'hidden' }),
         query(':enter', style({ transform: 'translateX(-100%)' })),
-        query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0})),
+        query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0, overflow: 'hidden'})),
         group([
-          query(':leave', [animate('0.3s cubic-bezier(.35, 0, .25, 1)', style({ transform: 'translateX(100%)'}))]),
-          query(':enter', [animate('0.3s cubic-bezier(.35, 0, .25, 1)', style({ transform: 'translateX(0)'}))])
+          query(':leave', [animate('0.3s cubic-bezier(.35, 0, .25, 1)', style({ transform: 'translateX(100%)' }))]),
+          query(':enter', [animate('0.3s cubic-bezier(.35, 0, .25, 1)', style({ transform: 'translateX(0)' }))])
         ])
       ]),
       transition('depthAbout => depthHome', [
@@ -68,8 +68,8 @@ import * as AOS from 'aos';
         ]),
       ]),
 
-      transition('depthHome => depthSkills', [
-        style({ height: '!' }),
+      transition('depthHome => depthProjects', [
+        style({ height: '!', overflowX: 'hidden' }),
         query(':enter', style({ transform: 'translateX(100%)' })),
         query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0})),
         group([
@@ -77,7 +77,7 @@ import * as AOS from 'aos';
           query(':enter', [animate('0.3s cubic-bezier(.35, 0, .25, 1)', style({ transform: 'translateX(0)'}))])
         ])
       ]),
-      transition('depthSkills => depthHome', [
+      transition('depthProjects => depthHome', [
         style({ height: '!' }),
         query(':enter', style({ transform: 'translateX(-100%)' })),
         query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0})),
@@ -100,6 +100,6 @@ export class AppComponent {
   }
 
 	getDepth(outlet) {
-  	return outlet.activatedRouteData['depth']
+    return outlet.activatedRouteData['depth']
 	}
 }

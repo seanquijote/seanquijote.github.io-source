@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
-import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
     {
@@ -41,23 +41,23 @@ const routes: Routes = [
             depth: "depthWork",
             title: "Sean Quijote - Work",
             metatags: {
-                description: "A few of my projects",
+                description: "My work experience",
                 keywords: "work seanquijote, work sean quijote"
             }
         }
     },
     {
-      path: 'skills',
-      component: SkillsComponent,
-      data: {
-          depth: "depthSkills",
-          title: "Sean Quijote - Skills",
-          metatags: {
-              description: "Tech things I can do",
-              keywords: "skills seanquijote, skills sean quijote"
-          }
-      }
-  },
+		path: 'projects',
+		component: ProjectsComponent,
+		data: {
+			depth: "depthProjects",
+			title: "Sean Quijote - Projects",
+			metatags: {
+				description: "A few of my projects",
+				keywords: "projects seanquijote, projects sean quijote"
+			}
+		}
+	},
     { path: '**', redirectTo: '/' }
 
     // { path: 'path4', component: Name4Component },

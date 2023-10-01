@@ -23,7 +23,7 @@ import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
 import { ParticlesDirective } from './particles.directive';
 
 @NgModule({
@@ -34,7 +34,7 @@ import { ParticlesDirective } from './particles.directive';
     WorkComponent,
     AboutComponent,
     FooterComponent,
-    SkillsComponent,
+    ProjectsComponent,
     ParticlesDirective
   ],
   imports:[
